@@ -1,66 +1,190 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
 
-html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
-body, button, input, select, textarea { font-family: adelle-1, adelle-2, georgia, serif; color: #222; }
+body {
+  margin: 0;
+  font-size: 125%;
+  line-height: 1.7; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+body, button, input, select, textarea {
+  font-family: adelle-1, adelle-2, georgia, serif;
+  color: #222; }
 
-a { color: #333; }
-a:visited { color: #333; }
-a:focus { outline: thin dotted; }
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
 
-a:hover, a:active { outline: 0; }
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
 
-b, strong { font-weight: 700; }
+a {
+  color: #333;
+  text-decoration: none; }
 
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
+a:visited {
+  color: #333; }
 
+a:focus {
+  outline: thin dotted; }
 
-ul, ol { margin-bottom: 1em; }
+a:hover, a:active {
+  outline: 0; }
 
-img { border: 0; -ms-interpolation-mode: bicubic; }
+b, strong {
+  font-weight: 700; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+ul, ol {
+  margin-bottom: 1em; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
 
 /*
 Clearfix
 */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
 
 /*
 Forms, monospaced and other CSS rules omitted - see html5 boilerplate
 */
+/*
+Base Layout
+*/
+.container {
+  width: 49.5em;
+  margin: 0 auto; }
 
+section[role=main] {
+  padding-top: 60px; }
 
+/*
+typography
+*/
+h1 {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-bottom: 1em; }
+
+/*
+header
+*/
+header[role=banner] {
+  height: 110px;
+  padding: 35px 0;
+  border-bottom: 1px solid #f1f1f1; }
+
+.logo {
+  width: 340px;
+  height: 110px;
+  display: block;
+  background: transparent url(/graphics/self-portrait.png) no-repeat left center;
+  float: left;
+  padding-left: 140px;
+  line-height: 110px; }
+
+nav {
+  float: left;
+  padding: 25px 0; }
+
+nav a {
+  line-height: 60px;
+  padding: 0 30px; }
+
+/*
+Articles
+*/
+.article-content {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 30;
+  -moz-column-gap: 30;
+  column-gap: 30; }
 
 @media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
-
-}
-
+  /* Style adjustments for viewports 480px and over go here */ }
 @media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-}
-
+  /* Style adjustments for viewports 768px and over go here */ }
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
-}
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; } }

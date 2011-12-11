@@ -5,9 +5,16 @@
 <body>
   <div class="container">
     {% include header.html %}
-    <div class="content">
-      {{ content }}
-    </div><!-- end of content -->
+    <section role="main">
+      <article>
+        <header>
+        <h1>{{ page.title }}</h1>
+        </header>
+        <div class="article-content">
+          {{ content }}
+        </div><!-- end of article-content -->
+      </article>
+    </section><!-- main -->
     {% include footer.html %}
   </div><!-- end of container -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
