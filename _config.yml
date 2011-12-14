@@ -1,2 +1,2 @@
-exclude: [ Gemfile, Gemfile.lock, Procfile, vendor]
+exclude: [ Gemfile, Gemfile.lock, Procfile, vendor, screen.scss]
 permalink: pretty
