@@ -64,8 +64,12 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
-
 ul, ol { margin-bottom: 1em; }
+
+figcaption { font-style: italic; font-size: 0.75em; }
+
+figure { margin: 0 0 2em 0; }
+
 
 img { border: 0; -ms-interpolation-mode: bicubic; }
 
@@ -80,6 +84,14 @@ Clearfix
 /*
 Forms, monospaced and other CSS rules omitted - see html5 boilerplate
 */
+
+/*
+Global
+*/
+
+.center {
+  text-align: center
+}
 
 /*
 Base Layout
@@ -102,6 +114,7 @@ h1 {
   font-size: 1.8em;
   font-weight: 400;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 /*
@@ -111,7 +124,7 @@ header
 header[role=banner] {
   height: 110px;
   padding: 35px 0;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .logo {
@@ -138,7 +151,11 @@ nav a {
 Articles
 */
 
-.article-content {
+.article-content p {
+  padding: 0 100px;
+}
+
+.two-columns {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
@@ -147,7 +164,12 @@ Articles
   column-gap: 30;
 }
 
+.two-columns p {
+  padding: 0;
+}
 
+.article-content img {
+  max-width: 100%}
 
 
 @media only screen and (min-width: 480px) {
