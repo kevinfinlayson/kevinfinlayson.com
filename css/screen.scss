@@ -93,6 +93,10 @@ Global
   text-align: center
 }
 
+.date {
+  font-size: 0.75em;
+}
+
 /*
 Base Layout
 */
@@ -113,8 +117,6 @@ typography
 h1 {
   font-size: 1.8em;
   font-weight: 400;
-  margin-bottom: 1em;
-  text-align: center;
 }
 
 /*
@@ -159,12 +161,14 @@ footer[role=contentinfo] {
   text-align: center;
   font-size: 0.75em;
 }
- 
-
 
 /*
 Articles
 */
+
+article header {
+  text-align: center
+}
 
 .article-content p {
   padding: 0 100px;
