@@ -168,12 +168,18 @@ footer[role=contentinfo] {
 Articles
 */
 
-article header {
-  text-align: center;
+article {
+  padding: 5em 0 3em 0;
+  border-top: 1px solid #e1e1e1;
 }
 
-article p {
-  text-align: center
+section[role=main] > article:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+article header {
+  text-align: center;
 }
 
 abbr.date {
