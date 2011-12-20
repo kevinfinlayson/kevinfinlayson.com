@@ -118,6 +118,7 @@ h1 {
   font-size: 1.8em;
   font-weight: 400;
   line-height: 1;
+  margin: 0 0 0.5em 0;
 }
 
 /*
@@ -162,8 +163,6 @@ footer[role=contentinfo] {
   text-align: center;
   font-size: 0.75em;
 }
- 
-
 
 /*
 Articles
@@ -174,6 +173,15 @@ article header {
 }
 
 article p {
+  text-align: center
+}
+
+abbr.date {
+  display: block;
+  margin-bottom: 1em
+}
+
+.article-content p {
   padding: 0 100px;
 }
 
