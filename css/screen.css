@@ -115,7 +115,8 @@ typography
 */
 h1 {
   font-size: 1.8em;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0 0 0.5em 0; }
 
 /*
 header
@@ -157,6 +158,10 @@ Articles
 */
 article header {
   text-align: center; }
+
+abbr.date {
+  display: block;
+  margin-bottom: 1em; }
 
 .article-content p {
   padding: 0 100px; }
