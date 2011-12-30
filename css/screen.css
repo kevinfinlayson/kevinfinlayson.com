@@ -17,7 +17,7 @@ html {
 body {
   margin: 0;
   font-size: 125%;
-  line-height: 1.7; }
+  line-height: 1.8; }
 
 body, button, input, select, textarea {
   font-family: adelle-1, adelle-2, georgia, serif;
@@ -132,8 +132,9 @@ header[role=banner] {
   height: 110px;
   display: block;
   background: transparent url(/graphics/self-portrait.png) no-repeat left center;
+  background-size: 75px 75px;
   float: left;
-  padding-left: 140px;
+  padding-left: 100px;
   line-height: 110px; }
 
 nav {

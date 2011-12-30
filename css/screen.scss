@@ -45,7 +45,7 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
 
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 125%; line-height: 1.7; }
+body { margin: 0; font-size: 125%; line-height: 1.8; }
 
 body, button, input, select, textarea { font-family: adelle-1, adelle-2, georgia, serif; color: #222; }
 
@@ -136,8 +136,9 @@ header[role=banner] {
   height: 110px;
   display: block;
   background: transparent url(/graphics/self-portrait.png) no-repeat left center;
+  background-size: 75px 75px;
   float: left;
-  padding-left: 140px;
+  padding-left: 100px;
   line-height: 110px;
 }
 
