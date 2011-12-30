@@ -1,18 +1,19 @@
-//Frameless			<http://framelessgrid.com/>
-//by Joni Korpi 		<http://jonikorpi.com/>
-//licensed under CC0	<http://creativecommons.org/publicdomain/zero/1.0/>
+//Frameless <http://framelessgrid.com/>
+//by Joni Korpi <http://jonikorpi.com/>
+//licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
 
 
 //
 // Configuration
 //
 
-$font-size: 20; 		// Your base font-size in pixels
+$font-size: 18;  // Your base font-size in pixels
 $em: $font-size;	// Shorthand for outputting ems
 
-$column: 55;	// The column-width of your grid in pixels
-$gutter: 30;	// The gutter-width of your grid in pixels
-
+$column: 4*$em;	// The column-width of your grid in pixels
+$gutter: $em; // The aggregate gutter-width based on the padding
+$padding: 0.5em;
+$container: #{(12 * ($column + $gutter)) / $em}em;
 
 //
 // Column-widths in variables, in ems
@@ -36,16 +37,16 @@ $cols12: #{(12 * ($column + $gutter) - $gutter) / $em}em;
 // Column-widths in a function, in ems
 //
 
-@mixin width ($cols:1) {
-	width: #{($cols * ($column + $gutter) - $gutter) / $em}em;
-}
+// @mixin width ($cols:1) {
+//   width: #{($cols * ($column + $gutter) - $gutter) / $em}em;
+// }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
-html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; font-weight: 400; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 125%; line-height: 1.8; }
+body { margin: 0; font-size: 112.5%; line-height: 1.8; }
 
 body, button, input, select, textarea { font-family: adelle-1, adelle-2, georgia, serif; color: #222; }
 
@@ -94,7 +95,7 @@ Global
 }
 
 .date {
-  font-size: 0.75em;
+  font-size: 0.825em;
 }
 
 /*
@@ -102,12 +103,13 @@ Base Layout
 */
 
 .container {
-  width: $cols12;
+  width: $container;
   margin: 0 auto
 }
 
 section[role=main] {
-  padding-top: 60px;
+  width: $cols12;
+  padding: 4em $padding;
 }
 
 /*
@@ -115,9 +117,9 @@ typography
 */
 
 h1 {
-  font-size: 1.8em;
-  font-weight: 400;
+  font-size: 2em;
   line-height: 1;
+  font-weight: 600;
   margin: 0 0 0.5em 0;
 }
 
@@ -126,35 +128,40 @@ header
 */
 
 header[role=banner] {
-  height: 110px;
-  padding: 35px 0;
+  height: 5em;
+  padding: 2em $padding;
   border-bottom: 1px solid #e1e1e1;
+  font-weight:600;
 }
 
 .logo {
-  width: 340px;
-  height: 110px;
+  width: $cols4;
+  height: 5em;
   display: block;
   background: transparent url(/graphics/self-portrait.png) no-repeat left center;
-  background-size: 75px 75px;
+  background-size: 4em 4em;
   float: left;
-  padding-left: 100px;
-  line-height: 110px;
+  padding-left: 5em;
+  line-height: 5em;
 }
 
 nav {
   float: left;
-  padding: 25px 0;
 }
 
 nav a {
-  line-height: 60px;
-  padding: 0 30px;
+  display: inline-block;
+  line-height: 5em;
+  padding: 0 2em;
 }
 
-  
+.article-content > p:first-child {
+  font-size: 125%
+}
+
+
 /*
-Footer   
+Footer
 */
 
 footer[role=contentinfo] {
@@ -189,7 +196,8 @@ abbr.date {
 }
 
 .article-content p {
-  padding: 0 100px;
+  width: $cols8;
+  padding: 0 $cols2;
 }
 
 .two-columns {
