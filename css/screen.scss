@@ -1,78 +1,112 @@
-//Frameless <http://framelessgrid.com/>
-//by Joni Korpi <http://jonikorpi.com/>
-//licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
-
-
 //
-// Configuration
+// SASS variables
 //
 
-$font-size: 18;  // Your base font-size in pixels
-$em: $font-size;	// Shorthand for outputting ems
+// Colors
 
-$column: 4*$em;	// The column-width of your grid in pixels
-$gutter: $em; // The aggregate gutter-width based on the padding
-$padding: 0.5rem;
-$container: #{(12 * ($column + $gutter)) / $em}rem;
+$body-color: #555555;
+$link-color: #6C8890;
 
-//
-// Column-widths in variables, in ems
-//
+// Typefaces: font-family stacks
 
- $cols1: #{( 1 * ($column + $gutter) - $gutter) / $em}rem;
- $cols2: #{( 2 * ($column + $gutter) - $gutter) / $em}rem;
- $cols3: #{( 3 * ($column + $gutter) - $gutter) / $em}rem;
- $cols4: #{( 4 * ($column + $gutter) - $gutter) / $em}rem;
- $cols5: #{( 5 * ($column + $gutter) - $gutter) / $em}rem;
- $cols6: #{( 6 * ($column + $gutter) - $gutter) / $em}rem;
- $cols7: #{( 7 * ($column + $gutter) - $gutter) / $em}rem;
- $cols8: #{( 8 * ($column + $gutter) - $gutter) / $em}rem;
- $cols9: #{( 9 * ($column + $gutter) - $gutter) / $em}rem;
-$cols10: #{(10 * ($column + $gutter) - $gutter) / $em}rem;
-$cols11: #{(11 * ($column + $gutter) - $gutter) / $em}rem;
-$cols12: #{(12 * ($column + $gutter) - $gutter) / $em}rem;
+$body-text: "chaparral-pro-1", "chaparral-pro-2", georgia, serif;
+$caption-text: "chaparral-pro-caption-2", "chaparral-pro-caption-2", georgia, serif;
+$headers: "brandon-grotesque-1", "brandon-grotesque-2", "helvetica neue", arial, sans-serif;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display:
+  inline; *zoom: 1;
+}
+
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.7;
+}
+
+body, button, input, select, textarea {
+  font-family: $body-text;
+  color: $body-color;
+}
+
+::-moz-selection {
+  background: $link-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: $link-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $link-color;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+p, ul, ol {
+  margin-bottom: 1em;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.8889em;
+}
+
+figure {
+  margin: 0 0 2em 0;
+}
 
 
-//
-// Column-widths in a function, in ems
-//
-
-// @mixin width ($cols:1) {
-//   width: #{($cols * ($column + $gutter) - $gutter) / $em}em;
-// }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-
-html { font-size: 112.5%; font-weight: 400; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-body { margin: 0; font-size: 100%; line-height: 1.7; }
-
-body, button, input, select, textarea { font-family: adelle-1, adelle-2, georgia, serif; color: #222; }
-
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
-a { color: #333; text-decoration: none; }
-a:visited { color: #333; }
-a:focus { outline: thin dotted; }
-
-a:hover, a:active { outline: 0; }
-
-b, strong { font-weight: 700; }
-
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-ul, ol { margin-bottom: 1em; }
-
-figcaption { font-style: italic; font-size: 0.75em; }
-
-figure { margin: 0 0 2em 0; }
-
-
-img { border: 0; -ms-interpolation-mode: bicubic; }
+img {
+  border: 0; -ms-interpolation-mode: bicubic;
+}
 
 /*
 Clearfix
@@ -95,7 +129,7 @@ Global
 }
 
 .date {
-  font-size: 0.825em;
+  font-size: 0.8889em;
 }
 
 /*
@@ -103,14 +137,9 @@ Base Layout
 */
 
 .container {
-  max-width: $container;
-  margin: 0 auto;
-  padding: 0 $padding;
 }
 
 section[role=main] {
-  max-width: $cols12;
-  padding: 4em $padding;
 }
 
 /*
@@ -118,10 +147,6 @@ typography
 */
 
 h1 {
-  font-size: 2em;
-  line-height: 1;
-  font-weight: 600;
-  margin: 0 0 0.5em 0;
 }
 
 /*
@@ -129,47 +154,16 @@ header
 */
 
 header[role=banner] {
-  padding: 2em $padding;
-  border-bottom: 1px solid #e1e1e1;
-  font-weight:600;
 }
 
 .logo {
-  width: $cols4;
-  height: 5em;
-  display: block;
-  background: transparent url(/graphics/self-portrait.png) no-repeat left center;
-  background-size: 4em 4em;
-  float: left;
-  padding-left: 5em;
-  line-height: 5em;
 }
-
-nav {
-  float: left;
-}
-
-nav a {
-  display: inline-block;
-  line-height: 5em;
-  padding: 0 2em;
-}
-
-.article-content > p:first-child {
-  font-size: 125%;
-}
-
 
 /*
 Footer
 */
 
 footer[role=contentinfo] {
-  height: 70px;
-  padding: 70px 0 35px 0;
-  border-top: 1px solid #e1e1e1;
-  text-align: center;
-  font-size: 0.75em;
 }
 
 /*
@@ -177,31 +171,12 @@ Articles
 */
 
 article {
-  padding: 5em 0 3em 0;
-  border-top: 1px solid #e1e1e1;
-}
-
-section[role=main] > article:first-child {
-  border-top: none;
-  padding-top: 0;
 }
 
 article header {
-  text-align: center;
-}
-
-abbr.date {
-  display: block;
-  margin-bottom: 1em
-}
-
-.article-content p {
-  max-width: $cols8;
-  margin: 0 auto 1em auto;
 }
 
 .article-content img {
-  max-width: 100%;
 }
 
 
