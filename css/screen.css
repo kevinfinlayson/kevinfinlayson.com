@@ -183,17 +183,6 @@ abbr.date {
   max-width: 39rem;
   margin: 0 auto 1em auto; }
 
-.two-columns {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 30;
-  -moz-column-gap: 30;
-  column-gap: 30; }
-
-.two-columns p {
-  padding: 0; }
-
 .article-content img {
   max-width: 100%; }
 
