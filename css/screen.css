@@ -7,7 +7,7 @@ audio[controls], canvas, video {
   *zoom: 1; }
 
 html {
-  font-size: 100%;
+  font-size: 112.5%;
   font-weight: 400;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -17,8 +17,8 @@ html {
 
 body {
   margin: 0;
-  font-size: 112.5%;
-  line-height: 1.8; }
+  font-size: 100%;
+  line-height: 1.7; }
 
 body, button, input, select, textarea {
   font-family: adelle-1, adelle-2, georgia, serif;
@@ -105,12 +105,13 @@ Global
 Base Layout
 */
 .container {
-  width: 60em;
-  margin: 0 auto; }
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 0.5rem; }
 
 section[role=main] {
-  width: 59em;
-  padding: 4em 0.5em; }
+  max-width: 59rem;
+  padding: 4em 0.5rem; }
 
 /*
 typography
@@ -125,13 +126,12 @@ h1 {
 header
 */
 header[role=banner] {
-  height: 5em;
-  padding: 2em 0.5em;
+  padding: 2em 0.5rem;
   border-bottom: 1px solid #e1e1e1;
   font-weight: 600; }
 
 .logo {
-  width: 19em;
+  width: 19rem;
   height: 5em;
   display: block;
   background: transparent url(/graphics/self-portrait.png) no-repeat left center;
@@ -180,8 +180,8 @@ abbr.date {
   margin-bottom: 1em; }
 
 .article-content p {
-  width: 39em;
-  padding: 0 9em; }
+  max-width: 39rem;
+  margin: 0 auto 1em auto; }
 
 .two-columns {
   -webkit-column-count: 2;
@@ -197,9 +197,7 @@ abbr.date {
 .article-content img {
   max-width: 100%; }
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */ }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 960px) {
   /* Style adjustments for viewports 768px and over go here */ }
 @media print {
   * {
