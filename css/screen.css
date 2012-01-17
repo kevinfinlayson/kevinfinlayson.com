@@ -125,12 +125,28 @@ Global
 /*
 Base Layout
 */
+body {
+  width: 98%;
+  border-top: 1px solid #dedede;
+  margin: 10px auto 0 auto; }
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto; }
+
 /*
 typography
 */
 /*
 header
 */
+header[role=banner] {
+  padding: 6em 0  5em 0; }
+
+.logo {
+  font-family: "brandon-grotesque-1", "brandon-grotesque-2", "helvetica neue", arial, sans-serif; }
+
 /*
 Footer
 */
