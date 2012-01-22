@@ -34,8 +34,11 @@ time, mark, audio, video {
   background:transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight:normal;
+h1 {
+  font-weight: normal;
+  font-family: $headers;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -181,6 +184,8 @@ typography
 */
 
 h1 {
+  line-height: 4.275rem;
+  font-size: 0.875rem;
 }
 
 /*
@@ -188,11 +193,34 @@ header
 */
 
 header[role=banner] {
-  padding: 6em 0  5em 0;
+  padding: 6.125rem 0 5.25rem 0;
+  height: 4.275rem;
 }
 
-.logo {
-  font-family: $headers;
+a.logo {
+  padding-left: 10%;
+  height: 4.275rem;
+  display: inline-block;
+  position: relative;
+  color: #555;
+}
+
+a.logo img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 35px;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+a.logo:hover img {
+  filter: alpha(opacity=100);
+  opacity: 1;
 }
 
 /*
