@@ -1,4 +1,8 @@
-//
+/*
+  screen.scss
+  Stylesheet for kevinfinlayson.com
+*/
+
 // SASS variables
 //
 
@@ -54,6 +58,14 @@ body, button, input, select, textarea {
   text-shadow: none;
 }
 
+h1, h2, h3 {
+  font-weight: normal;
+  font-family: $headers;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
 a {
   color: $link-color;
 }
@@ -69,14 +81,6 @@ a:focus {
 a:hover, a:active {
   outline: 0;
   color: $body-color;
-}
-
-h1, h2, h3 {
-  font-weight: normal;
-  font-family: $headers;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1.3;
 }
 
 h1 a, h2 a, h3 a {
@@ -107,11 +111,13 @@ p, ul, ol {
 }
 
 ul {
-  list-style: none
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-  margin-bottom: 0.4em
+  margin-bottom: 0.75em
 }
 
 figcaption {
@@ -123,10 +129,12 @@ figure {
   margin: 0 0 2em 0;
 }
 
-
 img {
-  border: 0; -ms-interpolation-mode: bicubic;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
 }
+
 
 /*
 Clearfix
@@ -166,20 +174,24 @@ body {
 
 .container {
   max-width: 1100px;
+  min-width: 726px;
   width: 100%;
   margin: 0 auto;
 }
+
 
 /*
 typography
 */
 
 h1 {
+  margin: 0;
   line-height: 5em;
   font-size: 0.875em;
 }
 
 h2 {
+  font-size: 1.125em;
   margin-bottom: 0.75em;
 }
 
@@ -198,14 +210,14 @@ header
 */
 
 header[role=banner] {
-  padding: 6.125rem 0 5.25rem 0;
+  padding: 6rem 0 5.5rem 0;
   height: 4.275rem;
   border-bottom: 2px solid #ebebeb;
 }
 
 a.logo {
   padding-left: 13%;
-  height: 4.275rem;
+  line-height: 4.275rem;
   display: inline-block;
   position: relative;
   color: #555;
@@ -213,7 +225,7 @@ a.logo {
 
 a.logo img {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 0;
   border-radius: 35px;
   filter: alpha(opacity=80);
@@ -233,13 +245,14 @@ a.logo:hover img {
   opacity: 1;
 }
 
+
 /*
 Sidebar
 */
 
 aside[role=complementary] {
   width: 28%;
-  padding: 3.9rem 0 0 4%;
+  padding: 2.5rem 0 0 4%;
   float: left;
   line-height: 1.5;
 }
@@ -248,13 +261,34 @@ aside section {
   margin-bottom: 3.3rem;
 }
 
+.social-link {
+  line-height: 2.5rem;
+}
+
+.social-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25em;
+  background-color:  #ddd;
+  display: inline-block;
+  text-indent: -999em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 1em;
+}
+
+.twitter {
+  background-image: url(/graphics/twitter-icon.png);
+  background-size: 24px 16px;
+}
+
 /*
 Articles
 */
 
 section[role=main] {
   width: 45%;
-  padding: 3.6rem 9% 0 13%;
+  padding: 2.5rem 9% 0 13%;
   float: left;
   border-right: 1px solid #dedede;
 }
@@ -267,8 +301,6 @@ article header {
   margin-bottom: 1.34em;
 }
 
-.article-content img {
-}
 
 /*
 Footer
