@@ -3,6 +3,8 @@
   Stylesheet for kevinfinlayson.com
 */
 
+@import 'bourbon/bourbon';
+
 // SASS variables
 //
 
@@ -10,6 +12,7 @@
 
 $body-color: #555555;
 $link-color: #6C8890;
+$meta-color: #999999;
 
 // Typefaces: font-family stacks
 
@@ -35,90 +38,23 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-  font-size: 100%;
-  line-height: 1.7;
-}
-
 body, button, input, select, textarea {
   font-family: $body-text;
   color: $body-color;
 }
 
 ::-moz-selection {
-  background: $link-color;
+  background: #B2D2F8;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: $link-color;
+  background: #B2D2F8;
   color: #fff;
   text-shadow: none;
 }
 
-h1, h2, h3 {
-  font-weight: normal;
-  font-family: $headers;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1.3;
-}
-
-a {
-  color: $link-color;
-}
-
-a:visited {
-  color: $link-color;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
-  outline: 0;
-  color: $body-color;
-}
-
-h1 a, h2 a, h3 a {
-  text-decoration: none;
-}
-
-b, strong {
-  font-weight: 700;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-p, ul, ol {
-  margin-bottom: 1em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin-bottom: 0.75em
-}
 
 figcaption {
   font-style: italic;
@@ -157,9 +93,11 @@ Global
 }
 
 .date {
-  font-size: 0.8889em;
-  font-weight: 300;
-  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: $headers;
+  font-size: 0.75em;
+  color: $meta-color;
 }
 
 /*
@@ -167,15 +105,19 @@ Base Layout
 */
 
 body {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.6;
   width: 98%;
+  margin: 10px 1% 0 1%;
   border-top: 1px solid #dedede;
-  margin: 10px auto 0 auto;
+  // background-color: #f1f1f1
 }
 
 .container {
-  max-width: 1100px;
-  min-width: 726px;
-  width: 100%;
+  max-width: 1000px;
+  min-width: 320px;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -184,24 +126,93 @@ body {
 typography
 */
 
-h1 {
+h1, h2, h3 {
+  font-weight: normal;
+  font-family: $headers;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
   margin: 0;
-  line-height: 5em;
-  font-size: 0.875em;
+}
+
+h1 {
+  font-size: 0.9em;
 }
 
 h2 {
-  font-size: 1.125em;
-  margin-bottom: 0.75em;
+  font-family: $body-text;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
 h3 {
-  font-size: 0.875em;
-  margin-bottom: 1.25em;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.75em;
+}
+
+h1 a, h2 a, h3 a {
+  text-decoration: none;
 }
 
 h2 a, h2 a:visited {
   color: #555;
+}
+
+
+a {
+  color: $link-color;
+}
+
+a:visited {
+  color: $link-color;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+  color: $body-color;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.75em
 }
 
 
@@ -210,22 +221,22 @@ header
 */
 
 header[role=banner] {
-  padding: 6rem 0 5.5rem 0;
-  height: 4.275rem;
+  padding: 4em 0 2em 15%;
   border-bottom: 2px solid #ebebeb;
+  margin-bottom: 3em;
 }
 
 a.logo {
-  padding-left: 13%;
-  line-height: 4.275rem;
+  line-height: 70px;
   display: inline-block;
   position: relative;
   color: #555;
 }
 
 a.logo img {
+  display: none;
   position: absolute;
-  left: 10px;
+  left: 0;
   top: 0;
   border-radius: 35px;
   filter: alpha(opacity=80);
@@ -245,41 +256,21 @@ a.logo:hover img {
   opacity: 1;
 }
 
+.profile {
+  // color: $meta-color;
+  padding-right: 40px;
+  max-width: 540px;
+}
+
 
 /*
 Sidebar
 */
 
 aside[role=complementary] {
-  width: 28%;
-  padding: 2.5rem 0 0 4%;
+  width: 100%;
+  padding: 1em 0 0;
   float: left;
-  line-height: 1.5;
-}
-
-aside section {
-  margin-bottom: 3.3rem;
-}
-
-.social-link {
-  line-height: 2.5rem;
-}
-
-.social-icon {
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 1.25em;
-  background-color:  #ddd;
-  display: inline-block;
-  text-indent: -999em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-right: 1em;
-}
-
-.twitter {
-  background-image: url(/graphics/twitter-icon.png);
-  background-size: 24px 16px;
 }
 
 /*
@@ -287,18 +278,25 @@ Articles
 */
 
 section[role=main] {
-  width: 45%;
-  padding: 2.5rem 9% 0 13%;
-  float: left;
-  border-right: 1px solid #dedede;
+  width: 100%;
+}
+
+section[role=main] {
 }
 
 article {
-  font-size: 112.5%;
+  padding: 0 0 1em 15%;
+  margin: 0 0 2.8em 0;
+  max-width: 580px;
 }
 
-article header {
-  margin-bottom: 1.34em;
+article aside {
+  line-height: 1.3;
+  margin: 0 0 20px 0;
+}
+
+article p, article ul {
+  margin: 0 40px 1.6em 0;
 }
 
 
@@ -313,12 +311,65 @@ footer[role=contentinfo] {
 
 
 @media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+  /* Add a medium-wide configuration - full width main section with left-floated article asides */
+}
+
+@media only screen and (min-width: 1000px) {
+
+  /*
+  Header
+  */
+  header[role=banner] {
+    padding-left: 14%;
+  }
+
+  /*
+  Articles
+  */
+
+  section[role=main] {
+    float: left;
+    width: 70%;
+    border-right: 1px solid #e9e9e9;
+  }
+
+  article {
+    padding-left: 20%;
+  }
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  article aside {
+    margin-left: -25%;
+    width: 20%;
+    float: left;
+  }
+
+  /*
+  Sidebar
+  */
+  aside[role=complementary] {
+    float: left;
+    width: 25.9%;
+    padding-left: 4%;
+  }
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* Style adjustments for viewports 768px and over go here */
+@media only screen and (min-width: 960px) {
+
+  body {
+    // font-size: 112.5%;
+  }
+
 }
+
+
 
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
