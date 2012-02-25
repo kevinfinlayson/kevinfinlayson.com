@@ -1,5 +1,5 @@
 ---
-layout: on-specialness
+layout: single-post
 title: On Specialness
 ---
 
