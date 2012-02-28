@@ -32,7 +32,7 @@ body, button, input, select, textarea {
   text-shadow: none; }
 
 figcaption, abbr {
-  color: #999999; }
+  color: #888888; }
 
 figcaption {
   font-style: italic;
@@ -74,7 +74,7 @@ Global
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
   font-size: 0.75em;
   font-weight: 600;
-  color: #999999; }
+  color: #888888; }
 
 /*
 Base Layout
@@ -104,7 +104,7 @@ h1, h2, h3 {
 h1 {
   font-weight: 600;
   font-size: 1em;
-  margin-bottom: 3em; }
+  margin-bottom: 2em; }
 
 h2 {
   font-family: "skolar-1", "skolar-2", georgia, serif;
@@ -180,15 +180,16 @@ header[role=banner] {
   font-style: italic;
   font-weight: 300;
   font-size: 1.125em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  color: #888888; }
 
 nav[role=navigation] {
   border-top: 1px solid #EBEBEB;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 0.8889em;
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
-  padding: 2em 0;
+  padding: 1em 0;
+  font-size: 0.75em;
   display: -webkit-box;
   display: -moz-box;
   display: box;

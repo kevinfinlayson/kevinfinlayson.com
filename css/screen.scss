@@ -12,7 +12,7 @@
 
 $body-color: #555555;
 $link-color: #6C8890;
-$meta-color: #999999;
+$meta-color: #888888;
 
 // Typefaces: font-family stacks
 
@@ -141,7 +141,7 @@ h1, h2, h3 {
 h1 {
   font-weight: 600;
   font-size: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 h2 {
@@ -238,15 +238,16 @@ header[role=banner] {
   font-weight: 300;
   font-size: 1.125em;
   margin-bottom: 2em;
+  color: $meta-color;
 }
 
 nav[role=navigation] {
   border-top: 1px solid #EBEBEB ;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 0.8889em;
   font-family: $headers;
-  padding: 2em 0;
+  padding: 1em 0;
+  font-size: 0.75em;
   @include display-box;
   @include box-align(center);
   @include box-orient(horizontal);
