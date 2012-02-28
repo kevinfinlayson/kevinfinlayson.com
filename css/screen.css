@@ -188,13 +188,29 @@ nav[role=navigation] {
   letter-spacing: 0.1em;
   font-size: 0.8889em;
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
-  padding: 2em 0; }
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center; }
 
 nav a, nav a:visited {
-  display: inline-block;
   color: #555555;
+  display: block;
+  padding: 4px 10px;
   text-decoration: none;
-  margin-right: 4em; }
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  text-align: center; }
 
 /*
 Articles

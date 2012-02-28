@@ -247,13 +247,19 @@ nav[role=navigation] {
   font-size: 0.8889em;
   font-family: $headers;
   padding: 2em 0;
+  @include display-box;
+  @include box-align(center);
+  @include box-orient(horizontal);
+  @include box-pack(center);
 }
 
 nav a, nav a:visited {
-  display: inline-block;
   color: $body-color;
+  display: block;
+  padding: 4px 10px;
   text-decoration: none;
-  margin-right: 4em;
+  @include box-flex(1);
+  text-align: center;
 }
 
 /*
