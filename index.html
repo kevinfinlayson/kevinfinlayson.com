@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section role="main">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:1 %}
   <article>
     <header>
       <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
