@@ -1,6 +1,6 @@
 ---
 layout: single-post
-title: Time to start sharing. I have things to share.
+title: Time to start sharing
 ---
 
 From time to time, I like to write things. I’ll get excited or incensed about something, and find I have more to say than 140 characters will permit.

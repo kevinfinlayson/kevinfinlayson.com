@@ -1,0 +1,24 @@
+<aside role="complementary">
+  <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section><!-- recent-posts -->
+  <section class="recent-posts">
+    <h2>Recommended</h2>
+    <ul>
+    </ul>
+  </section><!-- recent-posts -->
+  <section class="elsewhere">
+    <h2>Elsewhere</h2>
+    <ul>
+      <li>Twitter</li>
+      <li>Dribbble</li>
+      <li>Email</li>
+      <li>RSS</li>
+    </ul>
+  </section><!-- recent-posts -->
+</aside><!-- end of complementary -->

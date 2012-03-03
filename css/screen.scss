@@ -9,6 +9,7 @@ Stylesheet for kevinfinlayson.com
 // Colors
 
 $grey: #717171;
+$dark-grey: #454545;
 $black: #363636;
 $light-grey: #E9E9E9;
 
@@ -69,11 +70,6 @@ typography
 */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-h2 {
   font-size: 1.5em;
   margin: 1.75em 0;
   font-family: $sans;
@@ -82,9 +78,14 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
+h2 {
+  font-size: 0.7778em;
+  margin: 3em 0;
+  font-family: $sans;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+
 }
 
 h1 a, h1 a:visited, h2 a, h2 a:visited {
@@ -130,7 +131,7 @@ sub {
 
 menu, ol, ul {
   list-style: none;
-  padding: 0 0 0 40px;
+  padding: 0;
 }
 
 li {
@@ -187,7 +188,6 @@ nav a, nav a:visited {
   display: inline-block;
   line-height: 1.4;
   text-decoration: none;
-  font-weight: 400;
   margin: 0 0 0 80px
 }
 
@@ -210,7 +210,7 @@ section[role=main] {
 
 article {
   font-family: $serif;
-  font-weight: 300;
+  border-bottom: 1px solid $light-grey;
 }
 
 article aside {
@@ -222,16 +222,41 @@ article aside {
   font-weight: 400;
 }
 
+/*
+Complementary
+*/
+
+aside[role=complementary] {
+  padding: 3em 0 4em 20%;
+  border-bottom: 1px solid $light-grey;
+  @include display-box;
+  @include box-align(start);
+  @include box-orient(horizontal);
+  @include box-pack(start);
+}
+
+aside[role=complementary] ul {
+  font-size: 0.8889em;
+}
+
+aside section {
+  margin-left: 40px;
+  @include box-flex(1);
+}
+
+aside > section:first-child {
+  margin-left: 0;
+}
 
 /*
 Footer
 */
 
 footer[role=contentinfo] {
-  clear: both;
+  padding: 3em 0 3em 20%;
+  font-size: 0.8889em;
+  color: $grey;
 }
-
-
 
 @media only screen and (min-width: 480px) {
 }
@@ -253,7 +278,7 @@ footer[role=contentinfo] {
   */
 
   article {
-    padding-left:20%;
+    padding: 0 0 2em 20%;
   }
 
   article aside {
