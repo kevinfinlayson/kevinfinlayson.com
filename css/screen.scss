@@ -171,7 +171,7 @@ figure {
 
 header[role=banner] {
   padding: 3em 0 2em 0;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $very-light-grey;
   margin-bottom: 4em;
   @include clearfix;
 }
@@ -184,26 +184,28 @@ nav[role=navigation] {
   font-family: $sans;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding: 23px 0;
+  padding: 10px 0;
   font-size: 0.7778em;
-  float: right;
   font-weight: 500;
+  // margin-left: 20%;
+  float: right;
 }
 
 nav a, nav a:visited {
-  color: $grey;
+  color: $black;
   display: inline-block;
   line-height: 1.4;
   text-decoration: none;
-  margin: 0 0 0 80px
+  margin: 0 0 0 60px;
+  padding: 13px 18px;
 }
 
 nav > a:first-child {
   margin-left: 0;
 }
 
-.home nav a.blog {
-  color: $black;
+.home nav a.home {
+  background-color: $ultra-light-grey;
 }
 
 /*
