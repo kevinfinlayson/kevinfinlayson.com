@@ -247,76 +247,50 @@ Complementary
   margin-right: 4.7%;
 }
 
-.extra section.working-on {
+.extra section.follow {
   margin-right: 0;
-  display: none;
-}
-
-#dribbble ul {
-  margin-left: 5%;
-}
-
-#dribbble li a {
-  max-width: 28%;
-  margin-left: 5%;
-  height: auto;
-  float: left;
-}
-
-#dribbble li a img {
-  float: left;
-  max-width: 100%;
-  height: auto;
-  border-radius: 3px;
-  @include box-shadow(0 1px 3px 0 rgba(0,0,0,0.25), inset 0 1px 1px 0 rgba(255,255,255,0.75));
-  border: 1px solid rgba(0,0,0,0.3);
 }
 
 /* Elsewhere */
 
 a.social-link, a.social-link:visited {
-  line-height: 28px;
-  display: block;
-  color: $medium-grey;
+  display: inline-block;
   font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 0.5em;
 }
 
 .social-link span {
-  width: 28px;
-  height: 28px;
+  vertical-align: bottom;
+  width: 30px;
+  height: 30px;
   display: inline-block;
   background-color: $medium-light-grey;
-  background-image: url(../assets/elsewhere-icons@2x.png);
   background-repeat: no-repeat;
-  vertical-align: bottom;
-  margin-right: 8px;
+  background-image: url(../assets/elsewhere.png);
+  background-size: 150px 75px;
+  margin-right: 6px;
   @include transition(background-color, 0.1s, linear);
-  background-size: 128px 28px;
 }
 
-.social-link .icon-twitter {
-  background-position: -10px center;
+.social-link span.twitter-icon {
+  background-position: -15px center;
+  width: 44px;
 }
 
-.social-link:hover span.icon-twitter {
+.social-link:hover span.twitter-icon {
   background-color: #33CCFF;
 }
 
-.social-link .icon-dribbble {
-  background-position: -50px center;
+.social-link span.rss-icon {
+  background-position: -98px center;
+  margin: 0 13px 0 7px;
 }
 
-.social-link:hover span.icon-dribbble {
-  background-color: #EA4C89;
+.social-link:hover span.rss-icon {
+  background-color: orange;
 }
 
-.social-link .icon-my-studio {
-  background-position: -88px center;
-}
-
-.social-link:hover span.icon-my-studio {
-  background-color: #66BEEB;
-}
 
 
 /* Footer */
