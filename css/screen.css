@@ -245,13 +245,7 @@ a.social-link, a.social-link:visited {
 
 /* Footer */
 footer[role=contentinfo] {
-  padding: 3em 0 3em 20%;
-  font-size: 0.7778em;
-  color: #717171;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif; }
+  padding: 3em 0 4em 20%; }
 
 @media only screen and (min-width: 1000px) {
   /*
