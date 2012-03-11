@@ -148,9 +148,6 @@ nav a, nav a:visited {
 nav > a:first-child {
   margin-left: 0; }
 
-.home nav a.home {
-  background-color: #f5f5f5; }
-
 /*
 Articles
 */
