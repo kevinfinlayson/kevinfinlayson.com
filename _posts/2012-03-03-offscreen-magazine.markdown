@@ -3,7 +3,7 @@ layout: single-post
 title: Offscreen Magazine
 ---
 
-![Offscreen Magazine](/images/offscreen.jpg)
+<img src="/images/offscreen.jpg" Alt="Offscreen magazine" />
 
 Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 
