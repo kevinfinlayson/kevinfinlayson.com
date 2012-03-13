@@ -1,6 +1,4 @@
-/*
-Stylesheet for kevinfinlayson.com
-*/
+/* Stylesheet for kevinfinlayson.com */
 
 @import 'bourbon/bourbon';
 
@@ -32,9 +30,7 @@ audio[controls], canvas, video {
   inline; *zoom: 1;
 }
 
-/*
-Base
-*/
+/* Base */
 
 html {
   font-size: 100%;
@@ -56,9 +52,7 @@ body {
   line-height: 1.6;
 }
 
-/*
-Selection
-*/
+/* Selection */
 
 ::-moz-selection {
   background: #B2D2F8;
@@ -70,9 +64,7 @@ Selection
   text-shadow: none;
 }
 
-/*
-typography
-*/
+/* Typography */
 
 h1 {
   font-size: 1.5em;
@@ -152,11 +144,7 @@ p {
 figcaption {
   font-size: 0.7778em;
   color: $light-grey;
-  position: absolute;
-  left: -25%;
-  bottom: 0;
-  margin: 1em 0;
-  width: 20%;
+  margin: 1em 0 0;
   display: inline-block;
   font-family: $sans;
   font-weight: 500;
@@ -176,8 +164,7 @@ img {
 }
 
 figure {
-  margin: 0 0 1.6em 0;
-  position: relative;
+  margin: 0.8em 0 0;
 }
 
 /* Global */
@@ -196,7 +183,7 @@ figure {
   padding: 0 20px;
 }
 
-/* header */
+/* Header */
 
 header[role=banner] {
   padding: 2em 0;
@@ -226,21 +213,22 @@ nav a, nav a:visited {
   color: $black;
   display: inline-block;
   text-decoration: none;
+  line-height: 1.5em;
   margin: 0 10px 0 0;
   padding: 3px 5px;
 }
-
 
 /* Articles */
 
 section[role=main] {
   width: 100%;
-  padding-bottom: 2em;
-  border-bottom: 1px solid $very-light-grey;
 }
 
 article {
   font-family: $serif;
+  margin-bottom: 1.6em;
+  padding: 0.4em 0 0.8em 0;
+  border-bottom: 1px solid $super-light-grey;
 }
 
 article aside {
@@ -250,10 +238,12 @@ article aside {
   color: $light-grey;
   font-size: 0.8889em;
   font-weight: 500;
+  margin: 0 0 0.8em 0;
 }
 
 /* Pagination */
 
+.pagination {
   @include clearfix;
   border-bottom: 1px solid $super-light-grey;
   padding: 0 0 1em 0;
@@ -265,7 +255,6 @@ article aside {
   width: 50%;
 }
 
-  margin-right: 0;
 .index.pagination span {
   color: $light-grey;
 }
@@ -278,6 +267,11 @@ article aside {
   text-align: right;
 }
 
+/* Extra */
+
+.extra section {
+  border-bottom: 1px solid $super-light-grey;
+  padding: 1em 0;
 }
 
 /* Elsewhere */
@@ -286,7 +280,6 @@ a.social-link, a.social-link:visited {
   display: inline-block;
   font-weight: 500;
   line-height: 26px;
-  margin-bottom: 0.5em;
 }
 
 .social-link span {
@@ -320,15 +313,53 @@ a.social-link, a.social-link:visited {
   background-color: orange;
 }
 
-
-
 /* Footer */
 
 footer[role=contentinfo] {
-  padding: 3em 0 4em 20%;
+  padding: 2em 0;
 }
 
 @media only screen and (min-width: 480px) {
+
+  /* Typography */
+
+  h1 {
+    font-size: 2em;
+    margin: 0 0 1.6em 0;
+  }
+
+  p {
+    margin: 1.6em 0;
+  }
+
+  /* Articles * /
+
+  /* Header - 480 */
+  .logo {
+    width: 66px;
+    height: 66px;
+  }
+  nav[role=navigation] {
+  }
+
+  /* Extra - 480 */
+  .extra {
+    padding: 1em 0 4em 0;
+    @include clearfix;
+    border-bottom: 1px solid $super-light-grey;
+  }
+
+  .extra section {
+    float: left;
+    width: 47.65%;
+    margin-right: 4.7%;
+    border-bottom: none;
+  }
+
+  .extra section.follow {
+    margin-right: 0;
+  }
+
   /* Pagination */
 
   .single.pagination span {
@@ -337,21 +368,41 @@ footer[role=contentinfo] {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+
+  /* Typography */
+
+  figcaption {
+    position: absolute;
+    left: -25%;
+    bottom: 0;
+    width: 20%;
+  }
+
+  /* Embedded */
+
+  figure {
+    margin: 0 0 1.6em 0;
+    position: relative;
+  }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 960px) {
 
-  /*
-  Base
-  */
+  /* Base - 960 */
+
   body {
     font-size: 1.125em;
   }
 
-  /*
-  Articles
-  */
+  /* Header - 960 */
+
+  header {
+    padding: 3em 0 2em 0;
+    margin-bottom: 4em;
+  }
+
+  /* Articles - 960 */
 
   article {
     padding: 0 0 2em 20%;
@@ -367,15 +418,21 @@ footer[role=contentinfo] {
     margin-right: 20%
   }
 
-}
+  /* Extra - 960 */
 
-@media only screen and (min-width: 960px) {
-
-  body {
-    // font-size: 112.5%;
+  .extra {
+    padding: 1em 0 4em 20%;
   }
 
+  /* Footer - 960 */
+
+  footer[role=contentinfo] {
+    padding: 3em 0 4em 0;
+  }
+
+
 }
+
 
 
 
