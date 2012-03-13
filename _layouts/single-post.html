@@ -8,8 +8,10 @@
     <section role="main">
       <article>
         <header>
-          <h2>{{ page.title }}</h2>
-          <abbr class="date">{{ page.date | date: "%b %d, %Y"}}</abbr>
+          <h1>{{ page.title }}</h1>
+          <aside>
+            <abbr class="date">{{ page.date | date: "%b %d, %Y"}}</abbr>
+          </aside>
         </header>
         <div class="article-content">
           {{ content }}
@@ -17,6 +19,7 @@
       </article>
     </section><!-- main -->
     {% include single_pagination.html %}
+    {% include complementary.html %}
     {% include footer.html %}
   </div><!-- end of container -->
   {% include scripts.html %}
