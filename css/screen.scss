@@ -249,24 +249,32 @@ article aside {
   font-weight: 500;
 }
 
-/*
-Complementary
-*/
+/* Pagination */
 
-.extra {
-  padding: 1em 0 4em 20%;
-  border-bottom: 1px solid $very-light-grey;
   @include clearfix;
+  border-bottom: 1px solid $super-light-grey;
+  padding: 0 0 1em 0;
 }
 
-.extra section {
+.pagination a, .index.pagination span {
+  display: inline-block;
   float: left;
-  width: 47.65%;
-  margin-right: 4.7%;
+  width: 50%;
 }
 
-.extra section.follow {
   margin-right: 0;
+.index.pagination span {
+  color: $light-grey;
+}
+
+.single.pagination span {
+  display: none;
+}
+
+.next {
+  text-align: right;
+}
+
 }
 
 /* Elsewhere */
@@ -318,6 +326,12 @@ footer[role=contentinfo] {
 }
 
 @media only screen and (min-width: 480px) {
+  /* Pagination */
+
+  .single.pagination span {
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {

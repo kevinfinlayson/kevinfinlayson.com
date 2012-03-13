@@ -1,0 +1,8 @@
+<div class="pagination single">
+  {% if page.previous.url %}
+    <a href="{{page.previous.url}}" title="Previous: {{page.previous.title}}" class="previous">← Previous<span>: {{page.previous.title}}<span></a>
+  {% endif %}
+  {% if page.next.url %}
+    <a href="{{page.next.url}}" title="next Post: {{page.next.title}}" class="next">Next<span>: {{page.next.title}}</span> →</a>
+  {% endif %}
+</div><!-- pagination -->
