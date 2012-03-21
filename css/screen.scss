@@ -319,9 +319,15 @@ footer[role=contentinfo] {
   padding: 2em 0;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) { /* iPad */
 
-  /* Typography */
+  /* Base - iPad */
+
+  body {
+    font-size: 1.125em;
+  }
+
+  /* Typography - iPad */
 
   h1 {
     font-size: 2em;
@@ -332,17 +338,21 @@ footer[role=contentinfo] {
     margin: 1.6em 0;
   }
 
-  /* Articles * /
+  /* Header - iPad */
 
-  /* Header - 480 */
-  .logo {
-    width: 66px;
-    height: 66px;
+  header[role=banner] {
+      padding: 2em 0 2em 0;
   }
+
   nav[role=navigation] {
+    margin-right: -40px;
   }
 
-  /* Extra - 480 */
+  nav[role=navigation] a {
+    margin: 0 40px 0 0;
+  }
+
+  /* Extra - iPad */
   .extra {
     padding: 1em 0 4em 0;
     @include clearfix;
@@ -360,7 +370,7 @@ footer[role=contentinfo] {
     margin-right: 0;
   }
 
-  /* Pagination */
+  /* Pagination - iPad */
 
   .single.pagination span {
     display: inline-block;
@@ -368,9 +378,9 @@ footer[role=contentinfo] {
 
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) { /* Notebook
 
-  /* Typography */
+  /* Typography - Notebook */
 
   figcaption {
     position: absolute;
@@ -379,30 +389,33 @@ footer[role=contentinfo] {
     width: 20%;
   }
 
-  /* Embedded */
+  /* Embedded - Notebook */
 
   figure {
     margin: 0 0 1.6em 0;
     position: relative;
   }
+
+  /* Header - Notebook */
+
+  .logo {
+    width: 66px;
+    height: 66px;
+  }
+
+
 }
 
 @media only screen and (min-width: 960px) {
 
-  /* Base - 960 */
 
-  body {
-    font-size: 1.125em;
-  }
-
-  /* Header - 960 */
+  /* Header - Desktop */
 
   header {
-    padding: 3em 0 2em 0;
     margin-bottom: 4em;
   }
 
-  /* Articles - 960 */
+  /* Articles - Desktop */
 
   article {
     padding: 0 0 2em 20%;
@@ -418,13 +431,13 @@ footer[role=contentinfo] {
     margin-right: 20%
   }
 
-  /* Extra - 960 */
+  /* Extra - Desktop */
 
   .extra {
     padding: 1em 0 4em 20%;
   }
 
-  /* Footer - 960 */
+  /* Footer - Desktop */
 
   footer[role=contentinfo] {
     padding: 3em 0 4em 0;

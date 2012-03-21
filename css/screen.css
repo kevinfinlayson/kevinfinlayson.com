@@ -268,7 +268,12 @@ footer[role=contentinfo] {
   padding: 2em 0; }
 
 @media only screen and (min-width: 480px) {
-  /* Typography */
+  /* iPad */
+  /* Base - iPad */
+  body {
+    font-size: 1.125em; }
+
+  /* Typography - iPad */
   h1 {
     font-size: 2em;
     margin: 0 0 1.6em 0; }
@@ -276,14 +281,17 @@ footer[role=contentinfo] {
   p {
     margin: 1.6em 0; }
 
-  /* Articles * /
+  /* Header - iPad */
+  header[role=banner] {
+    padding: 2em 0 2em 0; }
 
-  /* Header - 480 */
-  .logo {
-    width: 66px;
-    height: 66px; }
+  nav[role=navigation] {
+    margin-right: -40px; }
 
-  /* Extra - 480 */
+  nav[role=navigation] a {
+    margin: 0 40px 0 0; }
+
+  /* Extra - iPad */
   .extra {
     padding: 1em 0 4em 0;
     zoom: 1;
@@ -303,32 +311,34 @@ footer[role=contentinfo] {
   .extra section.follow {
     margin-right: 0; }
 
-  /* Pagination */
+  /* Pagination - iPad */
   .single.pagination span {
     display: inline-block; } }
 @media only screen and (min-width: 769px) {
-  /* Typography */
+  /* Notebook
+
+  /* Typography - Notebook */
   figcaption {
     position: absolute;
     left: -25%;
     bottom: 0;
     width: 20%; }
 
-  /* Embedded */
+  /* Embedded - Notebook */
   figure {
     margin: 0 0 1.6em 0;
-    position: relative; } }
-@media only screen and (min-width: 960px) {
-  /* Base - 960 */
-  body {
-    font-size: 1.125em; }
+    position: relative; }
 
-  /* Header - 960 */
+  /* Header - Notebook */
+  .logo {
+    width: 66px;
+    height: 66px; } }
+@media only screen and (min-width: 960px) {
+  /* Header - Desktop */
   header {
-    padding: 3em 0 2em 0;
     margin-bottom: 4em; }
 
-  /* Articles - 960 */
+  /* Articles - Desktop */
   article {
     padding: 0 0 2em 20%; }
 
@@ -340,11 +350,11 @@ footer[role=contentinfo] {
   article p, article ul, article blockquote {
     margin-right: 20%; }
 
-  /* Extra - 960 */
+  /* Extra - Desktop */
   .extra {
     padding: 1em 0 4em 20%; }
 
-  /* Footer - 960 */
+  /* Footer - Desktop */
   footer[role=contentinfo] {
     padding: 3em 0 4em 0; } }
 @media print {
