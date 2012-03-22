@@ -193,9 +193,17 @@ header[role=banner] {
 }
 
 .logo {
-  float: left;
-  height: 52px;
-  width: 52px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  height: 42px;
+  width: 42px;
+  display: block;
+  text-indent: -100%;
+  line-height: 0;
+  white-space: nowrap;
+  background: $link url(/assets/logo-small.png) center center;
+  @include border-radius(21px);
 }
 
 nav {
