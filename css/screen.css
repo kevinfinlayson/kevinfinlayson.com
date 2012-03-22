@@ -21,9 +21,11 @@ body, button, input, select, textarea {
   color: #363636; }
 
 body {
-  font-size: 0.8889em;
+  font-size: 0.75em;
   margin: 0;
-  line-height: 1.6; }
+  line-height: 1.6667;
+  background-color: #f0f2f3;
+  padding: 10px; }
 
 /* Selection */
 ::-moz-selection {
