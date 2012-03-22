@@ -99,7 +99,7 @@ p {
 
 figcaption {
   font-size: 0.7778em;
-  color: #9e9e9e;
+  color: #888888;
   margin: 1em 0 0;
   display: inline-block;
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
@@ -107,7 +107,7 @@ figcaption {
 
 figcaption a, figcaption a:visited {
   white-space: nowrap;
-  color: #717171; }
+  color: #888888; }
 
 /* Emebedded */
 img {
@@ -191,7 +191,7 @@ article aside {
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #9e9e9e;
+  color: #888888;
   font-size: 0.8889em;
   font-weight: 500;
   margin: 0 0 0.8em 0; }
@@ -213,7 +213,7 @@ article aside {
   width: 50%; }
 
 .index.pagination span {
-  color: #9e9e9e; }
+  color: #888888; }
 
 .single.pagination span {
   display: none; }
