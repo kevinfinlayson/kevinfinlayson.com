@@ -155,22 +155,41 @@ header[role=banner] {
   border-radius: 21px; }
 
 nav {
+  height: 20px;
+  padding: 3px 0 7px 42px;
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.7778em;
+  font-size: 0.8333em;
   font-weight: 500;
-  padding: 15px 0 0;
-  margin: 0 -10px 0 20px;
-  float: right; }
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  text-align: right;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch; }
 
 nav a, nav a:visited {
-  color: #363636;
+  width: 72px;
+  color: #888888;
   display: inline-block;
   text-decoration: none;
-  line-height: 1.5em;
-  margin: 0 10px 0 0;
-  padding: 3px 5px; }
+  line-height: 2em;
+  margin: 0;
+  padding: 3px 0;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0; }
 
 /* Articles */
 section[role=main] {
