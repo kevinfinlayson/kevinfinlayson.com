@@ -48,9 +48,11 @@ body, button, input, select, textarea {
 }
 
 body {
-  font-size: 0.8889em;
+  font-size: 0.75em;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.6667;
+  background-color: $background;
+  padding: 10px;
 }
 
 /* Selection */
