@@ -144,7 +144,7 @@ ul > li:first-child {
 }
 
 p {
-  margin: 0.8em 0;
+  margin: 1.6667em 0;
 }
 
 figcaption {
@@ -196,8 +196,9 @@ figure {
 
 header[role=banner] {
   padding: 26px 0 0;
-  margin-bottom: 1.6667em;
-  position: relative
+  margin-bottom: 2em;
+  border-bottom: 1px solid $border-grey;
+  position: relative;
 }
 
 .logo {
@@ -225,7 +226,7 @@ nav {
   border-bottom: 1px solid $border-grey;
   border-top: 1px solid $border-grey;
   text-align: right;
-  margin: 0;
+  margin: 0 0 1.6667em 0;
 }
 
 nav a, nav a:visited {
@@ -239,6 +240,17 @@ nav a, nav a:visited {
 
 nav > a:first-child {
   margin-left: 0;
+}
+
+.profile {
+  color: $text-grey;
+  font-style: italic;
+  font-size: 1.0833em;
+  line-height: 1.8461em;
+}
+
+.profile p {
+  margin: 1.4445em 0 1.6667em 0;
 }
 
 /* Articles */

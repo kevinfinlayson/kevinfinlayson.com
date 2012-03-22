@@ -95,7 +95,7 @@ ul > li:first-child {
   margin-top: 0; }
 
 p {
-  margin: 0.8em 0; }
+  margin: 1.6667em 0; }
 
 figcaption {
   font-size: 0.7778em;
@@ -140,7 +140,8 @@ figure {
 /* Header */
 header[role=banner] {
   padding: 26px 0 0;
-  margin-bottom: 1.6667em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #eeeeee;
   position: relative; }
 
 .logo {
@@ -171,7 +172,7 @@ nav {
   border-bottom: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
   text-align: right;
-  margin: 0; }
+  margin: 0 0 1.6667em 0; }
 
 nav a, nav a:visited {
   color: #888888;
@@ -183,6 +184,15 @@ nav a, nav a:visited {
 
 nav > a:first-child {
   margin-left: 0; }
+
+.profile {
+  color: #888888;
+  font-style: italic;
+  font-size: 1.0833em;
+  line-height: 1.8461em; }
+
+.profile p {
+  margin: 1.4445em 0 1.6667em 0; }
 
 /* Articles */
 section[role=main] {
