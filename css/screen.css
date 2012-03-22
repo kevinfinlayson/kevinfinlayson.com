@@ -135,12 +135,7 @@ header[role=banner] {
   padding: 2em 0;
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 2em;
-  zoom: 1; }
-  header[role=banner]:before, header[role=banner]:after {
-    content: "";
-    display: table; }
-  header[role=banner]:after {
-    clear: both; }
+  position: relative; }
 
 .logo {
   position: absolute;
