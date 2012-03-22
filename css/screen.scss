@@ -192,7 +192,7 @@ header[role=banner] {
   padding: 2em 0;
   border-bottom: 1px solid $border;
   margin-bottom: 2em;
-  @include clearfix;
+  position: relative
 }
 
 .logo {
@@ -210,23 +210,29 @@ header[role=banner] {
 }
 
 nav {
+  height: 20px;
+  padding: 3px 0 7px 42px;
   font-family: $sans;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.7778em;
+  font-size: 0.8333em;
   font-weight: 500;
-  padding: 15px 0 0;
-  margin: 0 -10px 0 20px;
-  float: right;
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
+  text-align: right;
+  margin: 0;
+  @include box(horizontal, end, stretch);
 }
 
 nav a, nav a:visited {
+  width: 72px;
   color: $grey;
   display: inline-block;
   text-decoration: none;
-  line-height: 1.5em;
-  margin: 0 10px 0 0;
-  padding: 3px 5px;
+  line-height: 2em;
+  margin: 0;
+  padding: 3px 0;
+  @include box-flex(0);
 }
 
 /* Articles */
