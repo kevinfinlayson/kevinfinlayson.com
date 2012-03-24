@@ -100,6 +100,7 @@ p {
 figcaption {
   font-size: 0.9167em;
   color: #888888;
+  margin: 0.9090em 0 0;
   display: inline-block;
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
   font-weight: 500; }
@@ -171,15 +172,30 @@ nav {
   border-bottom: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
   text-align: right;
-  margin: 0 0 1.6667em 0; }
+  margin: 0 0 1.6667em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center; }
 
 nav a, nav a:visited {
   color: #888888;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   line-height: 2em;
-  margin: 0 0 1em 1.3em;
-  padding: 3px 0; }
+  margin: 0 0 1em 0;
+  padding: 3px 0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1; }
 
 nav > a:first-child {
   margin-left: 0; }
@@ -239,25 +255,25 @@ article aside {
 
 /* Extra */
 .extra section {
-  border-bottom: 1px solid #eeeeee;
-  padding: 1em 0; }
+  margin: 1.667em 0; }
 
 /* Elsewhere */
 a.social-link, a.social-link:visited {
   display: inline-block;
   font-weight: 500;
-  line-height: 26px; }
+  font-size: 0.9167em;
+  line-height: 20px; }
 
 .social-link span {
   vertical-align: bottom;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   background-color: #cfcfcf;
   background-repeat: no-repeat;
   background-image: url(../assets/elsewhere.png);
-  background-size: 150px 75px;
-  margin-right: 6px;
+  background-size: 100px 50px;
+  margin-right: 3px;
   -webkit-transition-property: background-color;
   -moz-transition-property: background-color;
   -ms-transition-property: background-color;
@@ -280,22 +296,24 @@ a.social-link, a.social-link:visited {
   transition-delay: 0; }
 
 .social-link span.twitter-icon {
-  background-position: -15px center;
-  width: 44px; }
+  background-position: -12px center;
+  width: 28px;
+  margin-left: -4px; }
 
 .social-link:hover span.twitter-icon {
-  background-color: #33CCFF; }
+  background-color: #33ccff; }
 
 .social-link span.rss-icon {
-  background-position: -98px center;
-  margin: 0 13px 0 7px; }
+  background-position: -65px center;
+  margin: 0 7px 0 0; }
 
 .social-link:hover span.rss-icon {
   background-color: orange; }
 
 /* Footer */
 footer[role=contentinfo] {
-  padding: 2em 0; }
+  padding: 1em 0;
+  color: #888888; }
 
 @media only screen and (min-width: 480px) {
   /* iPad */
