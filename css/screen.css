@@ -128,7 +128,7 @@ figure {
   min-width: 258px;
   max-width: 1060px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 0.8335em 20px;
   background-color: white;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
