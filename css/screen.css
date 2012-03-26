@@ -141,7 +141,6 @@ figure {
 header[role=banner] {
   padding: 26px 0 0;
   margin-bottom: 1.6667em;
-  border-bottom: 1px solid #eeeeee;
   position: relative; }
 
 .logo {
@@ -162,8 +161,8 @@ header[role=banner] {
   border-radius: 21px; }
 
 nav {
-  height: 18px;
-  padding: 3px 0 7px 32px;
+  height: 27px;
+  padding: 6px 0 10px 0;
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -171,17 +170,16 @@ nav {
   font-weight: 500;
   border-bottom: 1px solid #eeeeee;
   border-top: 1px solid #eeeeee;
-  text-align: right;
-  margin: 0 0 1.6667em 0;
+  margin: 0 0 -1px 0;
   display: -webkit-box;
   display: -moz-box;
   display: box;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   box-orient: horizontal;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center; }
@@ -192,7 +190,8 @@ nav a, nav a:visited {
   text-decoration: none;
   line-height: 2em;
   margin: 0 0 1em 0;
-  padding: 3px 0;
+  padding: 6px 0 10px 0;
+  text-align: center;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1; }
@@ -204,10 +203,11 @@ nav > a:first-child {
   color: #888888;
   font-style: italic;
   font-size: 1.0833em;
-  line-height: 1.8461em; }
+  line-height: 1.8461em;
+  margin-left: 52px; }
 
 .profile p {
-  margin: 1.5384em 0; }
+  margin: 0.7692em 0 2em 0; }
 
 /* Articles */
 section[role=main] {
@@ -315,6 +315,38 @@ footer[role=contentinfo] {
   padding: 1em 0;
   color: #888888; }
 
+@media only screen and (min-width: 320px) and (max-width: 320px) {
+  /* Adjust header for 320 exact view */
+  header.reordered {
+    border-bottom: 1px solid #eeeeee; }
+
+  header.reordered nav {
+    height: 18px;
+    padding: 3px 0 7px 0;
+    padding-left: 32px;
+    text-align: right;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    box-pack: end;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    margin: 0 0 1.6667em 0; }
+
+  header.reordered .profile {
+    margin-left: 0; }
+
+  header.reordered .profile p {
+    margin: 1.5384em 0; }
+
+  header.reordered nav a {
+    padding: 3px 0; } }
 @media only screen and (min-width: 480px) {
   /* iPad */
   /* Base - iPad */

@@ -199,7 +199,6 @@ figure {
 header[role=banner] {
   padding: 26px 0 0;
   margin-bottom: 1.6667em;
-  border-bottom: 1px solid $border-grey;
   position: relative;
 }
 
@@ -218,8 +217,8 @@ header[role=banner] {
 }
 
 nav {
-  height: 18px;
-  padding: 3px 0 7px 32px;
+  height: 27px;
+  padding: 6px 0 10px 0;
   font-family: $sans;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -227,9 +226,8 @@ nav {
   font-weight: 500;
   border-bottom: 1px solid $border-grey;
   border-top: 1px solid $border-grey;
-  text-align: right;
-  margin: 0 0 1.6667em 0;
-  @include box(horizontal, end, center);
+  margin: 0 0 -1px 0;
+  @include box(horizontal, center, center);
 }
 
 nav a, nav a:visited {
@@ -238,7 +236,8 @@ nav a, nav a:visited {
   text-decoration: none;
   line-height: 2em;
   margin: 0 0 1em 0;
-  padding: 3px 0;
+  padding: 6px 0 10px 0;
+  text-align: center;
   @include box-flex(1)
 }
 
@@ -251,10 +250,11 @@ nav > a:first-child {
   font-style: italic;
   font-size: 1.0833em;
   line-height: 1.8461em;
+  margin-left: 52px;
 }
 
 .profile p {
-  margin: 1.5384em 0;
+  margin:  0.7692em 0 2em 0;
 }
 
 /* Articles */
@@ -359,6 +359,35 @@ a.social-link, a.social-link:visited {
 footer[role=contentinfo] {
   padding: 1em 0;
   color: $text-grey;
+}
+
+ @media only screen and (min-width: 320px) and (max-width: 320px) { /* Adjust header for 320 exact view */
+
+  header.reordered {
+    border-bottom: 1px solid $border-grey;
+  }
+
+  header.reordered nav {
+    height: 18px;
+    padding: 3px 0 7px 0;
+    padding-left: 32px;
+    text-align: right;
+    @include box(horizontal, end, center);
+    margin: 0 0 1.6667em 0;
+  }
+
+  header.reordered .profile {
+    margin-left: 0;
+  }
+
+  header.reordered .profile p {
+    margin: 1.5384em 0;
+  }
+
+  header.reordered nav a {
+    padding: 3px 0;
+  }
+
 }
 
 @media only screen and (min-width: 480px) { /* iPad */
