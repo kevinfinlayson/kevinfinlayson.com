@@ -2,7 +2,7 @@
 
 function reorderHeader(){
   var viewportWidth = $(window).width();
-  if( viewportWidth < 479 ) {
+  if( viewportWidth <= 480 ) {
     /* if window width is 320 or smaller, switch the nav and profile, and add a class for styling */
     if('header[role=banner]:not.reordered') {
       /* only add the ‘reordered’ class if it hasn’t been added already */

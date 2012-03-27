@@ -177,9 +177,9 @@ nav {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   box-orient: horizontal;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center; }
@@ -191,7 +191,7 @@ nav a, nav a:visited {
   line-height: 2em;
   margin: 0 0 1em 0;
   padding: 6px 0 10px 0;
-  text-align: center;
+  text-align: right;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1; }
@@ -207,7 +207,7 @@ nav > a:first-child {
   margin-left: 52px; }
 
 .profile p {
-  margin: 0.7692em 0 2em 0; }
+  margin: 0.7692em 0 1.8461em 0; }
 
 /* Articles */
 section[role=main] {
@@ -219,11 +219,10 @@ article {
 
 article aside {
   font-family: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   color: #888888;
   font-weight: 500;
-  margin: 0.8335em 0; }
+  margin: 0.8335em 0;
+  font-size: 0.8889em; }
 
 .article-content > p:first-child, .article-content > img:first-child, .article-content > figure:first-child {
   margin-top: 0.8835em; }
@@ -315,8 +314,10 @@ footer[role=contentinfo] {
   padding: 1em 0;
   color: #888888; }
 
-@media only screen and (min-width: 320px) and (max-width: 320px) {
-  /* Adjust header for 320 exact view */
+/*** Media Queries ***/
+/*** iPhone ***/
+@media only screen and (max-width: 480px) {
+  /* Adjust header for iPhone view */
   header.reordered {
     border-bottom: 1px solid #eeeeee; }
 
@@ -347,29 +348,111 @@ footer[role=contentinfo] {
 
   header.reordered nav a {
     padding: 3px 0; } }
+/*** iPhone Landscape ***/
 @media only screen and (min-width: 480px) {
-  /* iPad */
+  /* Header - iPhone Landscape */
+  header.reordered nav[role=navigation] {
+    padding-left: 62px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    box-pack: start;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center; }
+
+  nav[role=navigation] a {
+    text-align: left; }
+
+  header.reordered .profile {
+    margin: 0 10% 0 62px; }
+
+  /* Typography - iPhone Landscape */
+  h1 {
+    margin: 0.8335em 0; } }
+/*** iPhone + ***/
+@media only screen and (min-width: 481px) {
+  /* Base - iPhone + */
+  body {
+    font-size: 0.8125em; }
+
+  /* Typography - iPhone + */
+  p {
+    margin: 1.6667em 0; }
+
+  /* Structure - iPhone + */
+  .container {
+    padding: 0 30px 0.8335em 30px; }
+
+  /* Header - iPhone + */
+  header[role=banner] {
+    padding: 1.667em 0 0.8335em 0; }
+
+  nav[role=navigation] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    box-pack: start;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    padding-left: 62px; }
+
+  nav[role=navigation] a {
+    text-align: left; }
+
+  .profile {
+    margin: 0 10% 0 62px; } }
+/*** iPad ***/
+@media only screen and (min-width: 600px) {
   /* Base - iPad */
   body {
-    font-size: 1.125em; }
+    font-size: 0.8125em; }
 
   /* Typography - iPad */
   h1 {
-    font-size: 2em;
-    margin: 0 0 1.6em 0; }
+    margin: 0 0 1.667em 0; }
 
   p {
-    margin: 1.6em 0; }
+    margin: 1.6667em 0; }
+
+  /* Structure - iPad */
+  .container {
+    padding: 0 30px 0.8335em 30px; }
 
   /* Header - iPad */
   header[role=banner] {
-    padding: 2em 0 2em 0; }
+    padding: 2em 0; }
 
   nav[role=navigation] {
-    margin-right: -40px; }
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    box-pack: start;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center; }
 
   nav[role=navigation] a {
-    margin: 0 40px 0 0; }
+    text-align: left; }
+
+  .profile {
+    margin: 0 10% 0 62px; }
 
   /* Extra - iPad */
   .extra {
