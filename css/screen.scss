@@ -1,705 +1,315 @@
-/* Stylesheet for kevinfinlayson.com */
+/*
+Title:      screen.scss
+Author:     kevin@kevinfinlayson.com
+*/
+
+// SASS libraries
+//--------------------------------------------
 
 @import 'bourbon/bourbon';
 
+
 // SASS variables
+//--------------------------------------------
 
 // Colors
 
-$link: #EE4729;
-$medium-grey: #949494;
-$medium-grey: #cfcfcf;
-$text-grey: #888888;
-$dark-grey: #454545;
-$black: #363636;
-$border-grey: #eeeeee;
-$background-light-grey: #F0F2F3;
-$container-white:  #FFFFFF;
-$container-border-grey: #e2e2e2;
-$ultra-grey: #f5f5f5;
-$twitter: #33CCFF;
-$orange: orange;
+$body-color: #666;
+$link-color: #333;
 
+// Typefaces
+//--------------------------------------------
 
-// Typefaces: font-family stacks
+$body-text: "Elena-Regular", "helvetica neue", arial, sans-serif;
+$headers: "Elena-Bold", "helvetica neue", arial, sans-serif;
 
-$sans: "freight-sans-pro-1", "freight-sans-pro-2", "helvetica neue", arial, sans-serif;
-$serif: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", georgia, serif;
+// Reference for webfonts.fonts.com font names
+// font-family:'Century Gothic W01 Bold';
+// font-family:'CenturyGothicW01-BoldIt';
+// font-family:'CenturyGothicW01-Italic';
+// font-family:'Century Gothic W01';
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+/* Reset styles
+--------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
-}
+  }
+body {
+  line-height: 1;
+  }
+ol, ul {
+  list-style: none;
+  }
+blockquote, q {
+  quotes: none;
+  }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+  }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+:focus {
+  outline: none;
+  }
 
-audio[controls], canvas, video {
-  display: inline-block;
-  *display:
-  inline; *zoom: 1;
-}
+/* Highlighting reset */
 
-/* Base */
+::-moz-selection {
+  background: #B4D5FE;
+  color: #fff;
+  text-shadow: none;
+  }
+
+::selection {
+  background: #B4D5FE;
+  color: #fff;
+  text-shadow: none;
+  }
+
+/* General
+--------------------------------------------- */
 
 html {
-  font-size: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-}
+  }
 
 body, button, input, select, textarea {
-  font-family: $serif;
-  color: $black;
+  font-family: $body-text;
+  color: $body-color;
+  }
+
+audio[controls], canvas, video {
+display: inline-block;
+*display:
+inline; *zoom: 1;
+  }
+
+figcaption {
+  font-style: italic;
+  font-size: 0.75em;
 }
+
+figure {
+  margin: 0 0 2em 0;
+  }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  }
+
+/* Page Structure
+--------------------------------------------- */
 
 body {
-  font-size: 0.75em;
   margin: 0;
-  line-height: 1.6667;
-  background-color: $background-light-grey;
-  padding: 10px;
+  font-size: 100%;
+  line-height: 1.6;
+  border: 1em solid #fff;
+  background-color: #fafafa;
 }
 
-/* Selection */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  }
 
-::-moz-selection {
-  background: #B2D2F8;
-  text-shadow: none;
-}
+/* Typography
+--------------------------------------------- */
 
-::selection {
-  background: #B2D2F8;
-  text-shadow: none;
-}
-
-/* Typography */
+h1, h2, h3, h4, h5 {
+  font-family: $headers;
+  line-height: 1.3;
+  margin: 0 0 1em 0;
+  }
 
 h1 {
-  font-size: 1.5em;
-  font-family: $serif;
-  font-weight: 400;
-  margin: 0.9em 0 0.5555em 0;
-  line-height: 1.25em;
-}
+  font-size: 2em;
+  }
 
 h2 {
-  font-size: 0.8889em;
-  margin: 1.6667em 0;
-  font-family: $sans;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 500;
+  font-size: 1.5em;
+  }
+
+h3 {
+  font-size: 1.25em;
+  }
+
+h4 {
+  font-size: 1em;
+  }
+
+h5 {
+  font-size: 0.75em;
+  }
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
 }
 
-h1 a, h1 a:visited, h2 a, h2 a:visited {
-  color: $black;
-}
-
-a, a:visited {
-  color: $black;
+a {
+  color: $link-color;
   text-decoration: none;
-}
+  }
+
+a:visited {
+  color: $link-color;
+  }
 
 a:focus {
   outline: thin dotted;
-}
+  }
 
 a:hover, a:active {
   outline: 0;
-  color: $black;
-}
+  color: $body-color;
+  }
 
 b, strong {
-  font-weight: 600;
-}
-
-blockquote {
-  margin: 1em 40px;
-}
+  font-weight: 700;
+  }
 
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-}
+  }
 
 sup {
   top: -0.5em;
-}
+  }
 
 sub {
   bottom: -0.25em;
-}
+  }
 
-menu, ol, ul {
+ul {
   list-style: none;
   padding: 0;
-}
+  margin: 0;
+  }
 
 li {
-  margin-top: 1em
-}
+  margin-bottom: 0.75em
+  }
 
-ul > li:first-child {
-  margin-top: 0;
-}
 
-p {
-  margin: 1.6667em 0;
-}
+/* Header
+--------------------------------------------- */
 
-figcaption {
-  font-size: 0.9167em;
-  color: $text-grey;
-  margin: 0.9090em 0 0;
-  display: inline-block;
-  font-family: $sans;
-  font-weight: 500;
-}
-
-figcaption a, figcaption a:visited {
-  white-space: nowrap;
-  color: $text-grey;
-}
-
-/* Emebedded */
-
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  max-width: 100%;
-}
-
-figure {
-  margin: 0.8335em 0 0;
-}
-
-/* Global */
-
-.more {
-  display: inline-block;
-  margin: 1em 0;
-}
-
-/* Structure */
-
-.container {
-  min-width: 258px;
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 0 20px 0.8335em 20px;
-  background-color: $container-white;
-  @include border-radius(3px);
-  border: 1px solid $container-border-grey;
-}
-
-/* Header */
 
 header[role=banner] {
-  padding: 26px 0 0;
-  margin-bottom: 1.6667em;
-  position: relative;
-}
+  margin: 3em 0;
+  text-align: center;
+  }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: -10px;
-  height: 42px;
-  width: 42px;
-  display: block;
+a.logo {
+  display: inline-block;
+  background: #333 url(/assets/logo-medium.png) no-repeat center center;
+  height: 60px;
+  width: 60px;
+  @include border-radius(40px);
   text-indent: -100%;
-  line-height: 0;
+  overflow: hidden;
   white-space: nowrap;
-  background: $link url(/assets/logo-small.png) center center;
-  @include border-radius(21px);
-}
-
-nav {
-  font-family: $sans;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.8333em;
-  font-weight: 500;
-  border-bottom: 1px solid $border-grey;
-  border-top: 1px solid $border-grey;
-  margin: 0 0 -1px 0;
-  @include box(horizontal, end, center);
-}
-
-nav a, nav a:visited {
-  color: $text-grey;
-  display: block;
-  text-decoration: none;
-  line-height: 2em;
-  margin: 0;
-  padding: 20px 0;
-  text-align: right;
-  @include box-flex(1)
-}
-
-nav a:hover {
-  color: $black;
-}
-
-nav > a:first-child {
-  margin-left: 0;
+  border: 5px solid #fff;
+  @include box-shadow(0 1px 3px rgba(0,0,0,0.25));
 }
 
 .profile {
-  color: $text-grey;
-  font-style: italic;
-  font-size: 1.0833em;
-  line-height: 1.8461em;
-  margin-left: 52px;
-}
-
-.profile p {
-  margin:  0.7692em 0 1.8461em 0;
-}
-
-/* Articles */
-
-section[role=main] {
-  width: 100%;
-}
-
-article {
-  margin-bottom: 1.6667em;
-  border-bottom: 1px solid $border-grey;
-}
-
-article aside {
-  font-family: $sans;
-  color: $text-grey;
-  font-weight: 500;
-  margin: 0.8335em 0;
-  font-size: 0.8889em;
-}
-
-.article-content > p:first-child, .article-content > img:first-child, .article-content > figure:first-child {
-  margin-top: 0.8335em;
-}
-
-/* Pagination */
-
-.pagination {
-  @include clearfix;
-  border-bottom: 1px solid $border-grey;
-  padding: 0 0 1em 0;
-}
-
-.pagination a, .index.pagination span {
-  display: inline-block;
-  float: left;
-  width: 50%;
-}
-
-.index.pagination span {
-  color: $text-grey;
-}
-
-.single.pagination span {
   display: none;
+  }
+
+/* Navigation
+--------------------------------------------- */
+
+nav {
+  display: block;
+  margin: 3em 0;
+  padding: 1em 0;
+  @include box(horizontal, center, stretch);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
-.next {
-  text-align: right;
+nav a {
+  display: block;
+  width: 1;
+  @include box-flex(1);
+  line-height: 2em;
 }
 
-/* Extra */
+/* Main styles
+--------------------------------------------- */
 
-.extra section {
-  margin: 1.667em 0;
-}
+/* Footer
+--------------------------------------------- */
 
-/* Elsewhere */
-
-a.social-link, a.social-link:visited {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 0.9167em;
-  line-height: 20px;
-}
-
-.social-link span {
-  vertical-align: bottom;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  background-color: $medium-grey;
-  background-repeat: no-repeat;
-  background-image: url(../assets/elsewhere.png);
-  background-size: 100px 50px;
-  margin-right: 3px;
-  @include transition(background-color, 0.1s, linear);
-}
-
-.social-link span.twitter-icon {
-  background-position: -12px center;
-  width: 28px;
-  margin-left: -4px;
-}
-
-.social-link:hover span.twitter-icon {
-  background-color: $twitter;
-}
-
-.social-link span.rss-icon {
-  background-position: -65px center;
-  margin: 0 7px 0 0;
-}
-
-.social-link:hover span.rss-icon {
-  background-color: $orange;
-}
-
-/* Footer */
 
 footer[role=contentinfo] {
-  padding: 1em 0;
-  color: $text-grey;
-}
-
-
-/*** Media Queries ***/
-
-/*** iPhone ***/
-
- @media only screen and (max-width: 480px) { /* Adjust header for iPhone view */
-
-  header.reordered {
-    border-bottom: 1px solid $border-grey;
+  clear: both;
   }
 
-  header.reordered nav {
-    height: 18px;
-    padding: 3px 0 7px 0;
-    padding-left: 32px;
-    text-align: right;
-    @include box(horizontal, end, center);
-    margin: 0 0 1.6667em 0;
-  }
 
-  header.reordered .profile {
-    margin-left: 0;
-  }
+/* Responsiveness
+--------------------------------------------- */
 
-  header.reordered .profile p {
-    margin: 1.5384em 0;
-  }
-
-  header.reordered nav a {
-    padding: 3px 0;
-  }
-
-}
-
-/*** iPhone Landscape ***/
 
 @media only screen and (min-width: 480px) {
-
-  /* Header - iPhone Landscape */
-
-  header.reordered nav[role=navigation] {
-    padding-left: 62px;
-    @include box(horizontal, start, center)
-  }
-
-  nav[role=navigation] a {
-    text-align: left;
-  }
-
-  header.reordered .profile {
-    margin: 0 10% 0 62px;
-  }
-
-  /* Typography - iPhone Landscape */
-
-  h1 {
-    margin: 0.8335em 0;
-  }
-
 }
 
-/*** iPhone + ***/
-
-@media only screen and (min-width: 481px) {
-
-  /* Base - iPhone + */
-
-  body {
-    font-size: 0.8125em;
-    padding: 5%;
-  }
-
-  /* Typography - iPhone + */
-
-  h1 {
-    margin: 1.6667em 0 1em 0;
-  }
-
-  p {
-    margin: 1.6667em 0;
-  }
-
-  /* Structure - iPhone + */
-
+@media only screen and (min-width: 758px) {
   .container {
-    padding: 0 30px 0.8335em 30px;
-  }
-
-  /* Header - iPhone + */
-
-  .logo {
-    top: 40px;
-    left: 0px;
-    height: 50px;
-    width: 50px;
-    background: $link url(/assets/logo-medium.png) center center;
-    @include border-radius(25px);
-  }
-
-  header[role=banner] {
-    padding: 32px 0  0;
-  }
-
-  nav[role=navigation] {
-    @include box(horizontal, start, center);
-  }
-
-  nav[role=navigation] a {
-    text-align: left;
-
-  }
-
-  .profile {
-    margin: 0 10% 0 93px;
-  }
-
-  /* Articles - iPhone + */
-
-  article {
-    padding-bottom: 0.8335em;
-  }
-
-  article aside {
-    margin: 1em 0;
-  }
-
-  /* Extra - iPhone + */
-
-  .extra section {
-    margin: 2em 0;
-  }
-
-  /* Elsewhere */
-
-  a.social-link, a.social-link:visited {
-    font-size: 0.9167em;
-    line-height: 30px;
-  }
-
-  .social-link span {
-    vertical-align: bottom;
-    width: 30px;
-    height: 30px;
-    background-size: 150px 75px;
-    margin-right: 3px;
-  }
-
-  .social-link span.twitter-icon {
-    background-position: -11px center;
-    width: 54px;
-    margin-left: -12px;
-  }
-
-  .social-link span.rss-icon {
-    background-position: -98px center;
-    margin: 0 15px 0 0;
+    width: 70%;
   }
 
 }
 
 
-/*** iPad ***/
-
-@media only screen and (min-width: 768px) {
-
-  /* Base - iPad */
-
-  body {
-    font-size: 0.8889em;
-    padding: 5%;
-  }
-
-  /* Typography - iPad */
-
-  h1 {
-    font-size: 1.7142em;
-  }
-
-  /* Structure - iPad */
-
-  .container {
-    padding: 0 40px 0.8335em 40px;
-  }
-
-  /* Header - iPad */
-
-  header[role=banner] {
-    padding: 68px 0  0;
-    margin-bottom: 3.3334  0.8889em;
-  }
-
-  .logo {
-    height: 64px;
-    width: 64px;
-    background: $link url(/assets/logo-large.png) center center;
-    @include border-radius(32px);
-  }
-
-  nav[role=navigation] {
-    @include box(horizontal, start, center);
-    padding-left: 20%;
-  }
-
-  nav[role=navigation] a {
-    padding: 23px 0;
-    text-align: left;
-  }
-
-  .profile {
-    margin: 0 10% 2.25em 20%;
-    font-size: 1.1428em;
-  }
-
-  /* Articles - iPad */
-
-  article {
-    padding: 0 0 2em 20%;
-  }
-
-  article aside {
-    margin: 0 0 0 -25%;
-    width: 20%;
-    float: left;
-    font-size: 1em;
-  }
-
-  article p, article ul, article blockquote {
-    margin-right: 10%;
-  }
-
-  .article-content > p:first-child, .article-content > img:first-child, .article-content > figure:first-child {
-    margin-top: 0.4167em;
-  }
-
-  /* Extra - iPad */
-  .extra {
-    padding: 0 0 0 20%;
-  }
-
-  .extra section {
-    margin: 2.5em 0;
-  }
-
-  a.social-link, a.social-link:visited {
-    margin-bottom: 0.4167em;
-  }
-
-
-  /* Pagination - iPad */
-
-  .single.pagination span {
-    display: inline-block;
-  }
-
-}
-
-@media only screen and (min-width: 769px) { /* Notebook
-
-  /* Typography - Notebook */
-
-  figcaption {
-    position: absolute;
-    left: -25%;
-    bottom: 0;
-    width: 20%;
-  }
-
-  figcaption a {
-    white-space: pre-line;
-  }
-
-  /* Embedded - Notebook */
-
-  figure {
-    margin: 0 0 1.6em 0;
-    position: relative;
-  }
-
-  /* Header - Notebook */
-
-  .logo {
-    width: 66px;
-    height: 66px;
-  }
-
-
-}
-
-@media only screen and (min-width: 960px) {
-
-
-  /* Header - Desktop */
-
-  header {
-    margin-bottom: 4em;
-  }
-
-  /* Articles - Desktop */
-
-  article {
-    padding: 0 0 2em 20%;
-  }
-
-  article aside {
-    margin-left: -25%;
-    width: 20%;
-    float: left;
-  }
-
-  article p, article ul, article blockquote {
-    margin-right: 20%
-  }
-
-  /* Extra - Desktop */
-
-  .extra {
-    padding: 1em 0 4em 20%;
-  }
-
-  /* Footer - Desktop */
-
-  footer[role=contentinfo] {
-    padding: 3em 0 4em 0;
-  }
-
-}
-
-
+/* Print
+--------------------------------------------- */
 
 
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { color: #444 !important; text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
   @page { margin: 0.5cm; }
