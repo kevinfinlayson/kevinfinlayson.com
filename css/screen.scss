@@ -84,7 +84,7 @@ h1 {
 
 h2 {
   font-size: 0.8889em;
-  margin: 1em 0;
+  margin: 1.6667em 0;
   font-family: $sans;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -217,8 +217,6 @@ header[role=banner] {
 }
 
 nav {
-  height: 27px;
-  padding: 6px 0 10px 0;
   font-family: $sans;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -235,10 +233,14 @@ nav a, nav a:visited {
   display: block;
   text-decoration: none;
   line-height: 2em;
-  margin: 0 0 1em 0;
-  padding: 6px 0 10px 0;
+  margin: 0;
+  padding: 20px 0;
   text-align: right;
   @include box-flex(1)
+}
+
+nav a:hover {
+  color: $black;
 }
 
 nav > a:first-child {
@@ -264,7 +266,7 @@ section[role=main] {
 }
 
 article {
-  margin-bottom: 1.6em;
+  margin-bottom: 1.6667em;
   border-bottom: 1px solid $border-grey;
 }
 
@@ -277,7 +279,7 @@ article aside {
 }
 
 .article-content > p:first-child, .article-content > img:first-child, .article-content > figure:first-child {
-  margin-top: 0.8835em;
+  margin-top: 0.8335em;
 }
 
 /* Pagination */
@@ -429,9 +431,14 @@ footer[role=contentinfo] {
 
   body {
     font-size: 0.8125em;
+    padding: 5%;
   }
 
   /* Typography - iPhone + */
+
+  h1 {
+    margin: 1.6667em 0 1em 0;
+  }
 
   p {
     margin: 1.6667em 0;
@@ -445,21 +452,72 @@ footer[role=contentinfo] {
 
   /* Header - iPhone + */
 
+  .logo {
+    top: 40px;
+    left: 0px;
+    height: 50px;
+    width: 50px;
+    background: $link url(/assets/logo-medium.png) center center;
+    @include border-radius(25px);
+  }
+
   header[role=banner] {
-    padding: 1.667em 0 0.8335em 0;
+    padding: 32px 0  0;
   }
 
   nav[role=navigation] {
     @include box(horizontal, start, center);
-    padding-left: 62px;
   }
 
   nav[role=navigation] a {
     text-align: left;
+
   }
 
   .profile {
-    margin: 0 10% 0 62px;
+    margin: 0 10% 0 93px;
+  }
+
+  /* Articles - iPhone + */
+
+  article {
+    padding-bottom: 0.8335em;
+  }
+
+  article aside {
+    margin: 1em 0;
+  }
+
+  /* Extra - iPhone + */
+
+  .extra section {
+    margin: 2em 0;
+  }
+
+  /* Elsewhere */
+
+  a.social-link, a.social-link:visited {
+    font-size: 0.9167em;
+    line-height: 30px;
+  }
+
+  .social-link span {
+    vertical-align: bottom;
+    width: 30px;
+    height: 30px;
+    background-size: 150px 75px;
+    margin-right: 3px;
+  }
+
+  .social-link span.twitter-icon {
+    background-position: -11px center;
+    width: 54px;
+    margin-left: -12px;
+  }
+
+  .social-link span.rss-icon {
+    background-position: -98px center;
+    margin: 0 15px 0 0;
   }
 
 }
@@ -467,65 +525,90 @@ footer[role=contentinfo] {
 
 /*** iPad ***/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 
   /* Base - iPad */
 
   body {
-    font-size: 0.8125em;
+    font-size: 0.8889em;
+    padding: 5%;
   }
 
   /* Typography - iPad */
 
   h1 {
-    margin: 0 0 1.667em 0;
-  }
-
-  p {
-    margin: 1.6667em 0;
+    font-size: 1.7142em;
   }
 
   /* Structure - iPad */
 
   .container {
-    padding: 0 30px 0.8335em 30px;
+    padding: 0 40px 0.8335em 40px;
   }
 
   /* Header - iPad */
 
   header[role=banner] {
-    padding: 2em 0;
+    padding: 68px 0  0;
+    margin-bottom: 3.3334  0.8889em;
+  }
+
+  .logo {
+    height: 64px;
+    width: 64px;
+    background: $link url(/assets/logo-large.png) center center;
+    @include border-radius(32px);
   }
 
   nav[role=navigation] {
-    @include box(horizontal, start, center)
+    @include box(horizontal, start, center);
+    padding-left: 20%;
   }
 
   nav[role=navigation] a {
+    padding: 23px 0;
     text-align: left;
   }
 
   .profile {
-    margin: 0 10% 0 62px;
+    margin: 0 10% 2.25em 20%;
+    font-size: 1.1428em;
+  }
+
+  /* Articles - iPad */
+
+  article {
+    padding: 0 0 2em 20%;
+  }
+
+  article aside {
+    margin: 0 0 0 -25%;
+    width: 20%;
+    float: left;
+    font-size: 1em;
+  }
+
+  article p, article ul, article blockquote {
+    margin-right: 10%;
+  }
+
+  .article-content > p:first-child, .article-content > img:first-child, .article-content > figure:first-child {
+    margin-top: 0.4167em;
   }
 
   /* Extra - iPad */
   .extra {
-    padding: 1em 0 4em 0;
-    @include clearfix;
-    border-bottom: 1px solid $border-grey;
+    padding: 0 0 0 20%;
   }
 
   .extra section {
-    float: left;
-    width: 47.65%;
-    margin-right: 4.7%;
-    border-bottom: none;
+    margin: 2.5em 0;
   }
 
-  .extra section.follow {
-    margin-right: 0;
+  a.social-link, a.social-link:visited {
+    margin-bottom: 0.4167em;
   }
+
 
   /* Pagination - iPad */
 
@@ -544,6 +627,10 @@ footer[role=contentinfo] {
     left: -25%;
     bottom: 0;
     width: 20%;
+  }
+
+  figcaption a {
+    white-space: pre-line;
   }
 
   /* Embedded - Notebook */
@@ -599,7 +686,6 @@ footer[role=contentinfo] {
   footer[role=contentinfo] {
     padding: 3em 0 4em 0;
   }
-
 
 }
 
