@@ -17,7 +17,12 @@ Author:     kevin@kevinfinlayson.com
 $body-color: #222;
 $link-color: #333;
 $meta-color: #999;
+$border-color: #ddd;
 $background: #fff;
+
+$twitter-blue-color: #33CCFF;
+$rss-orange-color: orange;
+$dribbble-pink-color: #EA4C89;
 
 // Typefaces
 //--------------------------------------------
@@ -245,10 +250,9 @@ p {
 
 
 header[role=banner] {
-  margin: 3.2em auto;
+  margin: 3.2em auto 4.8em auto;
   padding: 3.2em 0;
-  // text-align: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $border-color;
   @include clearfix;
   line-height: 2em;
   max-width: 960px;
@@ -256,39 +260,23 @@ header[role=banner] {
 
 a.logo {
   font-family: $headers;
-  // float: left;
-  // width: 25%;
   display: inline-block;
-  // background: #333 url(/assets/logo-small.png) no-repeat center center;
-  // height: 4em;
-  // width: 4em;
-  // @include border-radius(2em);
-  // text-indent: -100%;
-  // overflow: hidden;
-  // white-space: nowrap;
-}
-
-.profile {
-  display: none;
 }
 
 /* Navigation
 --------------------------------------------- */
 
 nav {
-  display: none;
+  display: inline-block;
   float: right;
-  // margin: 3em 0;
-  // padding: 1em 0;
   @include box(horizontal, start, stretch);
-  // border-top: 1px solid #eee;
-  // border-bottom: 1px solid #eee;
-  width: 75%;
+  width: 50%;
 }
 
 nav a {
-  display: none;
-  // display: none;
+  display: block;
+  font-size: 87.5%;
+  text-align: right;
   width: 1;
   @include box-flex(1);
 
@@ -302,7 +290,7 @@ article {
 }
 
 article header {
-  margin: 0 0 3.2em 0;
+  margin: 0 0 1.6em 0;
   text-align: center;
 }
 
@@ -310,8 +298,20 @@ article header h1 {
   margin: 0 0 0.4em 0;
 }
 
+article aside {
+  font-size: 87.5%;
+}
+
+article aside abbr {
+  font-style: italic;
+}
+
 article p, article ul, article dl, article img, article figure {
   margin: 0 auto 1.6em auto;
+}
+
+article img, article figure {
+  margin: 3.2em auto 3.2em auto;
 }
 
 article p, article ul, article dl {
@@ -323,8 +323,45 @@ article p, article ul, article dl {
 
 
 footer[role=contentinfo] {
-  clear: both;
+  padding: 3.2em 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 960px;
+  border-top: 1px solid $border-color;
 }
+
+.elsewhere {
+  padding: 1.6em 0;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+a.social-link, a.social-link:visited {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  @include border-radius(1em);
+  text-indent: -100%;
+  overflow:hidden;
+  white-space: nowrap;
+  background-color: $border-color;
+  margin: 0 0.2em;
+  @include transition(background-color, 0.1s, linear)
+}
+
+a.twitter-icon:hover {
+  background-color: $twitter-blue-color;
+}
+
+a.rss-icon:hover {
+  background-color: $rss-orange-color;
+}
+
+a.dribbble-icon:hover {
+  background-color: $dribbble-pink-color;
+}
+
 
 
 /* Responsiveness
@@ -343,40 +380,57 @@ footer[role=contentinfo] {
 
 @media only screen and (min-width: 768px) {
 
-  /* Page structure - 768 */
+  /* Header - 768 */
 
-  article p, article ul, article dl, header[role=banner] {
+   header[role=banner] {
+     max-width: 75%;
+   }
+
+  /* Articles - 768 */
+
+  article p, article ul, article dl {
     width: 75%;
   }
-  
+
   article img, article figure {
     display: block;
     max-width: 90%;
   }
 
-  /* Header - 768 */
+  /* Extra - 768 */
+
+  aside[role=complementary] {
+    width: 75%;
+  }
+
+  /* Footer - 768 */
+
+  footer[role=contentinfo] {
+    width: 75%;
+  }
 
 }
 
 
 @media only screen and (min-width: 960px) {
 
-  /* Header - 960 */
+  /* Page structure - 960 */
 
   body {
     font-size: 112.5%;
   }
 
+  /* Articles - 960 */
+
   article p, article ul, article dl {
     width: 60%;
   }
-
 
 }
 
 @media only screen and (min-width: 1020px) {
 
-  /* Header - 960 */
+  /* Page structure - 960 */
 
   body {
     font-size: 125%;
@@ -384,11 +438,6 @@ footer[role=contentinfo] {
 
 }
 
-
-@media only screen and (min-width: 1600px) {
-
-
-}
 
 
 /* Print
