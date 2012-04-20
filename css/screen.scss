@@ -14,8 +14,10 @@ Author:     kevin@kevinfinlayson.com
 
 // Colors
 
-$body-color: #666;
+$body-color: #222;
 $link-color: #333;
+$meta-color: #999;
+$background: #fff;
 
 // Typefaces
 //--------------------------------------------
@@ -56,28 +58,34 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-  }
+}
+
 body {
   line-height: 1;
-  }
+}
+
 ol, ul {
   list-style: none;
-  }
+}
+
 blockquote, q {
   quotes: none;
-  }
+}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
-  }
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  }
+}
+
 :focus {
   outline: none;
-  }
+}
 
 /* Highlighting reset */
 
@@ -85,13 +93,13 @@ table {
   background: #B4D5FE;
   color: #fff;
   text-shadow: none;
-  }
+}
 
 ::selection {
   background: #B4D5FE;
   color: #fff;
   text-shadow: none;
-  }
+}
 
 /* General
 --------------------------------------------- */
@@ -102,49 +110,49 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  }
+}
 
 body, button, input, select, textarea {
   font-family: $body-text;
   color: $body-color;
-  }
+}
 
 audio[controls], canvas, video {
-display: inline-block;
-*display:
-inline; *zoom: 1;
-  }
+  display: inline-block;
+  *display:
+  inline; *zoom: 1;
+}
 
 figcaption {
   font-style: italic;
   font-size: 0.75em;
+  text-align: center;
 }
 
 figure {
-  margin: 0 0 2em 0;
-  }
+  margin: 0 0 1.6em 0;
+}
 
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   max-width: 100%;
-  }
+}
 
 /* Page Structure
 --------------------------------------------- */
 
 body {
   margin: 0;
-  font-size: 100%;
+  font-size: 87.5%;
   line-height: 1.6;
-  border: 1em solid #fff;
-  background-color: #fafafa;
+  background-color: $background;
 }
 
 .container {
   margin: 0 auto;
-  padding: 20px;
-  }
+  width: 90%;
+}
 
 /* Typography
 --------------------------------------------- */
@@ -152,28 +160,30 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: $headers;
   line-height: 1.3;
-  margin: 0 0 1em 0;
-  }
+  margin: 0;
+}
 
 h1 {
   font-size: 2em;
-  }
+  font-family: $body-text;
+  font-weight: 400;
+}
 
 h2 {
   font-size: 1.5em;
-  }
+}
 
 h3 {
   font-size: 1.25em;
-  }
+}
 
 h4 {
-  font-size: 1em;
-  }
+  font-size: 112.5em;
+}
 
 h5 {
-  font-size: 0.75em;
-  }
+  font-size: 1em;
+}
 
 h1 a, h2 a, h3 a, h4 a, h5 a {
 }
@@ -181,49 +191,53 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 a {
   color: $link-color;
   text-decoration: none;
-  }
+}
 
 a:visited {
   color: $link-color;
-  }
+}
 
 a:focus {
   outline: thin dotted;
-  }
+}
 
 a:hover, a:active {
   outline: 0;
   color: $body-color;
-  }
+}
 
 b, strong {
   font-weight: 700;
-  }
+}
 
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  }
+}
 
 sup {
   top: -0.5em;
-  }
+}
 
 sub {
   bottom: -0.25em;
-  }
+}
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  }
+}
 
 li {
-  margin-bottom: 0.75em
-  }
+  margin-bottom: 0.8em
+}
+
+p {
+  margin-bottom: 1.6em;
+}
 
 
 /* Header
@@ -231,48 +245,78 @@ li {
 
 
 header[role=banner] {
-  margin: 3em 0;
-  text-align: center;
-  }
+  margin: 3.2em auto;
+  padding: 3.2em 0;
+  // text-align: center;
+  border-bottom: 1px solid #eee;
+  @include clearfix;
+  line-height: 2em;
+  max-width: 960px;
+}
 
 a.logo {
+  font-family: $headers;
+  // float: left;
+  // width: 25%;
   display: inline-block;
-  background: #333 url(/assets/logo-medium.png) no-repeat center center;
-  height: 60px;
-  width: 60px;
-  @include border-radius(40px);
-  text-indent: -100%;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 5px solid #fff;
-  @include box-shadow(0 1px 3px rgba(0,0,0,0.25));
+  // background: #333 url(/assets/logo-small.png) no-repeat center center;
+  // height: 4em;
+  // width: 4em;
+  // @include border-radius(2em);
+  // text-indent: -100%;
+  // overflow: hidden;
+  // white-space: nowrap;
 }
 
 .profile {
   display: none;
-  }
+}
 
 /* Navigation
 --------------------------------------------- */
 
 nav {
-  display: block;
-  margin: 3em 0;
-  padding: 1em 0;
-  @include box(horizontal, center, stretch);
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  display: none;
+  float: right;
+  // margin: 3em 0;
+  // padding: 1em 0;
+  @include box(horizontal, start, stretch);
+  // border-top: 1px solid #eee;
+  // border-bottom: 1px solid #eee;
+  width: 75%;
 }
 
 nav a {
-  display: block;
+  display: none;
+  // display: none;
   width: 1;
   @include box-flex(1);
-  line-height: 2em;
+
 }
 
 /* Main styles
 --------------------------------------------- */
+
+article {
+  margin: 0 0 6.4em 0;
+}
+
+article header {
+  margin: 0 0 3.2em 0;
+  text-align: center;
+}
+
+article header h1 {
+  margin: 0 0 0.4em 0;
+}
+
+article p, article ul, article dl, article img, article figure {
+  margin: 0 auto 1.6em auto;
+}
+
+article p, article ul, article dl {
+  max-width: 768px;
+}
 
 /* Footer
 --------------------------------------------- */
@@ -280,7 +324,7 @@ nav a {
 
 footer[role=contentinfo] {
   clear: both;
-  }
+}
 
 
 /* Responsiveness
@@ -288,12 +332,61 @@ footer[role=contentinfo] {
 
 
 @media only screen and (min-width: 480px) {
+
+  /* Page structure - 480 */
+
+  body {
+    font-size: 100%;
+  }
+
 }
 
-@media only screen and (min-width: 758px) {
-  .container {
-    width: 70%;
+@media only screen and (min-width: 768px) {
+
+  /* Page structure - 768 */
+
+  article p, article ul, article dl, header[role=banner] {
+    width: 75%;
   }
+  
+  article img, article figure {
+    display: block;
+    max-width: 90%;
+  }
+
+  /* Header - 768 */
+
+}
+
+
+@media only screen and (min-width: 960px) {
+
+  /* Header - 960 */
+
+  body {
+    font-size: 112.5%;
+  }
+
+  article p, article ul, article dl {
+    width: 60%;
+  }
+
+
+}
+
+@media only screen and (min-width: 1020px) {
+
+  /* Header - 960 */
+
+  body {
+    font-size: 125%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1600px) {
+
 
 }
 
