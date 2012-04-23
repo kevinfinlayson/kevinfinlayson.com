@@ -16,7 +16,6 @@ Author:     kevin@kevinfinlayson.com
 
 $body-color: #222;
 $link-color: #FC3A3A;
-$meta-color: #777;
 $border-color: #ddd;
 $background: #fff;
 
@@ -191,11 +190,11 @@ h5 {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited {
-  // color: $body-color;
+  color: $body-color;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
-  text-decoration: underline;
+  color: $link-color;
 }
 
 a {
@@ -213,7 +212,7 @@ a:focus {
 
 a:hover, a:active {
   outline: 0;
-  text-decoration: underline;
+  color: $body-color;
 }
 
 b, strong {
@@ -263,15 +262,10 @@ header[role=banner] {
   max-width: 960px;
 }
 
-a.logo, a.logo:visited {
+a.logo {
   font-family: $headers;
   display: inline-block;
-  color: $body-color;
-}
-
-
-a.logo:hover {
-  text-decoration: none;
+  color: $body-text;
 }
 
 /* Navigation
@@ -298,6 +292,10 @@ nav a.blog, nav.a.blog:visited {
   text-decoration: underline;
 }
 
+nav a:hover {
+  color: $link-color;
+}
+
 /* Articles
 --------------------------------------------- */
 
@@ -316,7 +314,6 @@ article header h1 {
 
 article aside {
   font-size: 87.5%;
-  color: $body-color;
 }
 
 article aside abbr {
@@ -366,7 +363,6 @@ footer[role=contentinfo] {
   text-align: center;
   max-width: 960px;
   border-top: 1px solid $border-color;
-  color: $meta-color;
 }
 
 .elsewhere {

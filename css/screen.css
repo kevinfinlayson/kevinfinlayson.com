@@ -127,8 +127,11 @@ h4 {
 h5 {
   font-size: 1em; }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited {
+  color: #222222; }
+
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
-  text-decoration: underline; }
+  color: #fc3a3a; }
 
 a {
   color: #fc3a3a;
@@ -142,7 +145,7 @@ a:focus {
 
 a:hover, a:active {
   outline: 0;
-  text-decoration: underline; }
+  color: #222222; }
 
 b, strong {
   font-weight: 700; }
@@ -185,13 +188,10 @@ header[role=banner] {
   header[role=banner]:after {
     clear: both; }
 
-a.logo, a.logo:visited {
+a.logo {
   font-family: "Elena-Bold", "helvetica neue", arial, sans-serif;
   display: inline-block;
-  color: #222222; }
-
-a.logo:hover {
-  text-decoration: none; }
+  color: "Elena-Regular", "helvetica neue", arial, sans-serif; }
 
 /* Navigation
 --------------------------------------------- */
@@ -226,6 +226,9 @@ nav a.blog, nav.a.blog:visited {
   color: #fc3a3a;
   text-decoration: underline; }
 
+nav a:hover {
+  color: #fc3a3a; }
+
 /* Articles
 --------------------------------------------- */
 article {
@@ -239,8 +242,7 @@ article header h1 {
   margin: 0 0 0.4em 0; }
 
 article aside {
-  font-size: 87.5%;
-  color: #222222; }
+  font-size: 87.5%; }
 
 article aside abbr {
   font-style: italic; }
@@ -284,8 +286,7 @@ footer[role=contentinfo] {
   margin: 0 auto;
   text-align: center;
   max-width: 960px;
-  border-top: 1px solid #dddddd;
-  color: #777777; }
+  border-top: 1px solid #dddddd; }
 
 .elsewhere {
   display: none;
