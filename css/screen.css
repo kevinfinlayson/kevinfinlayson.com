@@ -131,14 +131,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:vis
   color: #222222; }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
-  color: #fc3a3a; }
+  color: #86b1bf; }
 
 a {
-  color: #fc3a3a;
+  color: #86b1bf;
   text-decoration: none; }
 
 a:visited {
-  color: #fc3a3a; }
+  color: #86b1bf; }
 
 a:focus {
   outline: thin dotted; }
@@ -191,7 +191,7 @@ header[role=banner] {
 a.logo {
   font-family: "Elena-Bold", "helvetica neue", arial, sans-serif;
   display: inline-block;
-  color: "Elena-Regular", "helvetica neue", arial, sans-serif; }
+  color: #222222; }
 
 /* Navigation
 --------------------------------------------- */
@@ -223,11 +223,11 @@ nav a, nav a:visited {
   color: #222222; }
 
 nav a.blog, nav.a.blog:visited {
-  color: #fc3a3a;
+  color: #86b1bf;
   text-decoration: underline; }
 
 nav a:hover {
-  color: #fc3a3a; }
+  color: #86b1bf; }
 
 /* Articles
 --------------------------------------------- */

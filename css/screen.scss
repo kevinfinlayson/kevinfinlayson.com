@@ -15,7 +15,7 @@ Author:     kevin@kevinfinlayson.com
 // Colors
 
 $body-color: #222;
-$link-color: #FC3A3A;
+$link-color: #86B1BF;
 $border-color: #ddd;
 $background: #fff;
 
@@ -265,7 +265,7 @@ header[role=banner] {
 a.logo {
   font-family: $headers;
   display: inline-block;
-  color: $body-text;
+  color: $body-color;
 }
 
 /* Navigation
