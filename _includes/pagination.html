@@ -1,14 +1,18 @@
-  {% if paginator.next_page != nil and paginator.previous_page != nil %}
-  <div class="pagination index">
+{% if paginator.next_page != nil or paginator.previous_page != nil %}
+<div class="pagination index">
+  <div class="previous">
     {% case paginator.previous_page %}
-      {% when "1" %}
-        <a href="/">← Previous</a>
+      {% when 1 %}
+          <a href="/">← Newer</a>
       {% when nil %}
       {% else %}
-        <a href="/page{{paginator.previous_page}}">← Previous</a>
+          <a href="/page{{paginator.previous_page}}">← Newer</a>
     {% endcase %}
-    {% if paginator.next_page %}
-      <a href="/page{{paginator.next_page}}" class="next ">Next →</a>
-    {% endif %}
-  </div><!-- pagination -->
+  </div><!-- previous -->
+  {% if paginator.next_page %}
+    <div class="next">
+      <a href="/page{{paginator.next_page}}" class="next ">Older →</a>
+    </div><!-- next -->
   {% endif %}
+</div><!-- pagination -->
+{% endif %}

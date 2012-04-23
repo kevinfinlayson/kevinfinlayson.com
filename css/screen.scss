@@ -15,8 +15,8 @@ Author:     kevin@kevinfinlayson.com
 // Colors
 
 $body-color: #222;
-$link-color: #333;
-$meta-color: #999;
+$link-color: #FC3A3A;
+$meta-color: #777;
 $border-color: #ddd;
 $background: #fff;
 
@@ -190,7 +190,12 @@ h5 {
   font-size: 1em;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited {
+  // color: $body-color;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+  text-decoration: underline;
 }
 
 a {
@@ -208,7 +213,7 @@ a:focus {
 
 a:hover, a:active {
   outline: 0;
-  color: $body-color;
+  text-decoration: underline;
 }
 
 b, strong {
@@ -258,9 +263,15 @@ header[role=banner] {
   max-width: 960px;
 }
 
-a.logo {
+a.logo, a.logo:visited {
   font-family: $headers;
   display: inline-block;
+  color: $body-color;
+}
+
+
+a.logo:hover {
+  text-decoration: none;
 }
 
 /* Navigation
@@ -273,16 +284,21 @@ nav {
   width: 50%;
 }
 
-nav a {
+nav a, nav a:visited {
   display: block;
   font-size: 87.5%;
   text-align: right;
   width: 1;
   @include box-flex(1);
-
+  color: $body-color;
 }
 
-/* Main styles
+nav a.blog, nav.a.blog:visited {
+  color: $link-color;
+  text-decoration: underline;
+}
+
+/* Articles
 --------------------------------------------- */
 
 article {
@@ -300,6 +316,7 @@ article header h1 {
 
 article aside {
   font-size: 87.5%;
+  color: $body-color;
 }
 
 article aside abbr {
@@ -318,19 +335,42 @@ article p, article ul, article dl {
   max-width: 768px;
 }
 
+/* Pagination--------------------------------------------- */
+
+.pagination {
+  @include clearfix;
+  margin: 0 auto 1.6em auto;
+  max-width: 960px;
+  font-size: 87.5%;
+}
+
+.pagination div {
+  float: left;
+  width: 50%;
+  display: block;
+  height: 1.6em;
+}
+.next {
+  text-align: right;
+}
+
+
 /* Footer
 --------------------------------------------- */
 
-
 footer[role=contentinfo] {
+  font-style: italic;
+  font-size: 87.5%;
   padding: 3.2em 0;
   margin: 0 auto;
   text-align: center;
   max-width: 960px;
   border-top: 1px solid $border-color;
+  color: $meta-color;
 }
 
 .elsewhere {
+  display: none;
   padding: 1.6em 0;
   margin: 0 auto;
   max-width: 960px;
@@ -383,7 +423,7 @@ a.dribbble-icon:hover {
   /* Header - 768 */
 
    header[role=banner] {
-     max-width: 75%;
+     width: 75%;
    }
 
   /* Articles - 768 */
@@ -395,6 +435,12 @@ a.dribbble-icon:hover {
   article img, article figure {
     display: block;
     max-width: 90%;
+  }
+
+  /* Pagination - 768 */
+
+  .pagination {
+    width: 75%;
   }
 
   /* Extra - 768 */
