@@ -105,7 +105,7 @@ body {
 
 /* Typography
 --------------------------------------------- */
-h1, h2, h3, h4, h5 {
+h1, h2 {
   font-family: "Elena-Bold", "helvetica neue", arial, sans-serif;
   line-height: 1.3;
   margin: 0; }
@@ -116,21 +116,16 @@ h1 {
   font-weight: 400; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Elena-Regular", "helvetica neue", arial, sans-serif;
+  font-weight: 400; }
 
-h3 {
-  font-size: 1.25em; }
-
-h4 {
-  font-size: 112.5em; }
-
-h5 {
-  font-size: 1em; }
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited {
+h1 a, h2 a, h1 a:visited, h2 a:visited {
   color: #222222; }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+h1 a:hover, h2 a:hover {
   color: #86b1bf; }
 
 a {
@@ -192,7 +187,8 @@ a.logo {
   font-family: "Elena-Bold", "helvetica neue", arial, sans-serif;
   display: inline-block;
   color: #222222;
-  width: 25%; }
+  width: 25%;
+  font-weight: 700; }
 
 /* Navigation
 --------------------------------------------- */
@@ -247,6 +243,9 @@ article figure img {
 
 article p, article ul, article dl {
   max-width: 768px; }
+
+article section {
+  margin-bottom: 3.2em; }
 
 /* Pagination--------------------------------------------- */
 .pagination {
@@ -333,9 +332,6 @@ a.dribbble-icon:hover {
 
 /* About
 --------------------------------------------- */
-.portrait {
-  margin-bottom: 1.6em; }
-
 .portrait img {
   width: 12em;
   height: 12em;
