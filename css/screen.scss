@@ -179,6 +179,7 @@ h2 {
   letter-spacing: 0.1em;
   font-family: $body-text;
   font-weight: 400;
+  margin: 1.6em 0;
 }
 
 h1 a, h2 a, h1 a:visited, h2 a:visited {
@@ -300,7 +301,7 @@ article {
 }
 
 article header {
-  margin: 0 0 1.6em 0;
+  margin: 1.6em 0;
   text-align: center;
 }
 
@@ -316,20 +317,21 @@ article aside abbr {
   font-style: italic;
 }
 
-article p, article ul, article dl  {
+article p, article ul {
   margin: 0 auto 1.6em auto;
+  max-width: 768px;
 }
 
-article img, article figure {
+article img {
   margin: 3.2em auto 3.2em auto;
+}
+
+article figure {
+  margin: 0 auto 1.6em auto;
 }
 
 article figure img {
   margin-bottom: 1.6em;
-}
-
-article p, article ul, article dl {
-  max-width: 768px;
 }
 
 article section {

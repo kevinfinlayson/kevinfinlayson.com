@@ -120,7 +120,8 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: "Elena-Regular", "helvetica neue", arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 1.6em 0; }
 
 h1 a, h2 a, h1 a:visited, h2 a:visited {
   color: #222222; }
@@ -220,7 +221,7 @@ article {
   margin: 0 0 6.4em 0; }
 
 article header {
-  margin: 0 0 1.6em 0;
+  margin: 1.6em 0;
   text-align: center; }
 
 article header h1 {
@@ -232,17 +233,18 @@ article aside {
 article aside abbr {
   font-style: italic; }
 
-article p, article ul, article dl {
-  margin: 0 auto 1.6em auto; }
+article p, article ul {
+  margin: 0 auto 1.6em auto;
+  max-width: 768px; }
 
-article img, article figure {
+article img {
   margin: 3.2em auto 3.2em auto; }
+
+article figure {
+  margin: 0 auto 1.6em auto; }
 
 article figure img {
   margin-bottom: 1.6em; }
-
-article p, article ul, article dl {
-  max-width: 768px; }
 
 article section {
   margin-bottom: 3.2em; }
