@@ -215,7 +215,7 @@ nav a, nav a:visited {
 nav a:hover {
   color: #86b1bf; }
 
-.url_index nav a.blog, .url_index nav a.blog:visited, .url_about nav a.about, .url_about nav a.about:visited {
+.url_index nav a.blog, .url_index nav a.blog:visited, .layout_single_post nav a.blog, .layout_single_post nav a.blog:visited, .url_about nav a.about, .url_about nav a.about:visited {
   color: #86b1bf;
   text-decoration: underline; }
 
