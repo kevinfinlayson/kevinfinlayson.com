@@ -91,6 +91,10 @@ img {
   -ms-interpolation-mode: bicubic;
   max-width: 100%; }
 
+iframe, object {
+  max-width: 100%;
+  display: block; }
+
 /* Page Structure
 --------------------------------------------- */
 body {
@@ -218,7 +222,7 @@ nav a:hover {
 /* Articles
 --------------------------------------------- */
 article {
-  margin: 0 0 6.4em 0; }
+  margin: 0 0 8em 0; }
 
 article header {
   margin: 1.6em 0;
@@ -237,17 +241,18 @@ article p, article ul {
   margin: 0 auto 1.6em auto;
   max-width: 768px; }
 
-article img {
-  margin: 3.2em auto 3.2em auto; }
+article img, article iframe, article object {
+  margin: 3.2em auto; }
 
 article figure {
-  margin: 0 auto 1.6em auto; }
+  margin: 3.2em auto 1.6em auto; }
 
 article figure img {
-  margin-bottom: 1.6em; }
+  margin-bottom: 1.6em;
+  max-width: 100%; }
 
-article section {
-  margin-bottom: 3.2em; }
+article section, article div.section {
+  margin: 3.2em 0 4.8em 0; }
 
 /* Pagination--------------------------------------------- */
 .pagination {
