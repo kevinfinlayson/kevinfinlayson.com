@@ -2,7 +2,7 @@
 <!--[if lte IE 8 ]> <html lang="en" class="no-js oldie"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 {% include head.html %}
-<body class="home">
+<body class="{% body_class %}">
   <div class="container">
     {% include header.html %}
     {{ content }}

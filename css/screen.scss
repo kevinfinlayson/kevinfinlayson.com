@@ -293,7 +293,7 @@ nav a:hover {
   color: $link-color;
 }
 
-nav a.blog, nav.a.blog:visited {
+.url_index nav a.blog, .url_index nav a.blog:visited, .url_about nav a.about, .url_about nav a.about:visited {
   color: $link-color;
   text-decoration: underline;
 }
