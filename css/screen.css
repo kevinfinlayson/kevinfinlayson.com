@@ -191,43 +191,32 @@ header[role=banner] {
 a.logo {
   font-family: "Elena-Bold", "helvetica neue", arial, sans-serif;
   display: inline-block;
-  color: #222222; }
+  color: #222222;
+  width: 25%; }
 
 /* Navigation
 --------------------------------------------- */
 nav {
   display: inline-block;
+  width: 75%;
+  text-align: right;
   float: right;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start;
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  box-align: stretch;
-  width: 50%; }
+  margin-right: -1.6em; }
 
 nav a, nav a:visited {
-  display: block;
+  display: inline;
   font-size: 87.5%;
-  text-align: right;
   width: 1;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  box-flex: 1;
+  text-align: right;
+  margin: 0 1.6em;
   color: #222222; }
+
+nav a:hover {
+  color: #86b1bf; }
 
 nav a.blog, nav.a.blog:visited {
   color: #86b1bf;
   text-decoration: underline; }
-
-nav a:hover {
-  color: #86b1bf; }
 
 /* Articles
 --------------------------------------------- */

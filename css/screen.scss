@@ -266,6 +266,7 @@ a.logo {
   font-family: $headers;
   display: inline-block;
   color: $body-color;
+  width: 25%;
 }
 
 /* Navigation
@@ -273,18 +274,23 @@ a.logo {
 
 nav {
   display: inline-block;
+  width: 75%;
+  text-align: right;
   float: right;
-  @include box(horizontal, start, stretch);
-  width: 50%;
+  margin-right: -1.6em;
 }
 
 nav a, nav a:visited {
-  display: block;
+  display: inline;
   font-size: 87.5%;
-  text-align: right;
   width: 1;
-  @include box-flex(1);
+  text-align: right;
+  margin: 0 1.6em;
   color: $body-color;
+}
+
+nav a:hover {
+  color: $link-color;
 }
 
 nav a.blog, nav.a.blog:visited {
@@ -292,9 +298,6 @@ nav a.blog, nav.a.blog:visited {
   text-decoration: underline;
 }
 
-nav a:hover {
-  color: $link-color;
-}
 
 /* Articles
 --------------------------------------------- */
