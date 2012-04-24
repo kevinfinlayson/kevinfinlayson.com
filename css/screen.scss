@@ -323,12 +323,16 @@ article aside abbr {
   font-style: italic;
 }
 
-article p, article ul, article dl, article img, article figure {
+article p, article ul, article dl  {
   margin: 0 auto 1.6em auto;
 }
 
 article img, article figure {
   margin: 3.2em auto 3.2em auto;
+}
+
+article figure img {
+  margin-bottom: 1.6em;
 }
 
 article p, article ul, article dl {
@@ -401,6 +405,19 @@ a.dribbble-icon:hover {
   background-color: $dribbble-pink-color;
 }
 
+
+/* About
+--------------------------------------------- */
+
+.portrait {
+  margin-bottom: 1.6em;
+}
+
+.portrait img {
+  width: 12em;
+  height: 12em;
+  @include border-radius(6em);
+}
 
 
 /* Responsiveness
