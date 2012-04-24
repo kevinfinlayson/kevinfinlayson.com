@@ -241,11 +241,8 @@ article p, article ul {
   margin: 0 auto 1.6em auto;
   max-width: 768px; }
 
-article img, article iframe, article object {
+article img, article iframe, article object, article figure {
   margin: 3.2em auto; }
-
-article figure {
-  margin: 3.2em auto 1.6em auto; }
 
 article figure img {
   margin-bottom: 1.6em;
