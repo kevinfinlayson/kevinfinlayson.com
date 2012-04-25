@@ -1,8 +1,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{% if page.title %}{{ page.title }} | {% endif %}Kevin Finlayson</title>
-	<meta name="description" content="the website of designer Kevin Finlayson">
+  {% if page.title %}
+	<title>Kevin Finlayson - {{ page.title }}</title>
+  {% else %}
+	<title>Kevin Finlayson—Interface and product designer for the web</title>
+  {% endif %}
+	<meta name="description" content="Design projects and writing by Kevin Finlayson">
 	<meta name="author" content="Kevin Finlayson">
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
