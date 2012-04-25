@@ -16,7 +16,7 @@ Author:     kevin@kevinfinlayson.com
 
 $body-color: #222;
 $link-color: #86B1BF;
-$border-color: #ddd;
+$border-color: #e1e1e1;
 $background: #fff;
 
 $twitter-blue-color: #33CCFF;
@@ -130,11 +130,11 @@ audio[controls], canvas, video {
 figcaption {
   font-style: italic;
   font-size: 0.75em;
-  text-align: center;
 }
 
 figure {
   margin: 0 0 1.6em 0;
+  text-align: center;
 }
 
 img {
@@ -252,20 +252,22 @@ p {
 
 
 header[role=banner] {
-  margin: 3.2em auto 4.8em auto;
-  padding: 3.2em 0;
+  margin: 0 auto 3.2em auto;
+  padding: 1.6em 0;
   border-bottom: 1px solid $border-color;
   @include clearfix;
   line-height: 2em;
   max-width: 960px;
+  text-align: center;
 }
 
 a.logo {
   font-family: $headers;
   display: inline-block;
   color: $body-color;
-  width: 25%;
+  width: 100%;
   font-weight: 700;
+  margin-bottom: 1.6em;
 }
 
 /* Navigation
@@ -273,20 +275,16 @@ a.logo {
 
 nav {
   display: inline-block;
-  width: 75%;
-  text-align: right;
-  float: right;
-  margin-right: -1.6em;
+  width: 100%;
 }
 
 nav a, nav a:visited {
   display: inline;
-  font-size: 87.5%;
-  width: 1;
-  text-align: right;
   margin: 0 1.6em;
   color: $body-color;
+  font-size: 87.5%;
 }
+
 
 nav a:hover {
   color: $link-color;
@@ -302,11 +300,11 @@ nav a:hover {
 --------------------------------------------- */
 
 article {
-  margin: 0 0 8em 0;
+  margin: 0 0 6em 0;
 }
 
 article header {
-  margin: 1.6em 0;
+  margin: 0 0 1.6em 0;
   text-align: center;
 }
 
@@ -328,12 +326,17 @@ article p, article ul {
 }
 
 article img, article iframe, article object, article figure  {
-  margin: 3.2em auto;
+  margin: 1.6em auto;
+}
+
+article figure, article img {
+  display: block;
 }
 
 article figure img {
-  margin-bottom: 1.6em;
+  margin: 0 auto 0.8em auto;
   max-width: 100%;
+  display: inline-block;
 }
 
 article section, article div.section {
@@ -439,17 +442,57 @@ a.dribbble-icon:hover {
 
    header[role=banner] {
      width: 75%;
+     margin: 3.2em auto 4.8em auto;
+     padding: 3.2em 0;
+     text-align: left;
+   }
+
+   a.logo {
+     width: 25%;
+   }
+
+   /* Navigation - 768 */
+
+   nav {
+     width: 75%;
+     text-align: right;
+     float: right;
+     margin-right: -1.6em;
+   }
+
+   nav a, nav a:visited {
+     text-align: right;
    }
 
   /* Articles - 768 */
+
+  article {
+    margin: 0 0 8em 0;
+  }
+
+  article header {
+    margin: 1.6em 0;
+  }
+
+  article aside {
+    font-size: 87.5%;
+  }
+
+  article img, article iframe, article object, article figure  {
+    margin: 3.2em auto;
+  }
 
   article p, article ul, article dl {
     width: 75%;
   }
 
   article img, article figure {
-    display: block;
     max-width: 90%;
+  }
+
+  article figure img {
+    margin: 0 0 0.8em 0;
+    max-width: 100%;
   }
 
   /* Pagination - 768 */
