@@ -2,7 +2,8 @@
 Title:      screen.scss
 Author:     kevin@kevinfinlayson.com
 */
-"elena-web-basic-1","elena-web-basic-2"
+/* Reset styles
+--------------------------------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,7 +70,7 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body, button, input, select, textarea {
-  font-family: "elena-web-basic-1", "elena-web-basic-2", "helvetica neue", arial, sans-serif;
+  font-family: "elena-web-basic-1", "elena-web-basic-2", georgia, serif;
   color: #222222; }
 
 audio[controls], canvas, video {
@@ -114,14 +115,14 @@ h1, h2 {
 
 h1 {
   font-size: 2em;
-  font-family: "elena-web-basic-1", "elena-web-basic-2", "helvetica neue", arial, sans-serif;
+  font-family: "elena-web-basic-1", "elena-web-basic-2", georgia, serif;
   font-weight: 400; }
 
 h2 {
   font-size: 0.875em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-family: "elena-web-basic-1", "elena-web-basic-2", "helvetica neue", arial, sans-serif;
+  font-family: "elena-web-basic-1", "elena-web-basic-2", georgia, serif;
   font-weight: 400;
   margin: 1.6em 0; }
 
