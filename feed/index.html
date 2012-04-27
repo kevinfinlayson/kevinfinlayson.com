@@ -19,14 +19,14 @@
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
       {% for post in site.posts limit:20 %}
-      <item>
+      <entry>
           <title>{{ post.title }}</title>
           <link href="http://kevinfinlayson.com{{ post.url }}"/>
           <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
           <dc:creator>Kevin Finlayson</dc:creator>
           <id>http://kevinfinlayson.com{{ post.url }}/</id>
           <summary type="html">{{ post.content | xml_escape }}</summary>
-      </item>
+      </entry>
       {% endfor %}
   </channel>
 </rss>
