@@ -2,31 +2,22 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 
-<rss version="2.0"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
->
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Kevin Finlayson</title>
-    <link type="application/atom+xml" href="http://kevinfinlayson.com/feed/" rel="self"/>
-    <link>http://kevinfinlayson.com</link>
     <description>Interface and product design for the web</description>
+    <title>Kevin Finlayson</title>
+    <generator>Jekyll</generator>
+    <link>http://kevinfinlayson.com</link>
+    <link type="application/rss+xml" href="http://kevinfinlayson.com/feed/" rel="self"/>
     <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
-    <language>en</language>
-    <sy:updatePeriod>hourly</sy:updatePeriod>
-    <sy:updateFrequency>1</sy:updateFrequency>
       {% for post in site.posts limit:20 %}
-      <entry>
+      <item>
           <title>{{ post.title }}</title>
-          <link href="http://kevinfinlayson.com{{ post.url }}"/>
+          <description>{{ post.content | xml_escape }}</description>
+          <link>http://kevinfinlayson.com{{ post.url }}</link>
+          <guid>http://kevinfinlayson.com{{ post.url }}</guid>
           <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-          <dc:creator>Kevin Finlayson</dc:creator>
-          <id>http://kevinfinlayson.com{{ post.url }}/</id>
-          <summary type="html">{{ post.content | xml_escape }}</summary>
-      </entry>
+      </item>
       {% endfor %}
   </channel>
 </rss>
