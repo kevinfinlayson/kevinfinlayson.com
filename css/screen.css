@@ -95,11 +95,13 @@ iframe, object {
   max-width: 100%;
   display: block; }
 
+object {
+  display: none; }
+
 /* Page Structure
 --------------------------------------------- */
 body {
   margin: 0;
-  font-size: 87.5%;
   line-height: 1.6;
   background-color: white; }
 
@@ -193,7 +195,8 @@ a.logo {
   color: #222222;
   width: 100%;
   font-weight: 700;
-  margin-bottom: 1.6em; }
+  margin-bottom: 1.6em;
+  font-size: 112.5%; }
 
 /* Navigation
 --------------------------------------------- */
@@ -203,9 +206,8 @@ nav {
 
 nav a, nav a:visited {
   display: inline;
-  margin: 0 1.6em;
   color: #222222;
-  font-size: 87.5%; }
+  margin: 0 1.6em; }
 
 nav a:hover {
   color: #86b1bf; }
@@ -217,7 +219,7 @@ nav a:hover {
 /* Articles
 --------------------------------------------- */
 article {
-  margin: 0 0 6em 0; }
+  margin: 0 0 4em 0; }
 
 article header {
   margin: 0 0 1.6em 0;
@@ -346,11 +348,34 @@ a.dribbble-icon:hover {
 
 /* Responsiveness
 --------------------------------------------- */
-@media only screen and (min-width: 480px) {
-  /* Page structure - 480 */
-  body {
-    font-size: 100%; } }
+@media only screen and (max-width: 480px) {
+  /* Nav - 320 */
+  nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center; }
+
+  nav a, nav a:visited {
+    display: block;
+    margin: 0;
+    width: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1; } }
 @media only screen and (min-width: 768px) {
+  /* General - 768 */
+  object {
+    display: block; }
+
   /* Header - 768 */
   header[role=banner] {
     width: 75%;
@@ -359,7 +384,8 @@ a.dribbble-icon:hover {
     text-align: left; }
 
   a.logo {
-    width: 25%; }
+    width: 25%;
+    font-size: 100%; }
 
   /* Navigation - 768 */
   nav {
@@ -373,7 +399,7 @@ a.dribbble-icon:hover {
 
   /* Articles - 768 */
   article {
-    margin: 0 0 8em 0; }
+    margin: 0 0 7em 0; }
 
   article header {
     margin: 1.6em 0; }
