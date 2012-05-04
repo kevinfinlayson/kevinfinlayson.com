@@ -273,6 +273,9 @@ article section, article div.section {
 .next {
   text-align: right; }
 
+.pagination span {
+  display: none; }
+
 /* Footer
 --------------------------------------------- */
 footer[role=contentinfo] {
@@ -423,6 +426,9 @@ a.dribbble-icon:hover {
   /* Pagination - 768 */
   .pagination {
     width: 75%; }
+
+  .pagination span {
+    display: inline; }
 
   /* Extra - 768 */
   aside[role=complementary] {
