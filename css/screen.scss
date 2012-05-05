@@ -142,6 +142,10 @@ img {
   max-width: 100%;
 }
 
+img.border {
+  border: 1px solid $border-color;
+}
+
 iframe, object {
   max-width: 100%;
   display: block;
