@@ -15,10 +15,9 @@ Author:     kevin@kevinfinlayson.com
 // Colors
 
 $body-color: #222;
-$link-color: #86B1BF;
+$link-color: #3C9DBF;
 $border-color: #e1e1e1;
 $background: #fff;
-
 $twitter-blue-color: #33CCFF;
 $rss-orange-color: orange;
 $dribbble-pink-color: #EA4C89;
@@ -345,6 +344,14 @@ article figure img {
 article section, article div.section {
   margin: 3.2em 0 4.8em 0;
 }
+
+/* Article slideshows --------------------------------------------- */
+
+article .slideshow {
+  margin: 1.6em auto;
+  max-width: 100%;
+}
+
 
 
 

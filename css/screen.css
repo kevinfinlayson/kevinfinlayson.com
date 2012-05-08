@@ -255,6 +255,11 @@ article figure img {
 article section, article div.section {
   margin: 3.2em 0 4.8em 0; }
 
+/* Article slideshows --------------------------------------------- */
+article .slideshow {
+  margin: 1.6em auto;
+  max-width: 100%; }
+
 /* Pagination--------------------------------------------- */
 .pagination {
   zoom: 1;
