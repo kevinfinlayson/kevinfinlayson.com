@@ -34,12 +34,22 @@ ol, ul {
   list-style: none; }
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+  font-style: italic;
+  margin: 0 1.6em 1.6em 1.6em;
+  font-size: 1.125em; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
+
+cite {
+  font-size: 75%;
+  font-style: normal;
+  display: block;
+  text-align: right;
+  margin: 1.6em 0; }
 
 table {
   border-collapse: collapse;
@@ -93,6 +103,9 @@ img {
 iframe, object {
   max-width: 100%;
   display: block; }
+
+object {
+  display: none; }
 
 /* Page Structure
 --------------------------------------------- */
@@ -235,6 +248,11 @@ article p, article ul {
   margin: 0 auto 1.6em auto;
   max-width: 768px; }
 
+article h2 {
+  margin: 3.2em auto 1.6em auto;
+  text-align: center;
+  max-width: 768px; }
+
 article img, article iframe, article object, article figure {
   margin: 1.6em auto; }
 
@@ -350,6 +368,10 @@ a.dribbble-icon:hover {
   body {
     font-size: 100%; } }
 @media only screen and (min-width: 768px) {
+  /* Typography - 768 */
+  blockquote, q {
+    margin: 0 4.8em 1.6em 4.8em; }
+
   /* Header - 768 */
   header[role=banner] {
     width: 75%;
@@ -392,6 +414,9 @@ a.dribbble-icon:hover {
   article figure img {
     margin: 0 0 0.8em 0;
     max-width: 100%; }
+
+  article object {
+    display: block; }
 
   /* Pagination - 768 */
   .pagination {
