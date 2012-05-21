@@ -35,12 +35,22 @@ ol, ul {
   list-style: none; }
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+  font-style: italic;
+  margin: 0 1.6em 1.6em 1.6em;
+  font-size: 1.125em; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
+
+cite {
+  font-size: 75%;
+  font-style: normal;
+  display: block;
+  text-align: right;
+  margin: 1.6em 0; }
 
 table {
   border-collapse: collapse;
@@ -135,14 +145,14 @@ h1 a, h2 a, h1 a:visited, h2 a:visited {
   color: #222222; }
 
 h1 a:hover, h2 a:hover {
-  color: #86b1bf; }
+  color: #3c9dbf; }
 
 a {
-  color: #86b1bf;
+  color: #3c9dbf;
   text-decoration: none; }
 
 a:visited {
-  color: #86b1bf; }
+  color: #3c9dbf; }
 
 a:focus {
   outline: thin dotted; }
@@ -213,10 +223,10 @@ nav a, nav a:visited {
   margin: 0 1.6em; }
 
 nav a:hover {
-  color: #86b1bf; }
+  color: #3c9dbf; }
 
 .url_index nav a.blog, .url_index nav a.blog:visited, .layout_single_post nav a.blog, .layout_single_post nav a.blog:visited, .url_about nav a.about, .url_about nav a.about:visited {
-  color: #86b1bf;
+  color: #3c9dbf;
   text-decoration: underline; }
 
 /* Articles
@@ -239,6 +249,11 @@ article aside abbr {
 
 article p, article ul {
   margin: 0 auto 1.6em auto;
+  max-width: 768px; }
+
+article h2 {
+  margin: 3.2em auto 1.6em auto;
+  text-align: center;
   max-width: 768px; }
 
 article img, article iframe, article object, article figure {
@@ -387,6 +402,10 @@ a.dribbble-icon:hover {
   object {
     display: block; }
 
+  /* Typography - 768 */
+  blockquote, q {
+    margin: 0 4.8em 1.6em 4.8em; }
+
   /* Header - 768 */
   header[role=banner] {
     width: 75%;
@@ -430,6 +449,9 @@ a.dribbble-icon:hover {
   article figure img {
     margin: 0 0 0.8em 0;
     max-width: 100%; }
+
+  article object {
+    display: block; }
 
   /* Pagination - 768 */
   .pagination {
