@@ -14,19 +14,11 @@ Author:     kevin@kevinfinlayson.com
 
 // Colors
 
-<<<<<<< HEAD
-$body-color: #222;
-$link-color: #3C9DBF;
-$border-color: #e1e1e1;
-$background: #fff;
-=======
 $body-color: #333;
 $link-color: #5a7f88;
 $border-color: #e1e1e1;
 $background: #fff;
 $logo-color: #96b6be;
-
->>>>>>> Switched to icon font for logo
 $twitter-blue-color: #33CCFF;
 $rss-orange-color: orange;
 $dribbble-pink-color: #EA4C89;
@@ -34,10 +26,7 @@ $dribbble-pink-color: #EA4C89;
 // Typefaces
 //--------------------------------------------
 
-<<<<<<< HEAD
 $body-text: "elena-web-basic-1","elena-web-basic-2", georgia, serif;
-=======
-$body-text: "elena-web-basic-1","elena-web-basic-2", "helvetica neue", arial, sans-serif;
 
 // Typefaces
 //--------------------------------------------
@@ -53,7 +42,6 @@ $body-text: "elena-web-basic-1","elena-web-basic-2", "helvetica neue", arial, sa
     font-style: normal;
 
 }
->>>>>>> Switched to icon font for logo
 
 // Reference for webfonts.fonts.com font names
 // font-family:'Century Gothic W01 Bold';
@@ -336,13 +324,6 @@ a.kf i::before {
 
 a.kf:hover i::before {
   color: $body-color;
-<<<<<<< HEAD
-  width: 100%;
-  font-weight: 700;
-  margin-bottom: 1.6em;
-  font-size: 112.5%;
-=======
->>>>>>> Switched to icon font for logo
 }
 
 
@@ -356,17 +337,11 @@ nav {
 }
 
 nav a, nav a:visited {
-<<<<<<< HEAD
-  display: inline;
-  color: $body-color;
-  margin: 0 1.6em;
-=======
   display: inline-block;
   margin: 0 1.6em;
   color: $body-color;
   font-size: 87.5%;
   padding: 1em 0;
->>>>>>> Switched to icon font for logo
 }
 
 nav a:hover {
@@ -566,14 +541,6 @@ a.dribbble-icon:hover {
      text-align: left;
    }
 
-<<<<<<< HEAD
-   a.logo {
-     width: 25%;
-     font-size: 100%;
-   }
-
-=======
->>>>>>> Switched to icon font for logo
    /* Navigation - 768 */
 
    nav {
