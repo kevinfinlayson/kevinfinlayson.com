@@ -14,10 +14,19 @@ Author:     kevin@kevinfinlayson.com
 
 // Colors
 
+<<<<<<< HEAD
 $body-color: #222;
 $link-color: #3C9DBF;
 $border-color: #e1e1e1;
 $background: #fff;
+=======
+$body-color: #333;
+$link-color: #5a7f88;
+$border-color: #e1e1e1;
+$background: #fff;
+$logo-color: #96b6be;
+
+>>>>>>> Switched to icon font for logo
 $twitter-blue-color: #33CCFF;
 $rss-orange-color: orange;
 $dribbble-pink-color: #EA4C89;
@@ -25,7 +34,26 @@ $dribbble-pink-color: #EA4C89;
 // Typefaces
 //--------------------------------------------
 
+<<<<<<< HEAD
 $body-text: "elena-web-basic-1","elena-web-basic-2", georgia, serif;
+=======
+$body-text: "elena-web-basic-1","elena-web-basic-2", "helvetica neue", arial, sans-serif;
+
+// Typefaces
+//--------------------------------------------
+
+@font-face {
+    font-family: 'kfwebsiteiconsRegular';
+    src: url('/fonts/kfwebsiteicons-regular-webfont.eot');
+    src: url('/fonts/kfwebsiteicons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/kfwebsiteicons-regular-webfont.woff') format('woff'),
+         url('/fonts/kfwebsiteicons-regular-webfont.ttf') format('truetype'),
+         url('/fonts/kfwebsiteicons-regular-webfont.svg#kfwebsiteiconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+>>>>>>> Switched to icon font for logo
 
 // Reference for webfonts.fonts.com font names
 // font-family:'Century Gothic W01 Bold';
@@ -261,14 +289,21 @@ p {
   margin-bottom: 1.6em;
 }
 
+/* Icons
+--------------------------------------------- */
+
+[data-icon]::before {
+  content: attr(data-icon);
+  -webkit-font-smoothing: antialiased;
+}
 
 /* Header
 --------------------------------------------- */
 
 
 header[role=banner] {
-  margin: 0 auto 3.2em auto;
-  padding: 1.6em 0;
+  margin: 0.8em auto 3.2em auto;
+  padding: 1.6em 0 0.8em 0;
   border-bottom: 1px solid $border-color;
   @include clearfix;
   line-height: 2em;
@@ -276,14 +311,40 @@ header[role=banner] {
   text-align: center;
 }
 
-a.logo {
+a.kf {
+  font: 1px/.45 'kfwebsiteiconsRegular';
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  text-indent: -999em;
+  @include border-radius(200);
   display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+a.kf i::before {
+  text-indent: 0px;
+  font: 81px/.45 'kfwebsiteiconsRegular';
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  color: $logo-color;
+}
+
+a.kf:hover i::before {
   color: $body-color;
+<<<<<<< HEAD
   width: 100%;
   font-weight: 700;
   margin-bottom: 1.6em;
   font-size: 112.5%;
+=======
+>>>>>>> Switched to icon font for logo
 }
+
 
 /* Navigation
 --------------------------------------------- */
@@ -291,12 +352,21 @@ a.logo {
 nav {
   display: inline-block;
   width: 100%;
+  margin-top: 1.6em;
 }
 
 nav a, nav a:visited {
+<<<<<<< HEAD
   display: inline;
   color: $body-color;
   margin: 0 1.6em;
+=======
+  display: inline-block;
+  margin: 0 1.6em;
+  color: $body-color;
+  font-size: 87.5%;
+  padding: 1em 0;
+>>>>>>> Switched to icon font for logo
 }
 
 nav a:hover {
@@ -491,23 +561,26 @@ a.dribbble-icon:hover {
 
    header[role=banner] {
      width: 75%;
-     margin: 3.2em auto 4.8em auto;
-     padding: 3.2em 0;
+     margin: 0.8em auto 3.2em auto;
+     padding: 3.2em 0 2.4em 0;
      text-align: left;
    }
 
+<<<<<<< HEAD
    a.logo {
      width: 25%;
      font-size: 100%;
    }
 
+=======
+>>>>>>> Switched to icon font for logo
    /* Navigation - 768 */
 
    nav {
      width: 75%;
      text-align: right;
      float: right;
-     margin-right: -1.6em;
+     margin: 0 -1.6em 0 0;
    }
 
    nav a, nav a:visited {
@@ -581,6 +654,40 @@ a.dribbble-icon:hover {
   body {
     font-size: 112.5%;
   }
+
+  /* Header - 960 */
+
+  header[role=banner] {
+    width: 75%;
+    margin-bottom: 4.8em;
+  }
+
+  a.kf {
+    font: 1px/.6 'kfwebsiteiconsRegular';
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    text-indent: -999em;
+    @include border-radius(200);
+    position: relative;
+    display: inline-block;
+  }
+
+  a.kf i::before {
+    text-indent: 0px;
+    font: 108px/.6 'kfwebsiteiconsRegular';
+    font-weight: normal;
+    font-style: normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+    // color: $body-color;
+  }
+
+  a.kf:hover i::before {
+    // color: $link-color;
+  }
+
 
   /* Articles - 960 */
 
