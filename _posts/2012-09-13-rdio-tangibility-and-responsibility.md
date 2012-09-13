@@ -23,7 +23,7 @@ Part of the trouble is tangibility. An additional $10 per album seems like a lot
 
 I could stop subscribing to Rdio, and invest the money instead in the few records that I really get attached to in a given year. But I’ve come to rely on Rdio for the tremendous back-catalogue of classics. This is where it really shines—it has a tremendous collection of jazz, classical, soul, funk, blues. There’s no way I’m giving that up, and I feel less guilt about using Rdio for older recordings.
 
-Ultimately, the thing to do is to continue using Rdio, but push myself to invest in the artists that I really enjoy. I have no problem giving writers and inventors money on [Kickstarter](http://kickstarter.com), or subscribing to new web design periodicals like [the Manual](http://alwaysreadthemanual.com) and [Offscreen](http://offscreenmagazine.com). Why should it be any different for music? The problem is it’s too easy to put it off, to not click ‘purchase’.
+Ultimately, the thing to do is to continue using Rdio, but push myself to invest in the artists that I really enjoy. I have no problem supporting writers and inventors on [Kickstarter](http://kickstarter.com), or subscribing to new web design periodicals like [the Manual](http://alwaysreadthemanual.com) and [Offscreen](http://offscreenmag.com). Why should it be any different for music? The problem is it’s too easy to put it off, to not click ‘purchase’.
 
 Here’s a thought. What if Rdio gently suggested consumers purchase a record, once they hit a certain play count? Make it opt-in, and let users set the threshold. The occasional purchase of a record that I’ve demonstrably enjoyed would help me feel better about using the service in general.
 
