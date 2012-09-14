@@ -271,7 +271,8 @@ article {
   margin: 0 0 4em 0; }
 
 article header {
-  margin: 0 0 1.6em 0;
+  max-width: 768px;
+  margin: 0 auto 1.6em auto;
   text-align: center; }
 
 article header h1 {
@@ -464,7 +465,8 @@ a.dribbble-icon:hover {
     margin: 0 0 7em 0; }
 
   article header {
-    margin: 1.6em 0; }
+    margin: 1.6em auto;
+    width: 75%; }
 
   article aside {
     font-size: 87.5%; }

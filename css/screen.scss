@@ -362,7 +362,8 @@ article {
 }
 
 article header {
-  margin: 0 0 1.6em 0;
+  max-width: 768px;
+  margin: 0 auto 1.6em auto;
   text-align: center;
 }
 
@@ -561,7 +562,8 @@ a.dribbble-icon:hover {
   }
 
   article header {
-    margin: 1.6em 0;
+    margin: 1.6em auto;
+    width: 75%;
   }
 
   article aside {
