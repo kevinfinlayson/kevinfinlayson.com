@@ -11,11 +11,6 @@ However, I also wanted to push the typography a bit, and—for the default confi
 
 Another big feature of the theme is the gorgeous, full-width product images. I love web shops that allow you to preview large versions of the product images, and decided to just make this the default view for Editions.
 
-<figure>
-  <img src="/images/editions-theme-2.jpg" alt="Editions Theme home page" data-retina="/images/editions-theme-2@2x.jpg" />
-  <figcaption>Product page</figcaption>
-</figure>
-
 Finally, it’s worth mentioning that the theme is responsive, although we’ve tweaked the viewport detection to only trigger mobile views if you’re on the appropriate devices. I’m indebted to the technical team with their dedication to the goal of optimizing the text size, leading and spacing for each viewport—quite daunting for a platform with so many view templates! I’m glad we took the time to make things look perfect at smaller sizes, though—I have strong feelings about optimizing type in this way, and I’m [not the](https://twitter.com/markboulton/status/267991619607871490) [only one](https://twitter.com/iA/status/267992691944587264).
 
 So if you’re looking for a flexible, elegant, typographically-nuanced responsive theme that focuses on showcasing products, check out [Editions theme](http://editions-theme.myshopify.com). At $180 USD, it’s an absolute steal for such a fully-realized design solution, on the very best consumer web commerce platform around.
