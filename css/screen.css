@@ -142,10 +142,7 @@ h1 {
 
 h2 {
   font-size: 0.875em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   font-family: "elena-web-basic-1", "elena-web-basic-2", georgia, serif;
-  font-weight: 400;
   margin: 1.6em 0; }
 
 h1 a, h2 a, h1 a:visited, h2 a:visited {
@@ -184,7 +181,12 @@ sub {
   bottom: -0.25em; }
 
 ul {
-  list-style: none;
+  list-style: circle;
+  padding: 0;
+  margin: 0; }
+
+ol {
+  list-style: decimal;
   padding: 0;
   margin: 0; }
 
@@ -284,13 +286,12 @@ article aside {
 article aside abbr {
   font-style: italic; }
 
-article p, article ul {
+article p, article ul, article ol, article dl {
   margin: 0 auto 1.6em auto;
   max-width: 768px; }
 
 article h2 {
   margin: 3.2em auto 1.6em auto;
-  text-align: center;
   max-width: 768px; }
 
 article img, article iframe, article object, article figure {
@@ -472,9 +473,12 @@ a.dribbble-icon:hover {
     font-size: 87.5%; }
 
   article img, article iframe, article object, article figure {
-    margin: 3.2em auto; }
+    margin: 3.2em auto 1.6em auto; }
 
-  article p, article ul, article dl {
+  article p, article ul, article ol, article dl {
+    width: 75%; }
+
+  article h2 {
     width: 75%; }
 
   article img, article figure {
@@ -535,7 +539,10 @@ a.dribbble-icon:hover {
     top: 0; }
 
   /* Articles - 960 */
-  article p, article ul, article dl {
+  article p, article ul, article ol, article dl {
+    width: 60%; }
+
+  article h2 {
     width: 60%; } }
 @media only screen and (min-width: 1020px) {
   /* Page structure - 960 */
