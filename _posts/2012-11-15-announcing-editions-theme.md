@@ -1,3 +1,8 @@
+---
+layout: single-post
+title: Announcing Editions Theme
+---
+
 I’m pleased to announce the release of [Editions theme](http://editions-theme.myshopify.com), [Pixel Union’s](http://pixelunion.net) newest addition to our growing collection of [Shopify themes](http://shopify.com/themes), and one which I had the privilege of taking a lead design role.
 
 <figure>
