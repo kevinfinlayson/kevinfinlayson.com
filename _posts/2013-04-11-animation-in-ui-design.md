@@ -3,7 +3,7 @@ layout: single-post
 title: Animation in UI Design
 ---
 
-In a [visually rich, fine-grained post](http://branch.com/b/transitional-interfaces-design-ux), [Elepath](http://www.elepath.com) designer and animator [Pasquale D’Silva](http://psql.me) calls for designers to think about animation as a critical aspect of UI design.
+In a [visually rich, fine-grained post](https://medium.com/design-ux/926eb80d64e3), [Elepath](http://www.elepath.com) designer and animator [Pasquale D’Silva](http://psql.me) calls for designers to think about animation as a critical aspect of UI design.
 
 >“Folks keep throwing around the word ‘delight’ when referring to animation and cute interactions. Cool and great for those guys. Guess what though? Animation can be used functionally too. It's not just an embellished detail.”
 
