@@ -35,7 +35,7 @@ Designer/Developer [Kirupa Chinnathambi](http://www.kirupa.com/) summarizes the 
 
 One particularly visible argument for dynamic prototyping tools comes with the recent unveiling of [Facebook Home](https://www.facebook.com/home), an interface rich with animations and fast, customized physics.
 
-In her follow-up post about the process and people behind Home, ‘[Go Big By Going Home](https://medium.com/the-year-of-the-looking-glass/af182add5a2f)’, Facebook product designer [Julie Zhou](http://www.juliezhuo.com/) discusses the team’s need for an alternative to the most commonly used static prototyping tool:
+In her follow-up post about the process and people behind Home, ‘[Go Big By Going Home](https://medium.com/the-year-of-the-looking-glass/af182add5a2f)’, Facebook product design director [Julie Zhou](http://www.juliezhuo.com/) discusses the team’s need for an alternative to the most commonly used static prototyping tool:
 
 >“…something like Facebook Home is completely beyond the abilities of Photoshop as a design tool. How can we talk about physics-based UIs and panels and bubbles that can be flung across the screen if we’re sitting around looking at static mocks? (Hint: we can’t.)” 
 
