@@ -1,2 +1,25 @@
-//= require "screen.scss"
-//= require "reset.scss"
+@import "bourbon";
+@import "common/normalize-top";
+
+/* Variables */
+
+@import "common/global";
+
+/* Header */
+  @import "common/header";
+  @import "common/navigation";
+
+/* Channels */
+  @import "channels/work";
+  @import "channels/blog";
+
+/* Pages */
+  @import "pages/home";
+  @import "pages/profile";
+  @import "pages/contact";
+
+
+/* Footer */
+  @import "common/footer";
+
+@import "common/normalize-bottom";
