@@ -36,7 +36,7 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -52,6 +52,17 @@ set :js_dir, 'js'
 set :images_dir, 'images'
 
 activate :bourbon
+
+activate :blog do |blog|
+  blog.name = 'work'
+  blog.prefix = 'work'
+end
+activate :blog do |blog|
+  blog.name = 'blog'
+  blog.prefix = 'blog'
+end
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
