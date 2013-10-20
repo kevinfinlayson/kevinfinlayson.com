@@ -36,7 +36,7 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -58,8 +58,8 @@ activate :blog do |blog|
   blog.prefix = 'work'
 end
 activate :blog do |blog|
-  blog.name = 'blog'
-  blog.prefix = 'blog'
+  blog.name = 'writing'
+  blog.prefix = 'writing'
 end
 
 activate :directory_indexes
