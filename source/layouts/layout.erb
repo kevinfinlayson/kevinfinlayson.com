@@ -9,12 +9,13 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title %></title>
 
-    <%= stylesheet_link_tag "all" %>
+    <%= stylesheet_link_tag "screen" %>
     <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>">
     <%= partial "layouts/header" %>
     <%= yield %>
+    <%= partial "layouts/footer" %>
   </body>
 </html>
