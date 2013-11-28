@@ -1,0 +1,18 @@
+---
+layout: single-post
+title: A Interaction Designer’s Legacy
+---
+
+In his insightful talk from Build 2013,  available as a [post on Quora](http://irondavy.quora.com/Applied-Discovery-Presentation-from-Build-2013), product designer David Cole discusses the shortcomings of the  role of design in the evolution of a product. Specifically, he details how design and product are often conceptualized as being discrete from one another—that the product (the thing of value) and the design (the ornamentation, or even the collateral used to market the product) are separate.
+
+Cole goes on to compare product design to what we historically have thought of as invention, and observes that some kinds of invention are decoupled from technological advancements. Many new products are the result of identifying a need—a human, social, societal need—and using existing technologies to create a solution. Twitter, with its 140 character limit, is the example he uses, but one could easily swap in another service such as Snapchat, with its Mission Impossible-style self-destroying photos and videos. He uses the term **applied discovery** to describe this phenomenon (invention not necessarily tied to technological innovation). One of the more enjoyable passages in the essay relate the invention of basketball as an example of applied discovery—a hugely successful game that was originally designed with simple, pre-existing materials, and which was based on concrete, well-stated requirements.
+
+Cole then comes to a conclusion that really resonates for me. Like many other interaction designers working in web or app design I am all too familiar with the ephemerality of my work. The field is expanding so quickly, with new technologies (webfonts, powerful preprocessing libraries) and screen substrates of all sizes, that our work quickly looks dated. Even work that seems timeless, due to the talent of its creators or an adherence to historical design principles, looks puny and lo-res as the state of the art advances.
+
+I sometimes struggle with the fact that I have no definitive body of work that will continue to be visually appealling or even relevant in the future. I won’t have prints or a monograph of my web design work that will act as a record of my experiments, failures and successes. As far as a tangible legacy goes, prospects are grim.
+
+But Mr. Cole has another perspective. He says that we interaction designers are fortunate; that unlike other fields of innovation, our work is both the discovery, *and* the embodiment, the creation. Interaction design is about discovering new truths about humanity, and the knowledge gained is the true legacy. The websites and apps may die, but we’re contributing to a new body of knowledge, and that knowledge outlives any physical (or virtual) artifact.
+
+I take great solace from this idea, but it can be taken further. As new technologies appear with increasing rapidity, there will be a greater need for interaction design to translate the raw possibilities these technologies afford into human terms. We interaction designers can be an interpretive layer that weaves the *new* into the fabric of everyday life. To do so, we need to have a strong bedrock of interaction design principles and knowledge, because the demand for interaction design has potential for limitless growth. We have an opportunity to start building this body of knowledge the right way, right now, with an eye to the future.
+
+Because, as Mr. Cole continues in his essay, the two greatest themes in the history of invention are empowerment and scale. The scale is rapidly expanding. Let’s make sure we continue to empower, to minimize friction and make new technologies invisible, useful, and delightful.
