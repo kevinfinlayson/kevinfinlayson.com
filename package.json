@@ -1,6 +1,6 @@
 {
   "name": "kevinfinlayson.com",
-  "version": "2.0.01",
+  "version": "2.0.1",
   "devDependencies": {
     "grunt": "~0.4.1"
   }
