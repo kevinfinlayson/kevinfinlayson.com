@@ -1,2 +1,2 @@
-//= require scripts/scripts.js
 //= require scripts/plugins.js
+//= require scripts/scripts.js
