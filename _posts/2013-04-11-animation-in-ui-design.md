@@ -25,7 +25,7 @@ In short—there’s potential here, we just need to become more mature as users
 
 From there, the Branch discussion moves into the shortcomings of current front-end animation tools. Pasquale puts it thus:
 
->“[…] The tools to create animation for interfaces are not ideal at all. I'd love to spend some time with some bright engineers to build better tools for animation. You shouldn't have to write a bunch of code to create something so abstract. It pigeon holes you into designing animation procedurally, and doesn't let you dream big.”
+>“\[…\] The tools to create animation for interfaces are not ideal at all. I'd love to spend some time with some bright engineers to build better tools for animation. You shouldn't have to write a bunch of code to create something so abstract. It pigeon holes you into designing animation procedurally, and doesn't let you dream big.”
 
 Designer/Developer [Kirupa Chinnathambi](http://www.kirupa.com/) summarizes the problem in terms of a question of putting the right people together to tackle the problem:
 
@@ -37,9 +37,9 @@ One particularly visible argument for dynamic prototyping tools comes with the r
 
 In her follow-up post about the process and people behind Home, ‘[Go Big By Going Home](https://medium.com/the-year-of-the-looking-glass/af182add5a2f)’, Facebook product design director [Julie Zhou](http://www.juliezhuo.com/) discusses the team’s need for an alternative to the most commonly used static prototyping tool:
 
->“…something like Facebook Home is completely beyond the abilities of Photoshop as a design tool. How can we talk about physics-based UIs and panels and bubbles that can be flung across the screen if we’re sitting around looking at static mocks? (Hint: we can’t.)” 
+>“…something like Facebook Home is completely beyond the abilities of Photoshop as a design tool. How can we talk about physics-based UIs and panels and bubbles that can be flung across the screen if we’re sitting around looking at static mocks? (Hint: we can’t.)”
 
-Zhuo goes on to discuss how Facebook Home was actually prototyped using Quartz Composer, which was introduced to the team by designer [Mike Matas](http://mikematas.com). The benefits, she argues, are enormous: 
+Zhuo goes on to discuss how Facebook Home was actually prototyped using Quartz Composer, which was introduced to the team by designer [Mike Matas](http://mikematas.com). The benefits, she argues, are enormous:
 
 >“Not only does QC make working with engineers much easier, it’s also incredibly effective at telling the story of a design. When you see a live, polished, interactable demo, you can instantly understand how something is meant to work and feel, in a way that words or long descriptions or wireframes will never be able to achieve.”
 
