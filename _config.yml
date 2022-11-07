@@ -1,3 +1,5 @@
 exclude: [ Gemfile, Gemfile.lock, Procfile, vendor, screen.scss, bourbon]
+plugins: 
+  - jekyll-paginate
 permalink: pretty
 paginate: 7
