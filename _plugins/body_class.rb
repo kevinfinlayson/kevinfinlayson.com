@@ -21,7 +21,7 @@
       classes = []
 
       %w[class url categories tags layout].each do |prop|
-        next unless page.has_key?(prop)
+        next unless page.key?(prop)
         if page[prop].kind_of?(Array)
           page[prop].each { |proper| classes.push prefixed_body_class(prop, proper) }
         else
