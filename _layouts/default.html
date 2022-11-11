@@ -4,7 +4,7 @@
 {% include head.html %}
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 {% capture id_prefix %}{% if page.id %}post{% else %}page{% endif %}{% endcapture %}
-{% capture id %}{{ id_prefix }}-{{ page.url | replace: '/','-' | split: "-" | slice: 1, 100 | join: "-"}}{% endcapture %}
+{% capture id %}{{ id_prefix }}-{% if page.url =="/" %}index{% else %}{{ page.url | replace: '/','-' | split: "-" | slice: 1, 100 | join: "-"}}{% endif %}{% endcapture %}
 <body class="{{ layout }}" id="{{ id }}">
   <div class="container">
     {% include header.html %}
