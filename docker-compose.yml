@@ -6,7 +6,7 @@ services:
       - JEKYLL_ENV=development
     command: >
       sh -c "
-      gem install jekyll sass &&
+      gem install jekyll sassc &&
       bundle install &&
       bundle exec jekyll serve --trace --watch --incremental --host 0.0.0.0"
     ports:
