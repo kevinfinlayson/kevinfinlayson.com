@@ -1,26 +1,17 @@
-<!doctype html>
-<!--[if lte IE 8 ]> <html lang="en" class="no-js oldie"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-{% include head.html %}
-<body class="{% body_class %}">
-  <div class="container">
-    {% include header.html %}
-    <section role="main">
-      <article>
-        <header>
-          <h1>{{ page.title | widont }}</h1>
-          <aside>
-            <abbr class="date">{{ page.date | date: "%b %d, %Y"}}</abbr>
-          </aside>
-        </header>
-        <div class="article-content">
-          {{ content }}
-        </div><!-- end of article-content -->
-      </article>
-    </section><!-- main -->
-    {% include single_pagination.html %}
-    {% include footer.html %}
-  </div><!-- end of container -->
-  {% include scripts.html %}
-</body>
-</html>
+---
+layout: default
+---
+
+<section role="main">
+  <article>
+    <header>
+      <h1>{{ page.title | widont }}</h1>
+      <aside>
+        <abbr class="date">{{ page.date | date: "%b %d, %Y"}}</abbr>
+      </aside>
+    </header>
+    <div class="article-content">
+      {{ content }}
+    </div><!-- end of article-content -->
+  </article>
+</section><!-- main -->

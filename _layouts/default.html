@@ -2,11 +2,14 @@
 <!--[if lte IE 8 ]> <html lang="en" class="no-js oldie"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 {% include head.html %}
-<body class="{% body_class %}">
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+{% capture id_prefix %}{% if page.id %}post{% else %}page{% endif %}{% endcapture %}
+{% capture id %}{{ id_prefix }}-{% if page.url =="/" %}index{% else %}{{ page.url | replace: '/','-' | split: "-" | slice: 1, 100 | join: "-"}}{% endif %}{% endcapture %}
+<body class="{{ layout }}" id="{{ id }}">
   <div class="container">
     {% include header.html %}
     {{ content }}
-    {% include pagination.html %}
+    {% if page.layout == "single-post" %}{% include single_pagination.html %}{% else %} {% include pagination.html %}{% endif %}
     {% include footer.html %}
   </div><!-- end of container -->
   {% include scripts.html %}

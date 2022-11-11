@@ -351,7 +351,7 @@ nav a:hover {
   color: $link-color;
 }
 
-.url_index nav a.blog, .url_index nav a.blog:visited, .layout_single_post nav a.blog, .layout_single_post nav a.blog:visited, .url_about nav a.about, .url_about nav a.about:visited {
+#page-index nav a.blog, #page-index nav a.blog:visited, .layout-single-post nav a.blog, .layout-single-post nav a.blog:visited, #page-about nav a.about, #page-about nav a.about:visited {
   color: $link-color;
   text-decoration: underline;
 }
