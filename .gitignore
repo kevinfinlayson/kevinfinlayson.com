@@ -3,3 +3,4 @@ _site
 
 *.log
 .jekyll-metadata
+vendor/bundle/
