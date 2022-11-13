@@ -1,4 +1,4 @@
-exclude: [ Gemfile, Gemfile.lock, Procfile, vendor, screen.scss, bourbon]
+exclude: [ Gemfile, Gemfile.lock, vendor, screen.scss, bourbon, docker-compose.yml]
 plugins: 
   - jekyll-paginate
 permalink: pretty
