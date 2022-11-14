@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '3.8'
-gem 'sassc'
+gem 'jekyll'
+gem 'jekyll-sass-converter'
 
 group :jekyll_plugins do
     gem 'jekyll-paginate'
