@@ -13,7 +13,7 @@ title: Home
       </aside>
     </header>
     <div class="article-content">
-      {{ post.content }}
+      {{ post.content | markdownify }}
     </div><!-- end of article-content -->
   </article>
   {% endfor %}
