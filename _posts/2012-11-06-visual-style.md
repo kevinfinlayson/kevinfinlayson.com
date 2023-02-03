@@ -11,4 +11,4 @@ However, I’m wary of shutting the door on any particular visual style. A desig
 
 If you wish to work in a specific style, align yourself with projects for which it is the absolute ideal. The only label you need to bother with is the one that describes this process of understanding what you’re building, whom it’s for, and what the best possible outcome is. As for skeumorphism, I believe Robert Anderson, designer at Square, sums its place and value nicely with this tweet:
 
-<blockquote class="twitter-tweet tw-align-center"><p>People are too quick to dismiss skeuomorphism. There's a tacky way to approach it, but if used correctly it can form an emotional bridge.</p>&mdash; Robert S. Andersen</blockquote>
+<blockquote class="twitter-tweet tw-align-center" cite="https://twitter.com/rsa/status/263256705268342784"><p>People are too quick to dismiss skeuomorphism. There's a tacky way to approach it, but if used correctly it can form an emotional&nbsp;bridge.</p></blockquote>
