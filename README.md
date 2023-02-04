@@ -1,4 +1,4 @@
-#Kevin Finlayson personal website
+# Kevin Finlayson personal website
 
 This website is run on Jekyll using Sass.
 
