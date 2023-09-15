@@ -1,8 +1,35 @@
-<footer role="contentinfo">
-  <span class="copyright">&copy; 2012–{{ site.time | date: "%Y" }} Kevin Finlayson</span>
-  <section class="elsewhere">
-    <a href="http://twitter.com/kevinfinlayson" title="@kevinfinlayson" class="social-link twitter-icon">Follow me on Twitter</a>
-    <a href="http://dribbble.com/players/kevinfinlayson" title="Dribbble" class="social-link dribbble-icon">Recent work on Dribbble</a>
-    <a href="/feed" title="RSS" class="social-link rss-icon">Subscribe to RSS</a>
-    </section><!-- elsewhere -->
-</footer><!-- end of contentinfo -->
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
