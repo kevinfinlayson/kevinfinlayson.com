@@ -1,0 +1,184 @@
+/*
+Base
+--------------------------------*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+  }
+  
+  html {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  audio[controls], canvas, video {
+    display: inline-block;
+    *display:
+    inline; *zoom: 1;
+  }
+  
+  ::-moz-selection {
+    background: $black;
+    color: $white;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: $black;
+    color: $white;
+    text-shadow: none;
+  }
+  
+  html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    padding: 0 $section-padding-wide;
+    color: $black;
+    font-family: $mono;
+    font-size: $base;
+    line-height: $base-line-height;
+    background-color: $near-white;
+  
+    @include breakpoint(tablet) {
+      padding: 0 $spacing-half;
+    }
+  
+    @include breakpoint(phone) {
+      padding: 0 $spacing-half;
+    }
+  
+    &.nav-open {
+      display: fixed;
+      overflow: hidden;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $bold-sans;
+    font-weight: 500;
+    line-height: $tight-line-height;
+    margin: 0 0 $text-spacing;
+  
+      a {
+        color: $black;
+  
+        &:visited {
+          color: $black;
+        }
+  
+        &:hover, &:focus, &:active {
+          text-decoration: underline;
+        }
+      }
+  }
+  
+  h1 {
+    font-size: $display;
+    line-height: $tighter-line-height;
+  }
+  
+  h2 {
+    font-size: $largest;
+  }
+  
+  h3 {
+    font-size: $larger;
+  }
+  
+  h4 {
+    font-size: $large;
+  }
+  
+  h5 {
+    font-size: $base;
+  }
+  
+  h6 {
+    font-size: $small;
+  }
+  
+  a {
+    display: inline;
+    color: $accent;
+    text-decoration: none;
+  
+    &:visited {
+      color: $accent;
+    }
+  
+    &:hover, &:focus, &:active {
+      color: $accent;
+      text-decoration: underline;
+    }
+  
+    a[rel*="attachment"] {
+      display: block;
+      line-height: 0;
+      font-size: 0;
+    }
+  }
+  
+  a:hover, a:active, a:focus {
+    color: $black;
+    outline: 0;
+  }
+  
+  b, strong {
+    font-family: $mono;
+    font-weight: 500;
+  }
+  
+  i, em {
+    font-family: $mono;
+  }
+  
+  p {
+    margin: 0 0 $spacing-half 0;
+  }
+  
+  ul, ol, dl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: $text-spacing-half;
+  }
+  
+  dt, dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img, iframe {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+  }
+  
+  figure {
+    margin: 0 0 $spacing 0;
+  }
+  
+  figcaption {
+    color: $black;
+    font-style: italic;
+    font-size: 0.85em;
+  }
+  
+  button, input, select, textarea {
+    color: $black;
+    font-family: $mono;
+  }
+  

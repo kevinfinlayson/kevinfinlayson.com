@@ -2,10 +2,12 @@
 
 // Colors
 
-$text-color: #0E181B;
-$background-color: #F5F5F5;
-$grey-color-light: #E0E0E0;
-$grey-color-dark: #757575;
+$black: #0E181B;
+$white: #FFFFFF;
+$near-white: #F5F5F5;
+$accent: #FFA76F;
+$light-grey: #E0E0E0;
+$dark-grey: #757575;
 
 // Fonts
 
@@ -15,11 +17,12 @@ $bold-sans: "GT America bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "N
 
 // Type scale
 
-$base-font-size: 16px;
-$small-font-size: 14px;
-$large-font-size: 24px;
-$larger-font-size: 36px;
-$display-font-size: 80px;
+$small: 14px;
+$base: 16px;
+$large: 24px;
+$larger: 36px;
+$largest: 48px;
+$display: 80px;
 
 //Line height
 
@@ -29,4 +32,8 @@ $tighter-line-height: 1.1;
 
 // Magic numners
 
-$spacing-unit: 24px;
+$spacing: 24px;
+$spacing-half: 12px;
+$section-padding-wide: 48px;
+$text-spacing: 32px;
+$text-spacing-half: 16px;

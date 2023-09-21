@@ -1,11 +1,23 @@
 // Mixins
 
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-      @content;
+@mixin breakpoint($point) {
+    @if $point == cinema {
+      @media (min-width: 1081px) { @content; }
+    }
+    @if $point == desktop {
+      @media (max-width: 1080px) { @content; }
+    }
+    @if $point == tablet {
+      @media (max-width: 768px ) { @content; }
+    }
+    @if $point == phablet {
+      @media (max-width: 600px ) { @content; }
+    }
+    @else if $point == phone {
+      @media (max-width: 480px)  { @content; }
     }
   }
   
   @mixin relative-font-size($ratio) {
-    font-size: $base-font-size * $ratio;
+    font-size: $base * $ratio;
   }
