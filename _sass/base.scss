@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     font-family: $bold-sans;
     font-weight: 700;
     line-height: $tight-line-height;
-    margin: $section-padding-wide 0 $section-padding 0;
+    margin: calc(2 * $section-padding) 0 $section-padding 0;
     
       &:first-child {
         margin-top: 0.3em;
