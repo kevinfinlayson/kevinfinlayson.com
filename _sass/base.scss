@@ -182,4 +182,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     color: $black;
     font-family: $mono;
   }
-  
+
+  hr {
+    visibility: hidden;
+  }
