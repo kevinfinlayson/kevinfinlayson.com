@@ -62,10 +62,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   
   h1, h2, h3, h4, h5, h6 {
     font-family: $bold-sans;
-    font-weight: 500;
+    font-weight: 700;
     line-height: $tight-line-height;
-    margin: 0 0 $text-spacing;
-  
+    margin: $section-padding-wide 0 $section-padding 0;
+    
+      &:first-child {
+        margin-top: 0.3em;
+      }
+
       a {
         color: $black;
   
@@ -105,12 +109,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   
   a {
     display: inline;
-    color: $accent;
+    color: $black;
     text-decoration: none;
-  
-    &:visited {
-      color: $accent;
-    }
   
     &:hover, &:focus, &:active {
       color: $accent;
@@ -144,12 +144,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   
   ul, ol, dl {
     list-style: none;
-    margin: 0;
+    margin: 0 0 $spacing 0;
     padding: 0;
   }
   
   li {
-    margin-bottom: $text-spacing-half;
+    margin: 0 0 1em $text-spacing-half;
+    padding-left: 0.3em;
+    list-style-type: disc;
   }
   
   dt, dd {

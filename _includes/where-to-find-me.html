@@ -1,7 +1,10 @@
 <ul class="where-to-find-me">
-  {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><span class="username">{{ site.github_username| escape }}</span></a></li>{%- endif -%}
-  {%- if site.instagram_username -%}<li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><span class="username">{{ site.instagram_username| escape }}</span></a></li>{%- endif -%}
-  {%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><span class="username">{{ site.linkedin_username| escape }}</span></a></li>{%- endif -%}
-  {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<li><a href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><span class="username">{{ mst.username|escape }}</span></a></li>{%- endif -%}{%- endfor -%}
-  {%- if site.twitter_username -%}<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><span class="username">{{ site.twitter_username| escape }}</span></a></li>{%- endif -%}
+  {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><span class="username">Github</span></a></li>{%- endif -%} 
+  {%- if site.arena_username -%}<li><a href="https://are.na/{{ site.arena_username| cgi_escape | escape }}"><span class="username">are.na</span></a></li>{%- endif -%}
+  {%- if site.mastodon_username and site.mastodon_url -%}<li><a href="https://{{ site.mastodon_url| cgi_escape | escape}}/@{{site.mastodon_username}}"><span class="username">Mastodon</span></a></li>{%- endif -%}
+  {%- if site.instagram_username -%}<li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><span class="username">Instagram</span></a></li>{%- endif -%}
+  {%- if site.instagram_username -%}<li><a href="https://threads.net/@{{ site.instagram_username| cgi_escape | escape }}"><span class="username">Threads</span></a></li>{%- endif -%}
+  {%- if site.strava_username -%}<li><a href="https://strava.com/athletes/{{ site.strava_username }}"><span class="username">Strava</span></a></li>{%- endif -%}
+  {%- if site.x_username -%}<li><a href="https://twitter.com/{{ site.x_username| cgi_escape | escape }}"><span class="username">X</span></a></li>{%- endif -%}
+ 
 </ul>

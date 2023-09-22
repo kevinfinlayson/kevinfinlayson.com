@@ -26,10 +26,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 x_username: kevinfinlayson
 github_username:  kevinfinlayson
-arena_username: kevinfinlayson
-strava_username: kevinfinlayson
+arena_username: kevin-finlayson
+strava_username: 6818289
 mastodon_username: kevinfinlayson
-linkedin_username: kevinfinlayson
+mastodon_url: indieweb.social
+instagram_username: kevinfinlayson
 
 # Build settings
 plugins:
