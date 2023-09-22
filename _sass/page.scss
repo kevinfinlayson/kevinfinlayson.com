@@ -1,0 +1,56 @@
+// Page
+
+.content {
+    min-height: 500px;
+    padding: 0 0 $section-padding-wide 0;
+  
+    @include breakpoint(tablet) {
+      font-size: $base;
+      padding-bottom: $spacing-half;
+    }
+}
+
+.content-column-wrapper {
+    display: flex;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+    }
+
+    .content-column {
+        flex: 0 0 auto;
+        flex-direction: column;
+        margin: 0 $section-padding 0 0;
+
+        @include breakpoint(tablet) {
+            width: 75%;
+        }
+
+        @include breakpoint(phablet) {
+            width: 100%;
+            margin: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.content-main {
+    width: calc(70% - $section-padding);
+
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+
+  }
+
+  .content-sidebar {
+    width: calc(30%);
+
+    @include breakpoint(phablet) {
+      width: 100%;
+      margin-bottom: $spacing-half;
+    }
+  }

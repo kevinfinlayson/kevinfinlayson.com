@@ -2,16 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+<div class="content" aria-label="Content">
   {%- if page.title -%}
+  <header class="page-header">   
   {% assign titleWords = page.title | split: ' ' %}
     <h1 class="page-heading">{% for word in titleWords %}{% if forloop.last %}&nbsp;{{word}}{% else %} {{ word }}{% endif %}{% endfor %}
     </h1>
+  </header><!-- page-header -->
   {%- endif -%}
 
-  {{ content }}
+  <div class="content-column-wrapper">
+    <div class="content-column content-main">
+    {{ content }} 
+    </div><!-- content-column-main -->
+    <div class="content-column content-sidebar">
+      {% include where-to-find-me.html %}
+    </div><!-- content-column-sidebar-->
+  </div><!-- content-column-wrapper -->
 
-  {%- if site.posts.size > 0 -%}
+
+  <!-- {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -31,6 +41,6 @@ layout: default
     </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  {%- endif -%} -->
 
 </div>

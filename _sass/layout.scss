@@ -9,7 +9,6 @@ Layout
   }
   
   .container-inner {
-    // background-color: pink;
     max-width: 1140px;
     min-height: 100%;
     padding: 0;
@@ -21,3 +20,41 @@ Layout
     }
   }
   
+  // .content-column-wrapper {
+
+  //   @include breakpoint(phablet) {
+  //     flex-direction: column;
+  //   }
+  // }
+
+  // .content-column {
+  //   margin: 0 $section-padding 0 0;
+
+  //   @include breakpoint(phablet) {
+  //     margin: 0;
+  //   }
+
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
+
+  // .content-main {
+  //   background: pink;
+  //   width: calc(60% - 40px);
+
+  //   @include breakpoint(phablet) {
+  //     width: 100%;
+  //   }
+
+  // }
+
+  // .content-sidebar {
+  //   background-color: yellow;
+  //   width: calc(25% - 40px);
+
+  //   @include breakpoint(phablet) {
+  //     width: 100%;
+  //     margin-bottom: $spacing-half;
+  //   }
+  // }
