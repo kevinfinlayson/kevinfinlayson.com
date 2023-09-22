@@ -39,7 +39,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   }
   
   body {
-    padding: 0 $section-padding-wide;
+    padding: $section-padding-wide;
     color: $black;
     font-family: $mono;
     font-size: $base;
