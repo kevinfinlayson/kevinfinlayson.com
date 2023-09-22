@@ -5,6 +5,7 @@ Layout
 .container {
     min-height: 100%;
     min-width: 320px;
+    padding: 0 calc(2 * $section-padding-wide);
     background-color: $white;
   }
   

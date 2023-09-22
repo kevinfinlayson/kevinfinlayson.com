@@ -1,5 +1,15 @@
 // Page
 
+// Page header
+
+.page-header {
+    h1 {
+        margin-bottom: $section-padding-wide
+    }
+}
+
+// Page content
+
 .content {
     min-height: 500px;
     padding: 0 0 $section-padding-wide 0;
@@ -20,7 +30,7 @@
     .content-column {
         flex: 0 0 auto;
         flex-direction: column;
-        margin: 0 $section-padding 0 0;
+        margin: 0 calc(1.5 * $section-padding-wide) 0 0;
 
         @include breakpoint(tablet) {
             width: 75%;
@@ -38,7 +48,8 @@
 }
 
 .content-main {
-    width: calc(70% - $section-padding);
+    width: calc(80% - (1.5 * $section-padding-wide));
+    line-height: $wide-line-height;
 
     @include breakpoint(phablet) {
       width: 100%;
@@ -47,7 +58,7 @@
   }
 
   .content-sidebar {
-    width: calc(30%);
+    width: calc(20%);
 
     @include breakpoint(phablet) {
       width: 100%;

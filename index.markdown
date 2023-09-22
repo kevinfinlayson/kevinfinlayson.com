@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Design Leader and Product Generalist
+title: Design leader and product generalist
 ---
 
 Hey there! I’m a design leader who thrives when leading teams at the complex intersection of people, technology and business. The peak of my career has been leading design for the most critical parts of the Shopify platform, including Online Store, Checkout, Orders Management, Fulfillment, Inventory and many more. 
