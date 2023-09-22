@@ -27,5 +27,28 @@ Thanks for visiting! <span class="emoji">&#x270C;</span>
 - Studying French
 
 
-#### Case Studies
 #### Case Studies <span class="status notification">Coming Sept 25, 2023</span>
+
+
+<div class="case-study-list">
+    <a>
+        <h5>Sections Everywhere</h5>
+        <p><span>Online Store</span>Shopify</p>
+    </a>
+    <a>
+        <h5>Buy Online, Pick Up In&#8209;Store</h5>
+        <p><span>Checkout</span>Shopify</p>
+    </a>
+    <a>    
+        <h5>Multi&#8209;Location Inventory</h5>
+        <p><span>Inventory</span>Shopify</p>
+    </a>
+    <a>
+        <h5>Bulk Shipping Label Purchase</h5>
+        <p><span>Fulfillment</span>Shopify</p>
+    </a>
+    <a>
+        <h5>Order Tasks</h5>
+        <p><span>Order Management</span>Shopify</p>
+    </a>
+</div><!-- cast-study-list -->

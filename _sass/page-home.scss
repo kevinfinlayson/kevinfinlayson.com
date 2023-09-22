@@ -6,3 +6,38 @@ h4 .status {
     margin-left: 8px;
 }
 
+.case-study-list {
+
+
+}
+
+.case-study-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    a {
+        display: block;
+        margin: 0 $section-padding $text-spacing 0;
+        flex: 0 0 calc(33.333% - (0.667 * $section-padding));
+        cursor: pointer;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        h5 {
+            line-height: $base-line-height;
+            margin: 0 0 calc(0.5 * $spacing-half) 0;
+        }
+    
+        p {
+            font-size: $small;
+            margin: 0;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+}
