@@ -6,3 +6,18 @@
     font-size: $large;
     line-height: 0;
 }
+
+
+.status {
+    font-family: $mono;
+    display: inline-block;
+    font-size: $small;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 4px 9px;
+    vertical-align: middle;
+}
+.notification {
+    color: $notification;
+    background-color: $notification-background;
+}
