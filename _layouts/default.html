@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="{{ page.permalink | split: "/" }}">
     <main class="container">
       <div class="container-inner">
         {%- include header.html -%}
