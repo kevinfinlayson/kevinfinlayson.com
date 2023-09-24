@@ -1,0 +1,19 @@
+// ABout
+
+.portrait {
+    // max-width: 50%;
+    // margin: 0 0 $section-padding $section-padding;
+    float: right;
+    display: block;
+    margin-bottom: $section-padding;
+
+    img {
+        margin-bottom: $spacing-half;
+    }
+
+    figcaption {
+        font-size: $smaller;
+        color: $dark-grey;
+        font-style: normal;
+    }
+}
