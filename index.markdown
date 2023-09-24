@@ -27,7 +27,7 @@ Thanks for visiting! <span class="emoji">&#x270C;</span>
 - Studying French
 
 
-#### Case Studies <span class="status notification">Coming Sept 25, 2023</span>
+#### Case Studies <span class="status notification">Coming week of Sept 25, 2023</span>
 
 
 <div class="case-study-list">
