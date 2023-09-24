@@ -1,14 +1,23 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+<div class="content" aria-label="Content">
+  {%- if page.title -%}
+  <header class="page-header">   
+  {% assign titleWords = page.title | split: ' ' %}
+    <h1 class="page-heading">{% for word in titleWords %}{% if forloop.last %}&nbsp;{{word}}{% else %} {{ word }}{% endif %}{% endfor %}
+    </h1>
+  </header><!-- page-header -->
+  {%- endif -%}
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+  <div class="content-column-wrapper">
+    <div class="content-column content-main">
+    {{ content }} 
+    </div><!-- content-column-main -->
+    <div class="content-column content-sidebar">
+      <h5>Where to find me</h5>
+      {% include where-to-find-me.html %}
+    </div><!-- content-column-sidebar-->
+  </div><!-- content-column-wrapper -->
+</div>
