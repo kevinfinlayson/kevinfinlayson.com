@@ -8,13 +8,13 @@ title: Design leader and product generalist
 
 Hey there! I’m a design leader who excels at leading teams at the complex intersection of people, technology and business. 
 
-The highlight of my career (so far) has been leading design for the most critical parts of the Shopify platform, including Online Store, Checkout, Orders Management, Fulfillment, Inventory and many more. 
+The highlight of my career (so far) has been owning design for some of the most critical parts of [Shopify](https://shopify.com), including Online Store, Checkout, Orders Management, Fulfillment, Inventory and many more. 
 
 I believe great product design is cultivated through a deeply-held empathy for the user, relentless attention to detail, and an unwavering focus on shipping value quickly and sustainably.
 
 As a leader my superpower is bringing a sense of stability, focus and drive to teams shipping complex products in volatile market and industry conditions.
 
-Get in touch, check out my about page, read more about my design and leadership philosophy, or check out some case studies from my time at Shopify.
+Read more about my [approach to design and leadership](/approach), learn more [about me](/about/), or check out some case studies from my time at Shopify (coming soon).
 
 Thanks for visiting! <span class="emoji">&#x270C;</span>
 
@@ -48,7 +48,7 @@ Thanks for visiting! <span class="emoji">&#x270C;</span>
         <p><span>Fulfillment</span>Shopify</p>
     </a>
     <a>
-        <h5>Order Tasks</h5>
+        <h5>Custom and Saved Views</h5>
         <p><span>Order Management</span>Shopify</p>
     </a>
 </div><!-- cast-study-list -->
