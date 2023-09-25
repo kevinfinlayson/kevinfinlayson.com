@@ -6,7 +6,7 @@
     line-height: $base-line-height * $base * 2.25;
   
     .nav-trigger {
-        display: none;
+      display: none;
     }
   
     .menu-icon {
@@ -25,12 +25,11 @@
   
     @include breakpoint(phablet) {
       position: absolute;
-      top: 9px;
-      right: $spacing;
+      top: 80px;
+      right: $section-padding;
       background-color: $white;
       border: 1px solid $light-grey;
       border-radius: 5px;
-      text-align: right;
   
       label[for="nav-trigger"] {
         display: block;
@@ -67,12 +66,11 @@
   
       .page-link {
         display: block;
-        padding: 5px 10px;
+        padding: 5px $section-padding 5px $text-spacing-half;
   
         &:not(:last-child) {
           margin-right: 0;
         }
-        margin-left: 20px;
       }
     }
   }
