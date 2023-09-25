@@ -60,7 +60,7 @@
 
         @include breakpoint(phablet) {
             width: 100%;
-            margin: 0;
+            margin: 0 0 $section-padding-wide;
         }
 
         &:last-child {
@@ -84,7 +84,8 @@
 
   .content-sidebar {
     width: calc(20%);
-
+    margin-bottom: 0 !important;
+    
     @include breakpoint(phablet) {
       width: 100%;
       margin-bottom: $spacing-half;
@@ -98,5 +99,11 @@
         list-style-type: none;
         margin-left: 0;
         padding: 0;
+
+        @include breakpoint(phablet) {
+            float: left; 
+            margin-right: $spacing;
+        }
+
     }
-  }
+}
