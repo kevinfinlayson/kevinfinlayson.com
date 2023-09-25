@@ -11,7 +11,7 @@
       @media (max-width: 1023px ) { @content; }
     }
     @if $point == phablet {
-      @media (max-width: 767px ) { @content; }
+      @media (max-width: 833px ) { @content; }
     }
     @else if $point == phone {
       @media (max-width: 480px)  { @content; }

@@ -26,7 +26,7 @@
     @include breakpoint(phablet) {
       position: absolute;
       top: 80px;
-      right: $section-padding;
+      right: calc($spacing + $section-padding);
       background-color: $white;
       border: 1px solid $light-grey;
       border-radius: 5px;
@@ -72,6 +72,10 @@
           margin-right: 0;
         }
       }
+    }
+
+    @include breakpoint(phone) {
+      right: $section-padding;
     }
   }
 
