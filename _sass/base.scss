@@ -74,13 +74,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
         margin-top: 0.3em;
       }
 
-      a {
+      a, a:visited {
         color: $black;
-  
-        &:visited {
-          color: $black;
-        }
-  
+        text-decoration: none;
+        
         &:hover, &:focus, &:active {
           text-decoration: underline;
         }

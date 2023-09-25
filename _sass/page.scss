@@ -75,10 +75,29 @@
     p {
         line-height: $wide-line-height;
     }
+    
+    a, a:visited {
+        color: $blue-accent;  
+        text-decoration: none;
+
+        h5, p {
+            color: $black;
+            text-decoration: none;
+        }
+    }  
+
+    a:active, a:hover {
+        color: $black;      
+        
+        h5 {
+            text-decoration: underline;
+        }
+    }
 
     @include breakpoint(phablet) {
       width: 100%;
     }
+
 
   }
 
