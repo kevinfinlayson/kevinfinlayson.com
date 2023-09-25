@@ -5,7 +5,27 @@
 .page-header {
     h1 {
         margin: 0 0 $section-padding-wide;
-        max-width: 75%
+        max-width: 80%;
+        font-size: $mega-display;
+    }
+
+    @include breakpoint(laptop) {
+        h1 {
+            max-width: 100%;
+            font-size: $display;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        h1 {
+            font-size: $even-largest;
+        }
+    }
+
+    @include breakpoint(phablet) {
+        h1 {
+            font-size: $largest;
+        }
     }
 }
 
@@ -16,7 +36,7 @@
     padding: 0 0 $section-padding-wide 0;
   
     @include breakpoint(tablet) {
-      font-size: $base;
+    //   font-size: $base;
       padding-bottom: $spacing-half;
     }
 }
@@ -34,7 +54,8 @@
         margin: 0 calc(1.5 * $section-padding-wide) 0 0;
 
         @include breakpoint(tablet) {
-            width: 75%;
+            margin: 0 $section-padding-wide 0 0;
+            // width: 75%;
         }
 
         @include breakpoint(phablet) {

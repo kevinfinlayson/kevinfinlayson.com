@@ -21,7 +21,7 @@ Thanks for visiting! <span class="emoji">&#x270C;</span>
 
 #### Currently (September 2023)
 
-- Looking for a team with whom to build exciting stuff
+- Looking for a team to build exciting stuff with
 - Training for California International Marathon 2023
 - Battling entropy aka maintaining a historic Montréal townhouse
 - Studying French

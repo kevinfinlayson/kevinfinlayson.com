@@ -21,8 +21,7 @@
     color: $black;
     font-size: $large;
     font-family: $medium-sans;
-  
+ 
     @include breakpoint(phone) {
-      width: 70px;
     }
   }

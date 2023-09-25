@@ -7,6 +7,18 @@ Layout
     min-width: 320px;
     padding: 0 calc(2 * $section-padding-wide);
     background-color: $white;
+
+    @include breakpoint(tablet) {
+      padding: 0 $section-padding-wide;
+    }
+
+    @include breakpoint(phablet) {
+      padding: 0 $section-padding;
+    }
+
+    @include breakpoint(phone) {
+      padding: 0 $spacing;
+    }
   }
   
   .container-inner {
@@ -17,6 +29,6 @@ Layout
     background-color: transparent;
   
     @include breakpoint(phone) {
-      padding: 0 $spacing-half;
+      // padding: 0 $spacing-half;
     }
   }

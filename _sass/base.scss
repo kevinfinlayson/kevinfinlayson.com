@@ -47,7 +47,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     background-color: $near-white;
   
     @include breakpoint(tablet) {
-      padding: 0 $spacing-half;
+      padding: 0 $section-padding;
+    }
+
+    @include breakpoint(phablet) {
+      padding: 0 $spacing;
     }
   
     @include breakpoint(phone) {

@@ -6,7 +6,7 @@ layout: default
   {%- if page.title -%}
   <header class="page-header">   
   {% assign titleWords = page.title | split: ' ' %}
-    <h1 class="page-heading">{% for word in titleWords %}{% if forloop.last %}&nbsp;{{word}}{% else %} {{ word }}{% endif %}{% endfor %}
+    <h1 class="page-heading">{% for word in titleWords %}{% if forloop.last %} {{word}}{% else %} {{ word }}{% endif %}{% endfor %}
     </h1>
   </header><!-- page-header -->
   {%- endif -%}
