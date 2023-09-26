@@ -14,7 +14,7 @@ I live with my partner [Kara Blake](https://philtrefilms.com) in Montreal, and s
 
 Some highlights about me:
 
-- PR at Brooklyn Half Marathon 2023 ([1:47:49)](https://results.nyrr.org/event/23BKH/result/18064?_gl=1*w46no6*_gcl_au*MTA1ODQ4Nzg1MC4xNjk1Njg0Mzc4)
+- PR at Brooklyn Half Marathon 2023 ([1:47:49](https://results.nyrr.org/event/23BKH/result/18064?_gl=1*w46no6*_gcl_au*MTA1ODQ4Nzg1MC4xNjk1Njg0Mzc4))
 - UX Director at [Shopify](https://shopify.com) (8 yrs)
 - 50 under 50 2021 [Concordia Alumni Magazine](https://www.concordia.ca/cunews/offices/advancement/2021/50-under-50/the-ux-guru.html)
 - Proud uncle of two wide-eyed and wonderful goblins
