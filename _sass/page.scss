@@ -6,13 +6,12 @@
     h1 {
         margin: 0 0 $section-padding-wide;
         max-width: 80%;
-        font-size: $mega-display;
+        font-size: $display;
     }
 
     @include breakpoint(laptop) {
         h1 {
             max-width: 100%;
-            font-size: $display;
         }
     }
 
