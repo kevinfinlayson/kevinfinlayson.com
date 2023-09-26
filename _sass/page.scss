@@ -27,6 +27,12 @@
             font-size: $largest;
         }
     }
+
+    @include breakpoint(phone) {
+        h1 {
+            font-size: $even-larger;
+        }
+    }
 }
 
 // Page content
