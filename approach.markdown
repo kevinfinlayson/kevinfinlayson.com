@@ -12,26 +12,22 @@ A great product leader does not stay at a high level of altitude, simply coachin
 
 It’s this kind of leader that is able to get more from their teams. They do this by recognizing and cultivating unique individual greatness, by creating a safe, trusting and sustainable work environment, and by inspiring team members to come together and create something greater than themselves.
 
-I aspire to be this kind of leader. I’m considered to be a calm, thoughtful and empathetic presence. I’m good at understanding people and reading tricky situations. I believe in letting teams own what they work on, but that it's my job to stay close, sharpen thinking, clear up ambiguity, and ultimately hold the team accountable for what they release into the world.
+I aspire to be this kind of leader. I’m considered to be a calm, thoughtful and empathetic presence. I’m good at understanding people and reading tricky situations. I believe in letting teams own what they work on, but that it's my job to stay close, clarify ambiguity, and keep the team inspired, engaged and shipping with a healthy sense of urgency.
 
 #### On product design
 
-A few medium-held opinions, lots more where these come from:
+A few medium-held opinions:
 
 - The customer is intelligent and should be treated as such.
 
-- The design process is a tool for driving alignment on what to build and ship.
+- Design is underused as a tool for driving alignment and decision making.
 
-- Your design should always have an opinion about what is best for the customer.
+- Your design should be opinionated but not rigid.
 
-- Ask yourself: does my design bring more value than a CSV upload? Does it need to?
+- Designers and developers aren't working together early enough in the process.
 
-- Designers should work continuously with their partner disciplines starting as early in the product life cycle as possible.
+- The point of a prototype is the knowledge it captures, not the artifact itself.
 
-- Tools and artifacts are a distant second to the knowledge they help uncover and capture.
+- Ask yourself how you could ship in days or weeks rather than months.
 
-- Good product design obscures the underlying system only to the extent that the customer is aided in what they are trying to accomplish.
-
-- There is almost always a simpler way of doing the thing. Ask yourself how you could ship in days or weeks rather than months.
-
-- A good MVP brings value to the customer while outlining the promise of what’s to come.
+- A good MVP is both a high quality value add and a promise of what's to come.
