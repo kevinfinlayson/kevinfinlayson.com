@@ -56,6 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   
     @include breakpoint(phone) {
       padding: 0 $spacing-half;
+      font-size: $small;
     }
   
     &.nav-open {
@@ -82,7 +83,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
           text-decoration: underline;
         }
       }
-  }
+ 
+      @include breakpoint(phone) {
+        margin: calc(1.5 * $section-padding) 0 $section-padding 0;
+      }
+    }
   
   h1 {
     font-size: $display;

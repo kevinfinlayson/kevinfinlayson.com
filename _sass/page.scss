@@ -30,6 +30,7 @@
     @include breakpoint(phone) {
         h1 {
             font-size: $even-larger;
+            margin-bottom: $section-padding;
         }
     }
 }
@@ -60,12 +61,15 @@
 
         @include breakpoint(tablet) {
             margin: 0 $section-padding-wide 0 0;
-            // width: 75%;
-        }
+        } 
 
         @include breakpoint(phablet) {
             width: 100%;
             margin: 0 0 $section-padding-wide;
+        }
+
+        @include breakpoint(phone) {
+            margin: 0 0 $section-padding;
         }
 
         &:last-child {

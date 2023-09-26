@@ -8,9 +8,9 @@
     //   height: 120px;
     // }
 
-    // @include breakpoint(phone) {
-    //   height: 90px;
-    // }
+    @include breakpoint(phone) {
+      padding: calc($section-padding-wide) 0;
+    }
 
   }
 
