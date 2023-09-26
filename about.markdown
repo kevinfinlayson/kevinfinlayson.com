@@ -8,7 +8,7 @@ permalink: /about/
 </figure><!-- portrait -->
 
 
-I’m a self-taught designer and software developer with a background in visual art and music. My career has spanned nearly two decades, and I've grown from a solo full-stack freelancer into a senior leader overseeing full product lines in a rapidly scaling organization. 
+I’m a self-taught designer and software developer with a background in visual art and music. My career has spanned nearly two decades, and I've grown from a solo full-stack freelancer into a senior leader overseeing full product lines in a rapidly scaling organization.
 
 I live with my partner [Kara Blake](https://philtrefilms.com) in Montreal, and spend a lot of my time training for foot races. 
 

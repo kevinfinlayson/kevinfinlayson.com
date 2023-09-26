@@ -14,16 +14,17 @@ I believe great product design is cultivated through a deeply-held empathy for t
 
 As a leader my superpower is bringing a sense of stability, focus and drive to teams shipping complex products in volatile market and industry conditions.
 
-Read more about my [approach to design and leadership](/approach), learn more [about me](/about/), or check out some case studies from my time at Shopify (coming soon).
+Read more about my [approach to design and leadership](/approach), learn more [about me](/about/), or check out some case studies from my time at Shopify (coming soon). You can also see some of my early web design at my [freelance site](https://dustandmold.net), dating back to 2010.
+
 
 Thanks for visiting! <span class="emoji">&#x270C;</span>
 
 
 #### Currently (September 2023)
 
-- Looking for a team to build exciting stuff with
+- Looking to join a team and build something great
 - Training for California International Marathon 2023
-- Battling entropy aka maintaining a historic Montréal townhouse
+- Battling entropy aka maintaining a historic Montreal townhouse
 - Studying French
 
 
