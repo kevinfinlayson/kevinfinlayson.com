@@ -1,0 +1,27 @@
+// Header
+
+.main-header {
+    // background-color: green;
+    padding: calc($section-padding * 2) 0;
+
+    // @include breakpoint(phablet) {
+    //   height: 120px;
+    // }
+
+    // @include breakpoint(phone) {
+    //   height: 90px;
+    // }
+
+  }
+
+  a.site-title {
+    // background-color: red;
+    display: inline-block;
+    line-height: $base-line-height * $base * 2.25;
+    color: $black;
+    font-size: $large;
+    font-family: $medium-sans;
+ 
+    @include breakpoint(phone) {
+    }
+  }

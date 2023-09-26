@@ -1,0 +1,30 @@
+/*
+screen.css
+Stylesheet for Kevin Finlayson website
+*/  
+
+// Defaults
+
+// Width of the content area
+
+// $content-width:    800px !default;
+
+// $on-palm:          600px !default;
+// $on-laptop:        800px !default;
+
+// Import partials
+
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "header";
+@import "nav";
+@import "footer";
+@import "page";
+@import "typography";
+@import "page-home";
+@import "page-about";
+
+

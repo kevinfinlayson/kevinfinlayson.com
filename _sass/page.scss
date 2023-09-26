@@ -1,0 +1,134 @@
+// Page
+
+// Page header
+
+.page-header {
+    h1 {
+        margin: 0 0 $section-padding-wide;
+        max-width: 80%;
+        font-size: $mega-display;
+    }
+
+    @include breakpoint(laptop) {
+        h1 {
+            max-width: 100%;
+            font-size: $display;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        h1 {
+            font-size: $even-largest;
+        }
+    }
+
+    @include breakpoint(phablet) {
+        h1 {
+            font-size: $largest;
+        }
+    }
+
+    @include breakpoint(phone) {
+        h1 {
+            font-size: $even-larger;
+        }
+    }
+}
+
+// Page content
+
+.content {
+    min-height: 500px;
+    padding: 0 0 $section-padding-wide 0;
+  
+    @include breakpoint(tablet) {
+    //   font-size: $base;
+      padding-bottom: $spacing-half;
+    }
+}
+
+.content-column-wrapper {
+    display: flex;
+
+    @include breakpoint(phablet) {
+        flex-direction: column;
+    }
+
+    .content-column {
+        flex: 0 0 auto;
+        flex-direction: column;
+        margin: 0 calc(1.5 * $section-padding-wide) 0 0;
+
+        @include breakpoint(tablet) {
+            margin: 0 $section-padding-wide 0 0;
+            // width: 75%;
+        }
+
+        @include breakpoint(phablet) {
+            width: 100%;
+            margin: 0 0 $section-padding-wide;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.content-main {
+    width: calc(80% - (1.5 * $section-padding-wide));
+   
+    p {
+        line-height: $wide-line-height;
+    }
+    
+    a, a:visited {
+        color: $blue-accent;  
+        text-decoration: none;
+
+        h5, p {
+            color: $black;
+            text-decoration: none;
+        }
+    }  
+
+    a:active, a:hover {
+        color: $black;      
+        
+        h5 {
+            text-decoration: underline;
+        }
+    }
+
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+
+
+  }
+
+  .content-sidebar {
+    width: calc(20%);
+    margin-bottom: 0 !important;
+    
+    @include breakpoint(phablet) {
+      width: 100%;
+      margin-bottom: $spacing-half;
+    }
+
+    h5 {
+        // margin-top: calc( 0.5 * $text-spacing-half);
+    }
+
+    ul li {
+        list-style-type: none;
+        margin-left: 0;
+        padding: 0;
+
+        @include breakpoint(phablet) {
+            float: left; 
+            margin-right: $spacing;
+        }
+
+    }
+}

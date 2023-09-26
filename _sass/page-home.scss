@@ -1,0 +1,100 @@
+// Home
+
+.content-main h4 {
+    position: relative;
+}
+
+h4 .status {
+    position: relative;
+    top: -2px;
+    margin-left: 8px;
+
+    @include breakpoint(phablet) {
+        font-size: $smaller;
+        position: absolute;
+        top: 4px;
+        right: 0px;
+        margin-left: 0;
+    
+    }
+}
+
+
+.case-study-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    a {
+        display: block;
+        margin: 0 $section-padding $text-spacing 0;
+        flex: 0 0 calc((100% - (2 * $section-padding))/3);
+        max-width: calc((100% - (2 * $section-padding))/3);
+        cursor: pointer;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        h5 {
+            line-height: $base-line-height;
+            margin: 0 0 calc(0.5 * $spacing-half) 0;
+        }
+    
+        p {
+            font-size: $small;
+            margin: 0;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        a {
+            flex: 0 0 calc((100% - $section-padding)/2);
+            max-width: calc((100% - $section-padding)/2);
+
+            &:nth-child(3n) {
+                margin-right: $section-padding;
+            }
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @include breakpoint(phablet) {
+        a {
+            flex: 0 0 calc((100% - (2 * $section-padding))/3);
+            max-width: calc((100% - (2 * $section-padding))/3);
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(2n) {
+                margin-right: $section-padding;
+            }
+    
+        }
+    }
+
+    @include breakpoint(phone) {
+        a {
+            flex: 0 0 calc((100% - $section-padding)/2);
+            max-width: calc((100% - $section-padding)/2);
+
+            &:nth-child(3n) {
+                margin-right: $section-padding;
+            }
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+
+}
