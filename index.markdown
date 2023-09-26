@@ -27,8 +27,10 @@ Thanks for visiting! <span class="emoji">&#x270C;</span>
 - Battling entropy aka maintaining a historic Montreal townhouse
 - Studying French
 
-
-#### Case Studies <span class="status notification">Coming week of Sept 25, 2023</span>
+<header class="case-studies">
+    <h4>Case Studies</h4>
+    <span class="status notification">Coming week of Sept 25, 2023</span>
+</header>
 
 
 <div class="case-study-list">
