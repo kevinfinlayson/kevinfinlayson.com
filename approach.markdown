@@ -12,8 +12,6 @@ A great product leader does not stay at a high level of altitude, simply coachin
 
 It’s this kind of leader that is able to get more from their teams. They do this by recognizing and cultivating unique individual greatness, by creating a safe, trusting and sustainable work environment, and by inspiring team members to come together and create something greater than themselves.
 
-I aspire to be this kind of leader. I’m considered to be a calm, thoughtful and empathetic presence. I’m good at understanding people and reading tricky situations. I believe in letting teams own what they work on, but that it's my job to stay close, clarify ambiguity, and keep the team inspired, engaged and shipping with a healthy sense of urgency.
-
 #### On product design
 
 A few medium-held opinions:
