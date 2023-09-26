@@ -22,8 +22,8 @@ title: Kevin Finlayson
 email: kevin@kevinfinlayson.com
 description: >- # this means to ignore newlines until "baseurl:"
   Kevin Finlayson design leadership portfolio website.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://kevinfinlayson.com" # the base hostname & protocol for your site, e.g. http://example.com
 x_username: kevinfinlayson
 github_username:  kevinfinlayson
 arena_username: kevin-finlayson
