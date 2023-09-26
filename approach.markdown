@@ -24,7 +24,7 @@ A few medium-held opinions, lots more where these come from:
 
 - Your design should always have an opinion about what is best for the customer.
 
-- Ask yourself: does my design bring more value than a CSV upload? If not, why not?
+- Ask yourself: does my design bring more value than a CSV upload? Does it need to?
 
 - Designers should work continuously with their partner disciplines starting as early in the product life cycle as possible.
 
