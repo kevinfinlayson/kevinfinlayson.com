@@ -1,8 +1,10 @@
 /* Nav */
 
-.site-nav {
-  // background-color: purple;
-    float: right;
+.site-nav {    
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    display: inline-block;
     line-height: $base-line-height * $base * 2.25;
   
     .nav-trigger {
