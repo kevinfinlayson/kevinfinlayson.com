@@ -1,12 +1,8 @@
 // Header
 
 .main-header {
-    // background-color: green;
     padding: calc($section-padding * 2) 0;
-
-    // @include breakpoint(phablet) {
-    //   height: 120px;
-    // }
+    position: relative;
 
     @include breakpoint(phone) {
       padding: calc($section-padding-wide) 0;
