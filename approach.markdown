@@ -20,12 +20,14 @@ A select few hard truths I've learned the hard way over the years.
 
 - Design is overused as a tool for specification and underused as a tool for driving alignment and decision making.
 
-- An unopinionated design betrays a lack of clarity and insight about the job to be done.
+- It is possible for an interface to be both opinionated and customizable.
 
 - The point of a prototype is the knowledge it captures, not the artifact itself.
 
 - Design work undertaken without a clear problem to solve will usually result in more regressions than added value.
 
-- It can be liberating to ask yourself how you can ship in days or weeks rather than months.
+- It can be liberating to ask yourself: what if we had to ship in days or weeks rather than months?
 
 - A good MVP is both a high-quality value add and a promise of what's to come.
+
+- Most prototypes are an articulation of what isn't yet known about the problem.
