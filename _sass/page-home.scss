@@ -16,12 +16,12 @@ header.case-studies {
 
     .status {
         position: relative;
-        top: -2px;
+        top: -4px;
         display: inline-block;
         margin-left: 8px;
 
         @include breakpoint(phablet) {
-            font-size: $smaller;
+            font-size: $small;
         }
 
         @include breakpoint(phone) {
