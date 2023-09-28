@@ -13,10 +13,11 @@
     display: inline-block;
     font-size: $small;
     font-weight: 400;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 4px 9px;
     vertical-align: middle;
 }
+
 .notification {
     color: $notification;
     background-color: $notification-background;

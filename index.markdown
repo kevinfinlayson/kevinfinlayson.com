@@ -29,7 +29,7 @@ Thanks for visiting! <span class="emoji">&#x270C;</span>
 
 <header class="case-studies">
     <h4>Case Studies</h4>
-    <span class="status notification">Coming week of Sept 25, 2023</span>
+    <span class="status notification">Coming soon</span>
 </header>
 
 
